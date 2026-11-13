@@ -14,6 +14,8 @@ From Search Console, pull query + page pairs for the trailing 28 days (compare w
 
 Prioritize by business value: a position-11 query that drives demos beats a position-9 glossary term with three times the impressions.
 
+If visibility dropped without a ranking change, check AI Overviews before rewriting: as of November 2026, Google collapsed the prominent desktop AI Overview citation cards (reported by @brodieseo on X), which can reduce clicks from cited pages. Verify on your own queries; see [ai-attribution.md](../../ai-seo/references/ai-attribution.md).
+
 Before touching a page, check for **cannibalization**: if two of your pages rank for the same query, positions often bounce between them and neither climbs. Pick one owner, merge the useful parts of the other into it, and redirect.
 
 ## Diagnose against the top three

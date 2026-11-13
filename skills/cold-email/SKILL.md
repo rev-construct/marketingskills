@@ -1,13 +1,23 @@
 ---
 name: cold-email
-description: "When the user wants to write or run B2B cold outbound, or asks whether an opener, reason to reach out, or email works or why nobody replies: cold emails, follow-ups, sending domains, deliverability, LinkedIn, cadences. Send from secondary domains, verify lists first, turn off open tracking, stop every channel when a prospect replies. No AI tells like 'it's not X, it's Y'. For the list, see prospecting. For lifecycle email, see emails. For call scripts, see sales-enablement."
+description: "When the user wants to write or run B2B cold outbound, or asks whether an opener, reason to reach out, or email works or why nobody replies: cold emails, follow-ups, sending domains, deliverability, LinkedIn, cadences, reply handling. For the list, see prospecting. For lifecycle email, see emails. For call scripts, see sales-enablement."
 metadata:
-  version: 2.2.4
+  version: 2.2.6
 ---
 
 # Cold Email Writing
 
 You are an expert in cold outbound. Your goal is to write emails that sound like they came from a sharp, thoughtful human — not a sales machine following a template — and to make sure they reach the inbox, work alongside the other channels, and turn replies into meetings.
+
+## What Do You Need?
+
+| If you need to... | Go to |
+|-------------------|-------|
+| Write a cold email | Writing Principles below |
+| Plan follow-ups | [follow-up-sequences.md](references/follow-up-sequences.md) |
+| Set up sending (domains, warmup, limits) | [deliverability.md](references/deliverability.md) |
+| Add LinkedIn or other channels | Beyond Email below |
+| Handle a reply that came in | [reply-handling.md](references/reply-handling.md) |
 
 ## Before Writing
 
@@ -112,11 +122,13 @@ See [follow-up-sequences.md](references/follow-up-sequences.md) for cadence, ang
 
 ## Before You Send
 
-Copy only matters if it reaches the inbox. Before the first send:
-- Send from **secondary domains**, never your primary one, with SPF, DKIM, and DMARC set up and mailboxes warmed for 3–4 weeks.
-- **Verify every list** right before upload and keep bounces under 2%.
-- **Turn off open and click tracking.** Measure replies.
-- Include a plain-text **opt-out line and your postal address** in every email.
+Copy only matters if it reaches the inbox. Copy this checklist into your reply and tick each item before the first send:
+
+- [ ] Sending from **secondary domains**, never your primary one, with SPF, DKIM, and DMARC set up and mailboxes warmed for 3–4 weeks. If not: finish setup and warmup first.
+- [ ] **List verified** right before upload, bounces under 2%. If bounces run higher: re-verify the list before sending more.
+- [ ] **Open and click tracking off.** Measure replies.
+- [ ] Plain-text **opt-out line and your postal address** in every email.
+- [ ] **EU or UK recipients?** Check the prospecting skill's [compliance.md](../prospecting/references/compliance.md) before the first send. Some countries (Germany, Italy) require prior consent for B2B email.
 
 Domain and mailbox math, the Google, Yahoo, and Microsoft rules, monitoring, and stop-loss thresholds are in [deliverability.md](references/deliverability.md).
 
@@ -124,7 +136,7 @@ Domain and mailbox math, the Google, Yahoo, and Microsoft rules, monitoring, and
 
 ## Beyond Email
 
-Most outbound that works in 2026 runs on more than one channel:
+Most outbound that works runs on more than one channel:
 - **LinkedIn**: profile, limits, the engage-then-connect sequence, message copy, and the automation decision. See [linkedin-outreach.md](references/linkedin-outreach.md).
 - **Cadence**: how email, LinkedIn, calls, video, and ads fit together by tier, and the rule that a reply on any channel stops all of them. See [multichannel-cadence.md](references/multichannel-cadence.md). Call scripts are in the sales-enablement skill.
 - **Plays**: value-first teardowns for services, product-led outbound for self-serve SaaS, problem-led outbound with a free sample, and founder-led outreach. See [outbound-plays.md](references/outbound-plays.md).
@@ -144,6 +156,8 @@ Before presenting, gut-check:
 - Does every sentence serve the reader, not the sender?
 - Is the personalization connected to the problem?
 - Is there one clear, low-friction ask?
+
+If any answer is no, rewrite and check again until every item passes.
 
 ---
 
@@ -188,15 +202,15 @@ Use this data to inform your writing — not as a checklist to satisfy.
 
 ## Tool Integrations
 
-For setup, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md), including its sales outbound quick start. Tools most used with this skill:
+For setup, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md), including its sales outbound quick start. Tools most used with this skill:
 
 | Job | Tools | Guides |
 |-----|-------|--------|
-| Email sending and sequences | Instantly, lemlist, Outreach | [instantly.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/instantly.md), [lemlist.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/lemlist.md), [outreach.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/outreach.md) |
-| LinkedIn steps | HeyReach, lemlist (both carry LinkedIn terms-of-service risk) | [heyreach.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/heyreach.md) |
-| Verification before send | Truelist, Hunter | [truelist.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/truelist.md), [hunter.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/hunter.md) |
-| CRM and reply logging | HubSpot, Attio, Close | [attio.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/attio.md), [close.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/close.md) |
-| Booking | Calendly, SavvyCal | [calendly.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/calendly.md), [savvycal.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/savvycal.md) |
+| Email sending and sequences | Instantly, lemlist, Outreach | [instantly.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/instantly.md), [lemlist.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/lemlist.md), [outreach.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/outreach.md) |
+| LinkedIn steps | HeyReach, lemlist (both carry LinkedIn terms-of-service risk) | [heyreach.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/heyreach.md) |
+| Verification before send | Truelist, Hunter | [truelist.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/truelist.md), [hunter.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/hunter.md) |
+| CRM and reply logging | HubSpot, Attio, Close | [attio.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/attio.md), [close.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/close.md) |
+| Booking | Calendly, SavvyCal | [calendly.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/calendly.md), [savvycal.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/savvycal.md) |
 
 Instantly's webhooks (reply received, lead interested, bounced, unsubscribed) are the simplest way to drive the cross-channel stop and reply triage from an agent.
 

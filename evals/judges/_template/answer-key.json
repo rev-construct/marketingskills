@@ -1,0 +1,7 @@
+{
+  "labeled_by": "TODO: name of the human expert",
+  "verdicts": ["FAIL", "PASS"],
+  "items": [
+    { "id": "example-1", "input": "TODO: text to grade", "label": "FAIL" }
+  ]
+}

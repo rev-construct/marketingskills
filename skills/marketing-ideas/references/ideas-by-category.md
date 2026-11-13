@@ -87,7 +87,7 @@ Complete list of proven marketing approaches organized by category.
 
 26. **Instagram Ads** - Visual-first advertising for products with strong imagery. Stories and Reels ads capture attention.
 
-27. **Twitter Ads** - Reach engaged professionals discussing industry topics. Promoted tweets and follower campaigns.
+27. **X Ads** - Reach engaged professionals discussing industry topics. Promoted posts and follower campaigns.
 
 28. **LinkedIn Ads** - Target by job title, company size, and industry. Premium CPMs justified by B2B purchase intent.
 
@@ -223,7 +223,7 @@ Complete list of proven marketing approaches organized by category.
 
 82. **Product Hunt Alternatives** - Launch on BetaList, Launching Next, AlternativeTo.
 
-83. **Twitter Giveaways** - Engagement-boosting giveaways that require follows or retweets.
+83. **X Giveaways** - Engagement-boosting giveaways that require follows or reposts.
 
 84. **Giveaways** - Strategic giveaways attract attention and capture leads.
 
@@ -333,7 +333,7 @@ Complete list of proven marketing approaches organized by category.
 
 129. **Review Sites** - Actively manage presence on review platforms.
 
-130. **Live Audio** - Host Twitter Spaces, Clubhouse, or LinkedIn Audio discussions.
+130. **Live Audio** - Host X Spaces or LinkedIn Audio discussions.
 
 ---
 

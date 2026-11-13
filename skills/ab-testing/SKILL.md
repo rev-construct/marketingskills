@@ -2,7 +2,7 @@
 name: ab-testing
 description: "When the user wants to plan, run, or read A/B tests, or asks a judgement call on one: is the result real, can we stop, which version won, is this worth testing at all: sample size, duration, significance, hypotheses, and experiment backlogs. For tracking setup, see analytics. For page-level conversion fixes, see cro."
 metadata:
-  version: 2.0.7
+  version: 2.0.8
 ---
 
 # A/B Test Setup
@@ -189,6 +189,7 @@ When a change only reaches visitors who interact with it (a hero video, a calcul
 - Peek at results and stop early
 - Make changes to variants
 - Add traffic from new sources
+- Ignore ad-platform setting changes: a new platform default or a changed destination setting (for example Meta Product Browsing) confounds a landing-page test, so log its date against the test
 
 ### The Peeking Problem
 Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.

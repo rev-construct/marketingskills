@@ -36,12 +36,12 @@
     "description": "Find co-marketing partners and plan joint campaigns, integration marketing, co-branded content, and cross-promotions."
   },
   "cold-email": {
-    "source_description_sha256": "fb1d5e6c63219fd6c4215c558f588568da1cdab9b66986932438d952e5fe3153",
+    "source_description_sha256": "94783423bc30ff8241c808512a484fa4da546139e95b5f7a00ad46111a51007e",
     "description": "Write and run cold outbound: emails and follow-ups, sending domains and deliverability, LinkedIn steps, multichannel cadences, call handoffs, and replies."
   },
   "community-marketing": {
-    "source_description_sha256": "4aaef2e4da92fdcc75c69f7bc55d320f3229306d3e6854f7647edadb36e3d03c",
-    "description": "Plan or grow a user community, forum, Discord, or Slack group; develop engagement, advocates, ambassadors, and community-led growth."
+    "source_description_sha256": "8013802afe35dfa575008bc68803269bc9458f17ff1597971a493595f53229ec",
+    "description": "Plan or grow a user community, forum, Discord, or Slack group; develop engagement and advocates; take part in Reddit without getting banned."
   },
   "competitor-profiling": {
     "source_description_sha256": "1f4a3bcdabc4eada49232bf652eee5c189490efc660e1c72349296829559ac5c",
@@ -56,7 +56,7 @@
     "description": "Plan content topics, pillars, clusters, editorial calendars, blog strategy, and content roadmaps before writing individual pieces."
   },
   "conversion-tracking": {
-    "source_description_sha256": "63dd568b2c75c366893a7a75bfc79229915d7458b2de485a4693bd5f947e3811",
+    "source_description_sha256": "0a2e48bd2d88e18bb6175d33f74f3612872d0c53cd577b441d2c3d699683b54a",
     "description": "Set up, audit, and fix conversion tracking from forms, bookings, and checkouts to Google Ads, Meta, GA4, LinkedIn, TikTok, and Microsoft Ads."
   },
   "copy-editing": {
@@ -124,7 +124,7 @@
     "description": "Design recurring agent-run marketing loops: weekly reviews, SEO and outbound operators, signal sweeps, reply triage, ad fatigue, churn and content decay."
   },
   "marketing-plan": {
-    "source_description_sha256": "7ca189e2df14f776d47e741d12c17fbb29e48f70b8a661da825c57035ea188fb",
+    "source_description_sha256": "82cbf96ea8f8f3e37e447fc18b63f3b85654c6f02fce11b17d2b45b366875dcd",
     "description": "Create a comprehensive AARRR marketing plan, current-state audit, market sizing, budget, operating stack, and growth roadmap."
   },
   "marketing-psychology": {
@@ -204,11 +204,15 @@
     "description": "Plan SMS, MMS, and WhatsApp campaigns, lifecycle texts, transactional messages, opt-ins, templates, and messaging compliance."
   },
   "social": {
-    "source_description_sha256": "65bed1c80735ec12b6324fd9461c6ddca0aec92f1a7ae59a7cb08915ec68bf86",
+    "source_description_sha256": "047ba7614df30c1e3561300b263e1ed8dc455cfffdc0a37864953c634362c65d",
     "description": "Create, repurpose, or schedule social posts, carousels, and short-video scripts; plan social strategy, listening, and engagement triage."
   },
   "video": {
     "source_description_sha256": "f011ae737fb8c220d88e314f515790fb36f31eeb0d964cbe2fc99ad4026580fc",
     "description": "Plan and produce AI or programmatic marketing videos, avatars, explainers, product demos, templates, and reference-style edits."
+  },
+  "webinar": {
+    "source_description_sha256": "7682378b5d177fc9d2c1acbfcb051c16951cd160e51492418e94933f745d5b44",
+    "description": "Plan, promote, and run webinars and virtual events: topic and offer, 4-week promo timeline, session structure, post-event follow-up, and metrics."
   }
 }

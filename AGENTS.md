@@ -6,9 +6,10 @@ Guidelines for AI agents working in this repository.
 
 This repository contains **Agent Skills** for AI agents following the [Agent Skills specification](https://agentskills.io/specification.md). Skills install to `.agents/skills/` (the cross-agent standard). This repo also serves as a **Claude Code plugin marketplace** via `.claude-plugin/marketplace.json`.
 
-- **Name**: Marketing Skills
-- **GitHub**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
-- **Creator**: Corey Haines
+- **Name**: REVConstruct Marketing Skills
+- **GitHub**: [rev-construct/marketingskills](https://github.com/rev-construct/marketingskills)
+- **Maintainer**: REVConstruct
+- **Creator**: Corey Haines ([original repo](https://github.com/coreyhaines31/marketingskills))
 - **License**: MIT
 
 ## Repository Structure
@@ -21,7 +22,7 @@ marketingskills/
 │   └── skill-name/
 │       └── SKILL.md       # Required skill file
 ├── tools/
-│   ├── clis/              # Zero-dependency Node.js CLI tools (67 tools)
+│   ├── clis/              # Zero-dependency Node.js CLI tools
 │   ├── composio/          # Composio integration layer (quick start + toolkit mapping)
 │   ├── integrations/      # API integration guides per tool
 │   └── REGISTRY.md        # Tool index with capabilities
@@ -38,7 +39,7 @@ marketingskills/
 - `name` is 1-64 chars, lowercase alphanumeric and hyphens only
 - `description` is 1-500 characters (the spec allows 1024; this repo caps it, see below)
 
-**CLI tools** (`tools/clis/*.js`) are zero-dependency Node.js scripts (Node 18+). Verify with:
+**CLI tools** (`tools/clis/*.js`) are zero-dependency Node.js scripts. Supported runtimes for every script in this repo: **Node 20+** (CI tests 20, 22, and 24) and **Python 3.9+** (CI tests 3.11 and 3.14; 3.9 and 3.10 also pass locally). Verify with:
 ```bash
 node --check tools/clis/<name>.js   # Syntax check
 node tools/clis/<name>.js           # Show usage (no args = help)
@@ -68,7 +69,7 @@ CI enforces both layers on PRs. Fetch first so `origin/main` is current, then ru
 node scripts/check-versions.mjs --base origin/main
 ```
 
-It fails if a changed skill didn't bump `metadata.version`, if `VERSIONS.md` disagrees with any SKILL.md, if the repo version didn't bump (or has no `### x.y.z` block), or if a file in `references/` isn't linked from anywhere in its skill. Changes only under a skill's `evals/` don't need a bump, since they don't change what installed users get.
+It fails if a changed skill didn't bump `metadata.version`, if `VERSIONS.md` disagrees with any SKILL.md, if the repo version didn't bump (or has no `### x.y.z` block), if a file in `references/` isn't linked from anywhere in its skill, or if a relative Markdown link inside a skill points at a file that doesn't exist. Changes only under a skill's `evals/` don't need a bump, since they don't change what installed users get.
 
 ## Agent Skills Specification
 
@@ -141,6 +142,18 @@ skills/skill-name/
 - Active voice over passive
 - One idea per section
 
+### Patterns for Large Skills
+
+For skills with big reference directories (ads, ai-seo, emails), these patterns keep agents from loading too much or guessing:
+
+1. **Say what costs what.** In the routing table, give each reference's approximate size and say when to open it ("open only for X; do not load speculatively").
+2. **Route by question.** Beyond intent rows, map 20-30 anticipated user questions ("if a user asks...") to the reference that answers them.
+3. **Tag perishable claims.** Mark algorithm behavior, tool pricing, and model names with a date or "as of", so agents treat them with recency care.
+4. **State known gaps.** Say what the skill deliberately doesn't cover, so the agent doesn't invent an answer.
+5. **Read references as local files.** Tell agents to open bundled references from disk, never fetch them from a URL.
+
+Apply these incrementally, as z releases, starting with ads and ai-seo.
+
 ### Description Field Best Practices
 
 The `description` is critical for skill discovery. Include:
@@ -167,8 +180,8 @@ description: When the user wants to optimize conversions on any marketing page. 
 This repo also serves as a plugin marketplace. The manifest at `.claude-plugin/marketplace.json` lists all skills for installation via:
 
 ```bash
-/plugin marketplace add coreyhaines31/marketingskills
-/plugin install marketing-skills
+/plugin marketplace add rev-construct/marketingskills
+/plugin install revconstruct-marketingskills
 ```
 
 See [Claude Code plugins documentation](https://code.claude.com/docs/en/plugins.md) for details.
@@ -204,7 +217,7 @@ This repository includes a tools registry for agent-compatible marketing tools.
 - **Tool discovery**: Read `tools/REGISTRY.md` to see available tools and their capabilities
 - **Connecting accounts**: For a new local setup, follow `tools/SETUP.md`: check the environment, configure only chosen tools, keep secrets local, and verify a read before proposing broader work
 - **Integration details**: See `tools/integrations/{tool}.md` for API endpoints, auth, and common operations
-- **MCP-enabled tools** (checked 2026-10-30; the registry is the source of truth): ga4, stripe, mailchimp, google-ads, meta-ads, resend, zapier, zoominfo, clay, supermetrics, coupler, outreach, crossbeam, introw, cloro, exa, apollo, hubspot, attio, close, instantly, lemlist, heyreach, hunter, truelist, fullenrich, leadmagic, rowbound, theirstack, apify, scrapecreators, firecrawl, browserbase, calendly, savvycal, mixpanel, amplitude, posthog, semrush, ahrefs, similarweb, salesforce, kit, klaviyo, brevo, activecampaign, beehiiv, optimizely, customer-io, typeform, buffer, post-bridge, livestorm, partnerstack, tolt, twilio, attentive, webflow, composio
+- **MCP-enabled tools** (checked 2026-10-30; the registry is the source of truth): ga4, stripe, mailchimp, google-ads, meta-ads, resend, zapier, zoominfo, clay, supermetrics, coupler, outreach, crossbeam, introw, cloro, mentiondrop, exa, apollo, hubspot, attio, close, instantly, lemlist, heyreach, hunter, truelist, fullenrich, leadmagic, rowbound, theirstack, apify, scrapecreators, firecrawl, browserbase, calendly, savvycal, mixpanel, amplitude, posthog, semrush, ahrefs, similarweb, salesforce, kit, klaviyo, brevo, activecampaign, beehiiv, optimizely, customer-io, typeform, buffer, post-bridge, livestorm, partnerstack, tolt, twilio, attentive, webflow, composio
 - **Composio** (integration layer): Adds MCP access to OAuth-heavy tools without native MCP servers (Salesforce, LinkedIn Ads, Google Sheets, Slack, etc.). See `tools/integrations/composio.md`
 
 ### Registry Structure
@@ -234,7 +247,7 @@ For tools without native MCP servers (Salesforce, LinkedIn Ads, Google Sheets, S
 When using any skill from this repository:
 
 1. **Once per session**, on first skill use, check for updates:
-   - Fetch `VERSIONS.md` from GitHub: https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/VERSIONS.md
+   - Fetch `VERSIONS.md` from GitHub: https://raw.githubusercontent.com/rev-construct/marketingskills/main/VERSIONS.md
    - Compare versions against local skill files
 
 2. **Only prompt if meaningful**:

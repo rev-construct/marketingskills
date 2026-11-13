@@ -2,7 +2,7 @@
 name: public-relations
 description: "When the user wants press and media coverage, or asks what to say to a reporter, whether a story is newsworthy, or how to handle a crisis: pitches, press releases, media lists, HARO, op-eds, podcast guest prep, newsjacking (public relations, not pull requests). For directories, see directory-submissions. For launches, see launch. For cold outreach to prospects, see cold-email."
 metadata:
-  version: 1.2.4
+  version: 1.2.7
 ---
 
 # Public Relations & Earned Media
@@ -127,6 +127,8 @@ What to track:
 | **Sales conversations citing the article** | The only one that matters for revenue |
 
 What not to obsess over: AVE (advertising value equivalency) — it's a vanity metric PR firms invented.
+
+**Monitoring coverage and brand mentions:** for DIY searches, see the social skill's `references/listening.md`. For always-on monitoring with alerts, a packaged tool such as MentionDrop (web + Reddit, API and MCP) is an option; see `tools/integrations/mentiondrop.md`.
 
 ---
 

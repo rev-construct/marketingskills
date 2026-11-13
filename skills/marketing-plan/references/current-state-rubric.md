@@ -1,5 +1,7 @@
 # Current State Rubric — 17-Section Scoring Lens
 
+Contents: [How to score](#how-to-score) · [The 17 sections (scored 0–5 each)](#the-17-sections-scored-05-each) · [How to compute the total + read the shape](#how-to-compute-the-total--read-the-shape) · [Common shapes](#common-shapes) · [When scores are subjective](#when-scores-are-subjective) · [When a prior scored audit exists](#when-a-prior-scored-audit-exists)
+
 This 17-section rubric is the source of truth for Section 3 ("Current State") of every marketing plan. Score each section 0–5 from available materials, then write a 2–4 sentence "shape interpretation" that names where strengths and gaps cluster.
 
 ## How to score

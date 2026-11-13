@@ -2,7 +2,7 @@
 name: lead-magnets
 description: "When the user wants to plan or improve a lead magnet, or asks what to give away for emails or how much to ask in return (gating, form fields): checklists, templates, ebooks, gated guides, content upgrades. For interactive tools, see free-tools. For the follow-up sequence, see emails. For popups that capture emails, see popups."
 metadata:
-  version: 2.1.5
+  version: 2.1.6
 ---
 
 # Lead Magnets
@@ -192,7 +192,7 @@ Don't waste the thank you page. After they've converted:
 
 - Add relevant CTAs within blog posts (inline, end-of-post)
 - Create post-specific content upgrades (bonus checklist for a how-to post)
-- Content upgrades convert 2-5x better than generic sidebar CTAs
+- Content upgrades matched to the post usually convert much better than generic sidebar CTAs, because the offer continues what the reader came for
 
 ### Exit-Intent & Popups
 

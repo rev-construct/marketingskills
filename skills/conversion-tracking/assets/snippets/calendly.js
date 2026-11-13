@@ -1,4 +1,5 @@
 /*! Calendly conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: meeting booked. Pushes dataLayer event: calendly_event_scheduled
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

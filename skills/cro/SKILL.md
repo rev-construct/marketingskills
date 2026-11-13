@@ -2,7 +2,7 @@
 name: cro
 description: "When the user wants more conversions from a page or form, or asks why a page isn't converting, what to change first, or whether to add or remove a field or element: landing and pricing pages, lead forms, or a URL shared for feedback. For signup flows, see signup. For activation, see onboarding. For popups, see popups. For running the test, see ab-testing."
 metadata:
-  version: 2.0.6
+  version: 2.0.7
 ---
 
 # Conversion Rate Optimization (CRO)
@@ -193,6 +193,6 @@ When recommending experiments, consider tests for:
 
 ## Form Optimization
 
-When enrichment controls the next step after a lead form, use the [revops inbound-routing playbook](https://github.com/coreyhaines31/marketingskills/blob/main/skills/revops/references/inbound-routing.md): preserve valid submissions, bound the lookup wait, and provide a useful fallback when qualification is unknown.
+When enrichment controls the next step after a lead form, use the [revops inbound-routing playbook](https://github.com/rev-construct/marketingskills/blob/main/skills/revops/references/inbound-routing.md): preserve valid submissions, bound the lookup wait, and provide a useful fallback when qualification is unknown.
 
 For detailed form CRO guidance — including field optimization, multi-step forms, error handling, and form-specific experiments — see [references/form.md](references/form.md).

@@ -1,0 +1,59 @@
+{
+  "skill_name": "webinar",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Plan our first webinar. We sell an expense-management tool for startup CFOs and want it to generate demo requests. We have about 5 weeks.",
+      "expected_output": "Should check for product-marketing.md. Starts with outcome, audience, and one offer (demo request) before logistics. Proposes a problem-led topic for startup CFOs rather than a product demo and a title written as an ad. Lays out a 4-week promo timeline (lock topic and page at week -4, open registration week -3, second angle week -2, last chance and rehearsal week -1, reminders at 1 day, 1 hour, 5 minutes). Gives a session structure with a named promise, teaching points, scripted bridge, one offer, and seeded Q&A. Includes behavior-segmented follow-up and the metrics funnel.",
+      "assertions": [
+        "Checks for product-marketing.md",
+        "Chooses a single offer and a problem-led topic before logistics",
+        "Provides a week-by-week promo timeline working back from the date",
+        "Includes reminders with a final join-link reminder just before start",
+        "Structures the session with a scripted bridge to one offer and seeded Q&A",
+        "Segments follow-up by behavior including no-shows",
+        "Presents benchmarks as directional, not targets"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our webinars get 400 registrants but only 60 people show up, and almost nobody books a demo. What's wrong?",
+      "expected_output": "Reads the funnel stage by stage. Identifies show-up as the first weak stage and proposes calendar invites, a reminder cadence ending five minutes before, a shorter registration-to-event gap, a pre-event question, and on-demand offered to late registrants. Then asks about hold rate and offer: where attendees drop, whether the bridge and single offer are clear. Checks follow-up speed and lead routing. Does not recommend simply driving more registrants.",
+      "assertions": [
+        "Diagnoses by funnel stage instead of recommending more registrations",
+        "Prescribes show-up fixes: calendar add, reminders, shorter gap",
+        "Asks about hold rate and where attendees leave",
+        "Reviews the offer and bridge for clarity and a single call to action",
+        "Checks follow-up timing and routing of hot leads to sales"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "What should we send people after the webinar? We have 300 registrants, 110 attended.",
+      "expected_output": "Segments by behavior: engaged attendees, attendees who took no action, people who left early, and no-shows. Provides a message approach for each within 24 hours, with a personal note for hot leads, same-day routing to sales with context, and a second touch several days later. Tags source and attendance status in the CRM. Plans replay, clips, and a written recap. Notes that detailed email sequence building is handled by the emails skill.",
+      "assertions": [
+        "Splits the audience into at least four behavior segments including no-shows",
+        "Sends hot leads a personal note and routes them to sales the same day",
+        "Includes a second touch a few days later",
+        "Tags webinar source and attendance status in the CRM",
+        "Plans replay and content recycling",
+        "Points to emails for the sequence build"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We're co-hosting a webinar with a partner next month. How do we split the work and leads?",
+      "expected_output": "Recognizes this is partnership mechanics and defers lead-splitting and partner terms to the co-marketing skill while helping with session execution: roles, run of show, panel preparation, and promotion with tracked links per partner. Suggests agreeing on lead ownership in writing before promotion starts.",
+      "assertions": [
+        "Refers partner and lead-splitting questions to co-marketing",
+        "Still covers session roles and run of show",
+        "Recommends tracked links per partner",
+        "Recommends agreeing on lead ownership before promotion begins"
+      ],
+      "files": []
+    }
+  ]
+}

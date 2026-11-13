@@ -4,73 +4,110 @@ Current versions of all skills. Agents can compare against local versions to che
 
 | Skill | Version | Last Updated |
 |-------|---------|--------------|
-| ab-testing | 2.0.7 | 2026-11-09 |
-| ad-creative | 2.13.0 | 2026-11-10 |
-| ai-seo | 2.12.3 | 2026-11-09 |
-| analytics | 2.2.5 | 2026-11-09 |
+| ab-testing | 2.0.8 | 2026-11-11 |
+| ad-creative | 2.13.2 | 2026-11-12 |
+| ai-seo | 2.12.5 | 2026-11-11 |
+| analytics | 2.2.6 | 2026-11-11 |
 | aso | 2.0.6 | 2026-11-09 |
-| attribution | 1.1.9 | 2026-11-09 |
-| churn-prevention | 2.0.6 | 2026-11-09 |
-| co-marketing | 2.0.6 | 2026-11-09 |
-| cold-email | 2.2.4 | 2026-11-09 |
-| community-marketing | 2.0.5 | 2026-11-09 |
+| attribution | 1.1.10 | 2026-11-11 |
+| churn-prevention | 2.0.7 | 2026-11-11 |
+| co-marketing | 2.0.7 | 2026-11-11 |
+| cold-email | 2.2.6 | 2026-11-11 |
+| community-marketing | 2.1.0 | 2026-11-11 |
 | competitor-profiling | 2.1.8 | 2026-11-09 |
-| competitors | 2.3.3 | 2026-11-09 |
-| content-strategy | 2.1.8 | 2026-11-09 |
-| conversion-tracking | 1.0.6 | 2026-11-09 |
-| copy-editing | 2.2.4 | 2026-11-09 |
-| copywriting | 2.3.5 | 2026-11-09 |
-| cro | 2.0.6 | 2026-11-09 |
-| customer-research | 2.0.8 | 2026-11-09 |
-| directory-submissions | 2.2.0 | 2026-11-11 |
-| emails | 2.1.7 | 2026-11-09 |
+| competitors | 2.3.4 | 2026-11-11 |
+| content-strategy | 2.1.10 | 2026-11-12 |
+| conversion-tracking | 1.0.8 | 2026-11-12 |
+| copy-editing | 2.2.5 | 2026-11-11 |
+| copywriting | 2.3.6 | 2026-11-12 |
+| cro | 2.0.7 | 2026-11-11 |
+| customer-research | 2.0.9 | 2026-11-11 |
+| directory-submissions | 2.2.1 | 2026-11-13 |
+| emails | 2.1.8 | 2026-11-11 |
 | events | 1.0.3 | 2026-11-09 |
 | free-tools | 2.0.6 | 2026-11-09 |
-| image | 2.0.6 | 2026-11-09 |
-| influencer-marketing | 1.4.3 | 2026-11-09 |
-| launch | 2.2.3 | 2026-11-09 |
-| lead-magnets | 2.1.5 | 2026-11-11 |
+| image | 2.0.7 | 2026-11-11 |
+| influencer-marketing | 1.4.4 | 2026-11-11 |
+| launch | 2.2.5 | 2026-11-11 |
+| lead-magnets | 2.1.6 | 2026-11-13 |
 | link-building | 1.0.4 | 2026-11-09 |
 | marketing-council | 1.0.3 | 2026-11-09 |
-| marketing-ideas | 2.0.5 | 2026-11-09 |
-| marketing-loops | 1.8.4 | 2026-11-09 |
-| marketing-plan | 1.2.5 | 2026-11-09 |
+| marketing-ideas | 2.0.6 | 2026-11-11 |
+| marketing-loops | 1.8.5 | 2026-11-11 |
+| marketing-plan | 1.2.7 | 2026-11-11 |
 | marketing-psychology | 2.0.3 | 2026-11-09 |
-| offers | 1.0.6 | 2026-11-09 |
+| offers | 1.0.7 | 2026-11-13 |
 | onboarding | 2.0.5 | 2026-11-09 |
-| ads | 2.7.5 | 2026-11-11 |
+| ads | 2.7.8 | 2026-11-12 |
 | paywalls | 2.1.4 | 2026-11-09 |
 | popups | 2.0.4 | 2026-11-09 |
 | pricing | 2.1.7 | 2026-11-09 |
 | product-marketing | 2.2.3 | 2026-11-09 |
-| programmatic-seo | 2.1.3 | 2026-11-09 |
-| prospecting | 1.5.3 | 2026-11-09 |
-| public-relations | 1.2.4 | 2026-11-09 |
-| referrals | 2.2.4 | 2026-11-09 |
-| reverse-engineer-marketing | 1.1.4 | 2026-11-09 |
-| revops | 2.2.4 | 2026-11-09 |
-| sales-enablement | 2.4.3 | 2026-11-09 |
+| programmatic-seo | 2.1.4 | 2026-11-11 |
+| prospecting | 1.5.6 | 2026-11-12 |
+| public-relations | 1.2.7 | 2026-11-12 |
+| referrals | 2.2.6 | 2026-11-11 |
+| reverse-engineer-marketing | 1.1.6 | 2026-11-12 |
+| revops | 2.2.5 | 2026-11-11 |
+| sales-enablement | 2.4.4 | 2026-11-11 |
 | schema | 2.0.5 | 2026-11-09 |
-| seo-audit | 2.2.5 | 2026-11-09 |
-| signup | 2.0.3 | 2026-11-09 |
-| site-architecture | 2.1.3 | 2026-11-09 |
-| sms | 1.1.3 | 2026-11-09 |
-| social | 2.5.2 | 2026-11-09 |
-| video | 2.4.3 | 2026-11-09 |
+| seo-audit | 2.2.8 | 2026-11-11 |
+| signup | 2.0.4 | 2026-11-11 |
+| site-architecture | 2.1.4 | 2026-11-11 |
+| sms | 1.1.4 | 2026-11-11 |
+| social | 2.5.5 | 2026-11-11 |
+| video | 2.4.4 | 2026-11-11 |
+| webinar | 1.0.1 | 2026-11-11 |
 
 ## Recent Changes
 
-### 2.14.12 (2026-11-11)
+### 2.15.1 (2026-11-11)
 
-Skills install cleanly under regex skill scanners that block on prompt-injection phrases.
+- **seo-audit** (2.2.7 → 2.2.8): fixed a dead link to local-seo.md in the site-type reference.
+- **ai-seo** (2.12.4 → 2.12.5): moved the pricing.md template into agent-readiness.md to get SKILL.md off the 500-line cap; no content removed.
+- **copy-editing** (2.2.4 → 2.2.5): moved the expert-panel lists and scoring rubric into references/expert-panel.md for the same reason.
+- **public-relations** (1.2.5 → 1.2.6): press-platforms table updated: Connectively closed in December 2024 and HARO relaunched under Featured in April 2025; Terkel is now Featured, so the duplicate row is merged.
+- **marketing-ideas** (2.0.5 → 2.0.6), **marketing-plan** (1.2.6 → 1.2.7), **co-marketing** (2.0.6 → 2.0.7): Twitter Ads, Twitter Giveaways, and Twitter Spaces renamed to their X names (idea numbers unchanged); Clubhouse dropped from the Live Audio idea.
+- Partner program removed. **ads** (2.7.6 → 2.7.7), ai-seo (already 2.12.5), **conversion-tracking** (1.0.6 → 1.0.7), **launch** (2.2.4 → 2.2.5), **programmatic-seo** (2.1.3 → 2.1.4), **prospecting** (1.5.4 → 1.5.5), **site-architecture** (2.1.3 → 2.1.4), **webinar** (1.0.0 → 1.0.1): dropped the "Verified Partner" disclosures and ◆ markers; the tools stay as ordinary options, and the rule to name an alternative alongside any tool you lean toward stays. Also removed `partners.json`, `tools/PARTNERS.md`, `scripts/sync-partners.mjs`, the README Partners section, the registry's Verified Partners table, and `.github/FUNDING.yml`. The integration-guide rules moved into CONTRIBUTING.md.
+- **ad-creative** (2.13.0 → 2.13.1), **reverse-engineer-marketing** (1.1.4 → 1.1.5): removed the promotional callouts for the original author's Magister product. The README's promotions for his agency, newsletter, training, and companion guide are removed too; the credit to Corey Haines stays.
+- Links inside skills to the tools registry and integration guides now point to `rev-construct/marketingskills` (28 skills; patch bumps for the 17 not already bumped in this release: analytics, attribution, churn-prevention, cold-email, content-strategy, cro, customer-research, emails, influencer-marketing, marketing-loops, referrals, revops, sales-enablement, signup, sms, social, video).
+- Unsourced statistics replaced with directional guidance: **directory-submissions** (AI-referral conversion "6–27×", Product Hunt video "2.7×", alternative-page "5–15%" conversion, feedback asks "3×", "30–50%" of tool research in AI), **lead-magnets** (content upgrades "2–5×"), **conversion-tracking** (consented users "2–5×"), **offers** (discount-askers "2×" churn), with matching evals updated. **revops** now attributes the speed-to-lead figure to the Lead Response Management Study (Oldroyd with InsideSales.com, 2007), qualification at 5 vs. 30 minutes, and drops the interval multipliers that study didn't report. **cold-email** flags its lever figures as vendor data. Sourced figures (Foundation Inc., SimilarWeb, Ryan Kulp, the ASO benchmark sources) are unchanged. Versions: directory-submissions (already 2.2.1 in this release), **lead-magnets** (2.1.5 → 2.1.6, above upstream 2.1.5), conversion-tracking (already 1.0.8 in this release), **offers** (1.0.6 → 1.0.7), cold-email (already 2.2.6 in this release), revops (already 2.2.5 in this release).
+- **Merged from upstream** (Marketing Skills 2.14.11 and 2.14.12, by Corey Haines, MIT):
+  - **directory-submissions** (2.1.7 → 2.2.0): a listing kit (`references/listing-kit.md`) filled in once before submitting, with every fact directories ask for, copy at each common length limit, asset sizes, and a submission log; a reference on the repo files agent registries read (`references/agent-registry-files.md`); rules for agent-run submissions (check the log, prefer an API or `/llms.txt` route, fill only visible fields, stop at CAPTCHAs and logins, contact hygiene, no paid listings without approval); filling web forms with browser or computer use; registry IDs kept separate from display names.
+  - **directory-submissions** (2.2.0 → 2.2.1, ours): the landing-page checklist and AI-citation tactics no longer recommend FAQ schema as an AI-visibility lever (Google retired FAQ rich results in May 2026; a visible FAQ section is what helps) and drop the unsourced "2.8× higher AI citation rate" and "87% of cited pages" figures. Heading-structure advice stays.
+  - **ads**, **lead-magnets**, and a **schema** eval: injection examples are described instead of quoted, so the skills install under regex skill scanners such as Hermes' Skills Guard.
+  - Repo: `check-hidden-content.mjs` now fails on literal prompt-injection phrases in skills and tools, so the problem upstream fixed by hand can't come back.
+- **reverse-engineer-marketing** (1.1.5 → 1.1.6): `teardown.mjs` states Node 20+. Repo: every script is verified on Node 20, 22, and 24 and Python 3.9 through 3.14; CI now runs the contract tests on Node 20/22/24 and packaging on Python 3.11/3.14, and docs state Node 20+ (Node 18 is end of life). `trigger-eval.mjs` now prints usage for `--help` and refuses unknown options before any paid request. `validate-skills.sh` no longer warns when a description has no "For X, see Y" pointer, since some skills have no neighbour. The README skill map is a Mermaid chart covering all 54 skills.
+- **ads** (2.7.7 → 2.7.8), **ad-creative** (2.13.1 → 2.13.2): the B2B "demand lifecycle" in `b2b-paid-playbook.md` is replaced by audiences named for CRM lifecycle stages (out-of-market, in-market, open pipeline, product users, closed-lost and recycled, customers), matching the revops skill, with the 95:5 rule (John Dawes, Ehrenberg-Bass) for why out-of-market spend pays back slowly and a holdout check before scaling. Lineage notes in six files now say "inspired by" Ivan Falco's ads-skills; an overlap check found no shared text. README gains a Credits section and drops the original project's Vercel OSS badge.
+- **conversion-tracking** (1.0.7 → 1.0.8), **public-relations** (1.2.6 → 1.2.7), **prospecting** (1.5.5 → 1.5.6): files that include MIT-licensed text or code now carry the source's copyright line (Converly in the conversion-tracking snippets and recipes, Knowatoa in podcast-guest-prep, Francesco Mistero in two prospecting references), and two credits that said "re-expressed" or "distilled" now say "adapted". `THIRD_PARTY_NOTICES.md` records a text-overlap check of each public source.
+- **copywriting** (2.3.5 → 2.3.6): `natural-transitions.md` is reorganized around the public-domain plainlanguage.gov transition types (sequencing, referring back with pointing words and echo links, adding, similarity, examples, restating, results, contrast, summing up), with a new Restating section. Phrases are written for this skill; the University of Manchester Academic Phrasebank credit is removed.
+- Released as "REVConstruct Marketing Skills", with a non-affiliation and as-is statement in the README and a new `THIRD_PARTY_NOTICES.md` collecting the inline credits to outside sources. **content-strategy** (2.1.9 → 2.1.10): a heading no longer uses the original project's name.
+- Repo: released under REVConstruct. Manifests, install commands, and the update-check URL now point to `rev-construct/marketingskills`. The marketplace is `revconstruct` and the plugin is `revconstruct-marketingskills` (was `marketingskills` / `marketing-skills`), so plugin skill ids are now `revconstruct-marketingskills:<skill>`. Skill names are unchanged; this pack replaces the original rather than running beside it.
+- Repo: `check-versions.mjs` now fails on relative Markdown links inside a skill that point at a missing file. The contract-test job also runs `tests/*.test.mjs` (the judge-harness tests) and triggers on changes to `scripts/`, `evals/triggers/`, and any `SKILL.md`, so a new skill without trigger prompts is caught on its own PR.
 
-- **ads** (2.7.4 → 2.7.5): the untrusted-data rule in `references/audit-guardrails.md` describes an embedded "drop your earlier instructions" directive instead of quoting the literal injection phrase, which Hermes' Skills Guard flagged as a critical prompt injection and blocked on install. Same rule, same meaning.
-- **lead-magnets** (2.1.4 → 2.1.5): `references/content-to-skill-corpus-design.md` and eval 9 describe the injected transcript line instead of quoting it, for the same reason. The eval still tests that transcript text is treated as data.
-- **schema**: eval 8's expected output rewords "do not ... tell the user to delete" so it no longer reads as an instruction to hide information from the user. Evals only, no version bump.
+### 2.15.0 (2026-11-11)
 
-### 2.14.11 (2026-11-11)
-
-- **directory-submissions** (2.1.7 → 2.2.0): a **listing kit** (`references/listing-kit.md`) to fill in once before the first submission: every fact directories ask for, the copy at each common length limit (40, 60, 100, 160, and ~500 characters), asset sizes, and a submission log with statuses for skips and hand-offs. A new section covers **agent-run submissions**: check the log first, use a documented API or `/llms.txt` route before a form, open embedded forms on their own page, fill only visible fields and stop at any CAPTCHA or login, keep personal phone numbers and addresses off listings, no paid listings without approval, close email verification loops, and read an awesome list's contributing rules and recent merges before opening a PR. Directories without an API or PR route are **filled with browser or computer use**: the user signs in once per batch, the agent maps fields to the kit, uploads assets, shows a screenshot of the filled form for approval, submits, and logs the confirmation; CAPTCHAs, logins, payments, and terms go back to the user and the agent resumes after. A new `references/agent-registry-files.md` lists the repo files agent registries read (`server.json`, `glama.json`, `gemini-extension.json`, Cursor and Claude plugin manifests, `SKILL.md`), checked against each registry's docs: only the Gemini CLI gallery lists a repo from the file alone; skills.sh lists from install counts; the rest need a claim or a reviewed submission. Prompted by Ilias Ism's directory-submissions skill.
+- **ads** (2.7.4 → 2.7.5): fixed a broken same-file link to the one-keyword hack, a dead conversion-tracking link in the Google Ads audit checklist, and a stale "forward link" note; dropped the fixed 200-word cap on the Friday readout in favor of the goal (a readout a stakeholder can read in a minute).
+- **launch** (2.2.3 → 2.2.4): corrected the marketing-ideas numbers (Product Hunt is #78, Early-Access Referrals #79) and rewrote the SLC gate, which had Stealth Mode and Just One More Feature swapped.
+- **referrals** (2.2.4 → 2.2.5): removed a maintainer note from runtime text.
+- **marketing-plan** (1.2.5 → 1.2.6): the Quietude plan is now framed as one illustrative example, not a bar to copy; client plans go to a private repo only with the client's OK; the quality bar is a check-and-revise checklist; connectors named generically; description opens with what the skill produces; contents lines added to all references.
+- **social** (2.5.2 → 2.5.3): the listening workflow no longer assumes dev-browser is installed, says what to do without a browser tool, and warns about LinkedIn account risk from automated browsing; description opens with what the skill does; contents lines added to long references.
+- **cold-email** (2.2.4 → 2.2.5): "What Do You Need?" routing table, a copyable pre-send checklist with fixes and an EU/UK pointer to the compliance reference, a Quality Check that loops until it passes, a contents line in deliverability.md, and an instruction-free description.
+- **prospecting** (1.5.3 → 1.5.4): added Italy (prior consent, confirm with counsel) to the EU specifics and country gating in compliance.md.
+- **ads** (2.7.5 → 2.7.6): new "Platform defaults audit" in audit-guardrails.md, with Meta Product Browsing as the worked example and its opt-out paths (the `product_browsing` API field is marked unconfirmed); pointer from operating-check.md.
+- **ab-testing** (2.0.7 → 2.0.8): ad-platform setting changes are logged as experiment confounds.
+- **seo-audit** (2.2.5 → 2.2.6): "AI Assistants and Local Search" section in local-seo.md (per-engine differences, review volume and pace, own site, what showed no link); dated note on collapsed AI Overview citation cards in the traffic-drop reference.
+- **image** (2.0.6 → 2.0.7): third option for product visuals, code-built product illustration, with restraint rules, failure modes, and an honesty note; eval accepts screenshots or code-built UI and still rejects AI-generated UI.
+- **community-marketing** (2.0.5 → 2.1.0): new reddit.md for taking part in subreddits you don't own.
+- **ai-seo** (2.12.3 → 2.12.4): ai-attribution sizing check and benchmarks, prompt-portfolio modifier tags and "reading the data", citations-vs-recommendations counterpoints, answer-accuracy claim-fidelity audit and brand page set, use-case page pattern. Several figures are relayed from secondary posts and flagged as such.
+- **competitors** (2.3.3 → 2.3.4): honest vendor-listicle checklist in templates.md.
+- **seo-audit** (2.2.6 → 2.2.7): Reference Routing table covering all eight references; Common Issues by Site Type moved into references/site-type-issues.md.
+- **social** (2.5.3 → 2.5.4): packaged-tool option (MentionDrop) in the listening reference; the DIY recipes stay the default.
+- **public-relations** (1.2.4 → 1.2.5): pointer to MentionDrop for earned-media monitoring.
+- **webinar** (new, 1.0.0): plan, promote, and run webinars: strategy and topics, promotion timeline, session structure, follow-up and measurement. Foundation contributed by @Adi29102000-s (PR #417).
+- Tools: added a MentionDrop integration guide and registry entries.
+- Evals: `scripts/judge-eval.mjs` and `evals/judges/` (format, methodology, template) for measuring a marketing judge against a named expert's labels. No calibrated judge ships yet; the harness refuses a key without a named labeler. Also a held-out trigger set (`heldout5.json`) and the recorded result of the plain-sentence description experiment.
+- Repo: new CI check `scripts/check-hidden-content.mjs` (HTML comments outside code blocks, blank-line runs, invisible Unicode, `curl | sh`, exfiltration patterns) with an allowlist, a `SECURITY.md`, and a description-opening rule in CONTRIBUTING.md.
 
 ### 2.14.10 (2026-11-10)
 
@@ -157,7 +194,7 @@ New skill: **reverse-engineer-marketing**, for growth teardowns of any company f
 
 ### 2.13.7 (2026-10-27)
 
-Fixes contradictions and stale facts found while rewriting marketing-skills.com's skill pages:
+Fixes contradictions and stale facts found while rewriting the skill pages:
 
 - **ab-testing** (2.0.2 → 2.0.3): sample-size tables recomputed. The reference ran about 2.3× high (31,000 per variant for 3% → 3.6%) and SKILL.md about 10–20% low (12k); both now come from the two-proportion formula at α 0.05 two-sided, 80% power (14k), with the assumptions stated.
 - **cold-email** (2.2.0 → 2.2.1): follow-up reply share aligned with the sourced Instantly 2026 benchmark (~58% of replies from email 1, ~42% from follow-ups) instead of an unsourced 55%.

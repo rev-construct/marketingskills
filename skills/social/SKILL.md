@@ -1,8 +1,8 @@
 ---
 name: social
-description: "When the user wants organic social content for LinkedIn, X, Instagram, TikTok, or Facebook, or asks what to post, which format to favor, or from which account: posts, threads, carousels, short-form video scripts, calendars, build-in-public posts from commits, listening. No AI tells like 'it's not X, it's Y' or broetry. For content strategy, see content-strategy. For paid ads, see ad-creative. For press, see public-relations."
+description: "Writes, schedules, and repurposes organic social posts. Use when the user wants content for LinkedIn, X, Instagram, TikTok, or Facebook, or asks what to post, which format to favor, or from which account: posts, threads, carousels, video scripts, calendars, build-in-public, listening. For content strategy, see content-strategy. For paid ads, see ad-creative. For press, see public-relations."
 metadata:
-  version: 2.5.2
+  version: 2.5.5
 ---
 
 # Social Content
@@ -332,7 +332,7 @@ work:
 1. **Check what's connected.** Ask the user what they schedule with. Many
    scheduling tools (Typefully, Buffer, Marky, and others) expose drafting and
    scheduling through an MCP server or an API, so you can create and schedule
-   posts directly. Check the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md) for guides.
+   posts directly. Check the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md) for guides.
 2. **Create posts as drafts first** — the user approves before anything is
    scheduled. Never auto-publish without an explicit go-ahead.
 3. **Schedule per the calendar you built** (spacing and platform rules from

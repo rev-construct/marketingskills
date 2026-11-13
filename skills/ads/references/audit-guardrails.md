@@ -47,6 +47,26 @@ Every optimization heuristic is **conditional** — it depends on sample size, c
 - **Recommend features the account is ineligible for.** Verify eligibility before recommending; otherwise flag it as "check whether you have access to X."
 - **Invent negative keywords.** Without a search-terms report you have no evidence of what's actually matching. Request the report, then review candidates against the business (an "overblocking review" — would this negative block a converting query?). Never produce a candidate negatives list from imagination.
 
+## Platform defaults audit
+
+Ad platforms regularly switch on new defaults for ads that are already running. Audit every new default the week it ships, before it has weeks of spend behind it. A default can change where a click lands, what the shopper sees, or what the platform edits, and none of that shows up as an error in the account. Treat a newly shipped default as a confound until you have checked it.
+
+**Worked example: Meta Product Browsing (personalized destinations).** On Oct 28, Meta turned on in-app Product Browsing for existing ads. A tap can now land on a Meta-built product page (catalog price, catalog images, and "suggested items" that may include competitors) before the advertiser's own site. The toggle is per ad, with no bulk opt-out. Meta's "+3% conversions" claim comes from Meta's own test; treat it as vendor-supplied, not as your account's result.
+
+Audit steps:
+
+1. **Snapshot a baseline before changing anything.** Per campaign: landing-page views, sessions, purchases, and AOV. Without it you can't tell what the default or your opt-out did.
+2. **Decide per ad.** Turn it off where the landing page does the selling (long-form pages, bundles, offers, subscriptions). Leave it on where the catalog page is a fair substitute, and compare against the baseline.
+3. **Audit the catalog in Commerce Manager.** It is now the storefront: check prices, images, titles, availability, and which products can appear as suggestions.
+4. **Make edits off-peak.** Edits re-trigger ad review, which is costly in the weeks before BFCM or any launch.
+5. **Log the change date** against any running landing-page A/B test, and in the account change history. See the confound rule in [ab-testing](../../ab-testing/SKILL.md).
+
+Opt-out paths (draft the change for approval; don't apply it to a live account unreviewed):
+
+- **UI:** Advantage+ creative, then Destination, then Personalized destinations.
+- **API, confirmed:** since v26.0, eligible Shops ads default to `destination_spec.destination_type = WEBSITE_AND_SHOP`. Opt out with `WEBSITE_AND_SHOP_OPT_OUT` (see Meta's v26.0 Marketing API changelog).
+- **API, unconfirmed:** `degrees_of_freedom_spec.creative_features_spec.product_browsing` with `enroll_status: OPT_OUT`. This field is **not listed in Meta's Ad Creative Features Spec reference** and comes from third-party notes. Check it against Meta's reference and changelog before using it, and score any opt-out that depends on it as unknown until you have.
+
 ## Facts, hypotheses, missing data
 
 Ad data makes guesses sound certain because of small samples, conversion lag, AOV drops that look like CPA problems, and platform recommendations presented as strategy. So every recommendation, diagnosis, or readout that could lead to a decision ends with three labeled lists:

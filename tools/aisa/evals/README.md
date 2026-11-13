@@ -1,6 +1,6 @@
 # AIsa integration evals
 
-> **◆ Verified Partner integration.** AIsa sponsors Marketing Skills. These evals are contributed by the AIsa team and assess the integration, not a preferred provider. Sponsorship does not change what any skill recommends. See [Verified Partners](../../REGISTRY.md#verified-partners) and the [partner rules](../../PARTNERS.md).
+> These evals are contributed by the AIsa team and assess the integration, not a preferred provider.
 
 [evals.json](evals.json) contains 16 scenario specifications for the [AIsa integration](../README.md). They test provider selection, discovery, research quality, authentication, cost handling, and failure recovery. They do not modify or replace skill evals.
 

@@ -1,5 +1,7 @@
 # Client Types — Variations by Business Model
 
+Contents: [Archetype 1 — B2B SaaS](#archetype-1--b2b-saas) · [Archetype 2 — D2C Consumer App (Subscription)](#archetype-2--d2c-consumer-app-subscription) · [Archetype 3 — Hybrid Hardware + Software](#archetype-3--hybrid-hardware--software) · [Archetype 4 — Marketplace](#archetype-4--marketplace) · [Archetype 5 — Developer Tool / Open Source](#archetype-5--developer-tool--open-source) · [Archetype 6 — Deep-Tech / Scientific / Clinical](#archetype-6--deep-tech--scientific--clinical) · [Archetype 7 — Commerce / DTC (non-subscription)](#archetype-7--commerce--dtc-non-subscription) · [How to use this doc when drafting a plan](#how-to-use-this-doc-when-drafting-a-plan) · [When the client doesn't fit cleanly](#when-the-client-doesnt-fit-cleanly)
+
 The 13-section plan structure stays consistent across client types. What changes is the **content emphasis** within each section. This doc names the dominant patterns by client archetype.
 
 ## Archetype 1 — B2B SaaS

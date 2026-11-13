@@ -2,6 +2,17 @@
 
 Which prompts you track decides what your AI visibility numbers mean. A portfolio stuffed with glossary questions will report healthy visibility while you lose every shortlist. This reference covers how to choose prompts, group them, version them, and how often to run them, including the multi-turn buying conversations single prompts miss.
 
+## Contents
+- Start with the measurement question
+- Build from real demand
+- Cover the intent families
+- Tag prompts by modifier
+- Three cohorts
+- How often to run, and reading the data
+- Version the portfolio
+- Read results by topic
+- Multi-turn buying journeys
+
 ## Start with the measurement question
 
 Write down the decision the numbers will drive before choosing a single prompt. "Are we on the shortlist for mid-market [category] buyers in the US?" needs a different portfolio from "Did our docs rewrite fix how Claude describes our API limits?"
@@ -30,7 +41,23 @@ Don't mechanically turn a keyword list into questions. "crm small business" and 
 | Implementation and troubleshooting | "How do I set up [you] with [stack]?" |
 | Local, shopping, or regulated | Only when they apply to the business |
 
+**Which prompts matter most depends on your position.** A category leader can lean on generic prompts. A challenger should prioritize modifier prompts (next section), where the field is less settled.
+
 Weight families by business value. A citation for a definition question rarely sells anything; see the revenue filter in SKILL.md's audit step.
+
+## Tag prompts by modifier
+
+Tag each prompt with the modifier that narrows it, if any: **generic** (no modifier), **use case**, **integration**, **compliance**, **segment**, or **location**. Then report visibility per tag, not as one blended number.
+
+Why it matters: in MaxAEO's data (a vendor study; verify against its primary report), challengers got about 14% of recommendations on generic prompts but 34-41% on prompts with modifiers. In the same compilation, requirement prompts flipped the #1 pick in 64% of 25 B2B answers (a small sample). A challenger can look invisible on generic prompts and still win the prompts where buyers state their constraints.
+
+**Gap checklist.** Check you have a prompt, and a page that answers it, for five question types buyers ask that brand pages often skip:
+
+1. **Cost:** what it really costs at their size, including add-ons
+2. **Fit:** who it is not for
+3. **Implementation:** how long, how hard, what it needs
+4. **Local:** availability and support in their market
+5. **Mistakes:** what goes wrong and how to avoid it
 
 ## Three cohorts
 
@@ -51,7 +78,17 @@ Two regimes, depending on portfolio size:
 - **A broad portfolio (hundreds of prompts):** once a day is usually enough. In Profound's comparison of 753 prompts across seven platforms over two weeks, once-daily visibility estimates landed within about two percentage points of running each prompt ten times a day (Profound, July 2026). Extra runs helped citation share more than visibility, and couldn't remove day-to-day platform drift. Composition mattered more than frequency.
 - **A small set (the 10–20 prompts of a DIY audit), short experiments, or citation-share precision:** run each prompt several times (3–5 per platform) and report the rate with its sample size, as the monitoring section in SKILL.md describes. With few prompts, one run per prompt is mostly noise.
 
-Profound sells AI visibility tracking, so treat these figures as vendor research from one setup. Other trackers include Ahrefs Brand Radar, Semrush, Peec AI, Otterly, and ZipTie; check what each one samples before comparing their numbers.
+Profound sells AI visibility tracking, so treat these figures as vendor research from one setup.
+
+**Track per engine, and run more for the noisy ones.** Engines repeat themselves to very different degrees. In one analysis of repeat runs, the overlap between runs was about 37% for ChatGPT and 35% for Gemini, against 96% for Perplexity (Semrush, a vendor, as relayed on X by Connor Gillivan; confirm in the primary study). Give ChatGPT and Gemini more runs per prompt. Only 2.2% of cited sites appeared in all four engines tested, so a blended number hides engine-specific wins and losses.
+
+### Reading the data
+
+- **Answers are personalized.** Location, history, and account context change what a person sees, so any single answer is a sample, not the answer. Report rates over repeated runs.
+- **API and web UI can differ.** One preprint found API-based trackers showing zero Reddit citations where the web UI showed some. Check a tracker's method against a manual sample before trusting a source breakdown (single preprint, not yet widely replicated).
+- **Label every cited URL by type** (your site, competitor, editorial, community, review platform; see [citations-vs-recommendations.md](citations-vs-recommendations.md)) so a shift in the mix is visible.
+
+All of these are vendor, agency, or preprint studies. Keep each as a dated, labeled data point and do not merge them into one benchmark. Other trackers include Ahrefs Brand Radar, Semrush, Peec AI, Otterly, and ZipTie; check what each one samples before comparing their numbers.
 
 ## Version the portfolio
 

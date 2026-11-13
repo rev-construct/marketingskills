@@ -9,26 +9,26 @@ test('skillsInvoked reads Skill tool calls and cost from stream-json', async () 
   const { skillsInvoked } = await load();
   const stream = [
     JSON.stringify({ type: 'system', subtype: 'init' }),
-    JSON.stringify({ type: 'assistant', message: { content: [{ type: 'text', text: 'hi' }, { type: 'tool_use', name: 'Skill', input: { skill: 'marketing-skills:cro' } }] } }),
+    JSON.stringify({ type: 'assistant', message: { content: [{ type: 'text', text: 'hi' }, { type: 'tool_use', name: 'Skill', input: { skill: 'revconstruct-marketingskills:cro' } }] } }),
     'not json',
     JSON.stringify({ type: 'result', total_cost_usd: 0.05 }),
   ].join('\n');
-  assert.deepEqual(skillsInvoked(stream), { skills: ['marketing-skills:cro'], cost: 0.05, finished: true, text: 'hi' });
+  assert.deepEqual(skillsInvoked(stream), { skills: ['revconstruct-marketingskills:cro'], cost: 0.05, finished: true, text: 'hi' });
   assert.equal(skillsInvoked('').finished, false);
 });
 
 test('score separates pass, wrong skill, no trigger, other skill, and false triggers', async () => {
   const { score } = await load();
   const item = { expect: ['cro'] };
-  assert.equal(score(item, ['marketing-skills:cro']).outcome, 'pass');
-  assert.equal(score(item, ['marketing-skills:copywriting']).outcome, 'wrong-skill');
+  assert.equal(score(item, ['revconstruct-marketingskills:cro']).outcome, 'pass');
+  assert.equal(score(item, ['revconstruct-marketingskills:copywriting']).outcome, 'wrong-skill');
   assert.equal(score(item, []).outcome, 'no-trigger');
   assert.equal(score(item, ['run']).outcome, 'other-skill');
-  assert.equal(score(item, ['other:copywriting', 'marketing-skills:cro']).outcome, 'other-skill');
-  assert.equal(score(item, [], 'marketing-skills', true).outcome, 'error');
-  assert.equal(score({ expect: [] }, [], 'marketing-skills', true).outcome, 'error');
+  assert.equal(score(item, ['other:copywriting', 'revconstruct-marketingskills:cro']).outcome, 'other-skill');
+  assert.equal(score(item, [], 'revconstruct-marketingskills', true).outcome, 'error');
+  assert.equal(score({ expect: [] }, [], 'revconstruct-marketingskills', true).outcome, 'error');
   assert.equal(score({ expect: [] }, ['run']).outcome, 'pass');
-  assert.equal(score({ expect: [] }, ['marketing-skills:social']).outcome, 'false-trigger');
+  assert.equal(score({ expect: [] }, ['revconstruct-marketingskills:social']).outcome, 'false-trigger');
 });
 
 test('descriptionOf reads plain, quoted, commented, and block descriptions', async () => {
@@ -61,7 +61,7 @@ test('every trigger prompt expects real skills', async () => {
   const fs = require('node:fs');
   const root = path.join(__dirname, '..', '..');
   const skills = new Set(fs.readdirSync(path.join(root, 'skills')));
-  for (const file of ['prompts.json', 'heldout.json', 'heldout2.json', 'heldout3.json', 'heldout4.json']) {
+  for (const file of ['prompts.json', 'heldout.json', 'heldout2.json', 'heldout3.json', 'heldout4.json', 'heldout5.json']) {
     const { prompts } = JSON.parse(fs.readFileSync(path.join(root, 'evals', 'triggers', file), 'utf8'));
     const ids = new Set();
     for (const p of prompts) {
@@ -71,4 +71,19 @@ test('every trigger prompt expects real skills', async () => {
     }
     for (const s of skills) assert.ok(prompts.some(p => p.expect.includes(s)), `${file}: no trigger prompt for ${s}`);
   }
+});
+
+test('help and bad options never start a paid run', async () => {
+  const { spawnSync } = require('node:child_process');
+  const script = path.join(__dirname, '..', '..', 'scripts', 'trigger-eval.mjs');
+  const env = { ...process.env, PATH: '/nonexistent' }; // no `claude` binary reachable
+  const help = spawnSync(process.execPath, [script, '--help'], { env, encoding: 'utf8' });
+  assert.equal(help.status, 0);
+  assert.match(help.stdout, /Usage: node scripts\/trigger-eval\.mjs/);
+  const bad = spawnSync(process.execPath, [script, '--bogus', 'x'], { env, encoding: 'utf8' });
+  assert.equal(bad.status, 2);
+  assert.match(bad.stderr, /Unknown option: --bogus/);
+  const missing = spawnSync(process.execPath, [script, '--label'], { env, encoding: 'utf8' });
+  assert.equal(missing.status, 2);
+  assert.match(missing.stderr, /Missing value for --label/);
 });

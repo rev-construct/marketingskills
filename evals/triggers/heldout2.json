@@ -353,7 +353,8 @@
       "id": "events-a2",
       "kind": "advice",
       "expect": [
-        "events"
+        "events",
+        "webinar"
       ],
       "prompt": "We're hosting a 45-minute online workshop on job costing for remodelers. We have 90 registrations, a $200/month product, and one host. Is a reminder the day before plus a recording afterward enough, or what would you add to turn attendance into useful sales conversations?"
     },
@@ -904,6 +905,22 @@
       "kind": "none",
       "expect": [],
       "prompt": "Can you draft a simple household chore rota for Alex and Sam? They need to alternate dishes daily, vacuum once a week, and take the bins out every Thursday night."
+    },
+    {
+      "id": "webinar-a1",
+      "kind": "advice",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "We're planning a webinar for 150 registrants. Give me 5 ways to get more of them to actually show up live."
+    },
+    {
+      "id": "webinar-a2",
+      "kind": "advice",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Is a single reminder email the morning of the webinar enough, or what would you add around the session to make it pay off?"
     }
   ]
 }

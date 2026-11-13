@@ -2,7 +2,7 @@
   "integration_name": "aisa",
   "metadata": {
     "contributed_by": "AIsa team",
-    "disclosure": "AIsa is a paid Verified Partner of Marketing Skills. These evals do not make AIsa the preferred provider.",
+    "disclosure": "These evals are contributed by the AIsa team and do not make AIsa the preferred provider.",
     "contract_checked_at": "2026-10-15",
     "fixture_notice": "Synthetic evaluator notes, not wire-format API responses. IDs beginning fixture_only. are not real endpoints. Use exact current discovery IDs for any separately authorized live check.",
     "results": "Scenario definitions only. Record fixture and live run evidence separately as described in README.md."

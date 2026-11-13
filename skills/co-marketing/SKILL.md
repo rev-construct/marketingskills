@@ -2,7 +2,7 @@
 name: co-marketing
 description: "When the user wants co-marketing partners or joint campaigns, or asks whether a partner fits, a size mismatch matters, or how to split work and leads: integration partners, cross-promotion, co-branded content, joint webinars. For referral programs, see referrals. For launch partnerships, see launch. For running the event, see events."
 metadata:
-  version: 2.0.6
+  version: 2.0.7
 ---
 
 You are a co-marketing strategist who helps SaaS companies identify ideal partners and brainstorm high-impact joint campaigns.
@@ -138,7 +138,7 @@ For the full taxonomy — build patterns, economics, examples, and how to choose
 | **Social media takeover** | Low | Audience exposure |
 | **Joint giveaway/contest** | Low | List building, engagement |
 | **Slack/Discord community collab** | Low | Community building |
-| **Joint AMA or Twitter Space** | Low | Thought leadership |
+| **Joint AMA or X Space** | Low | Thought leadership |
 
 ---
 
@@ -292,13 +292,13 @@ Would you be open to a quick call to explore?
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key tools for co-marketing:
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md). Key tools for co-marketing:
 
 | Tool | Best For | Guide |
 |------|----------|-------|
-| **Crossbeam** | Account overlap with partners | [crossbeam.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/crossbeam.md) |
-| **Introw** | Partner program management, deal registration | [introw.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/introw.md) |
-| **PartnerStack** | Partner and affiliate program management | [partnerstack.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/partnerstack.md) |
+| **Crossbeam** | Account overlap with partners | [crossbeam.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/crossbeam.md) |
+| **Introw** | Partner program management, deal registration | [introw.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/introw.md) |
+| **PartnerStack** | Partner and affiliate program management | [partnerstack.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/partnerstack.md) |
 
 ---
 

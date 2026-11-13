@@ -9,6 +9,7 @@
 //   - plugin.json, marketplace.json, and .codex-plugin/plugin.json share one repo version, matching the newest `### x.y.z` block in VERSIONS.md
 //   - every file in skills/<name>/references/ is linked from that skill's SKILL.md
 //     or from another of its reference files (no orphans)
+//   - every relative Markdown link inside a skill points at a file that exists
 //   - every description is at most 500 characters, and all of them together at most 24,000
 //     (Claude Code drops descriptions past a ~30,000-character skill listing; see evals/triggers/README.md)
 // With --base:
@@ -123,6 +124,23 @@ for (const name of skills) {
       return read(`skills/${name}/references/${other}`).includes(link);
     });
     if (!linkedFromSibling) errors.push(`skills/${name}/references/${file}: not linked from SKILL.md or any sibling reference`);
+  }
+}
+
+// Dead relative links in skill Markdown (code blocks and inline code are examples, so skip them)
+const markdownFiles = (directory) => readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+  const full = resolve(directory, entry.name);
+  return entry.isDirectory() ? markdownFiles(full) : entry.name.endsWith(".md") ? [full] : [];
+});
+for (const name of skills) {
+  for (const file of markdownFiles(resolve(ROOT, "skills", name))) {
+    const text = readFileSync(file, "utf8").replace(/^(```|~~~)[\s\S]*?^\1.*$/gm, "").replace(/`[^`\n]*`/g, "");
+    for (const [, target] of text.matchAll(/\]\(([^)\s#]+)(?:#[^)\s]*)?\)/g)) {
+      if (/^([a-z][a-z0-9+.-]*:|\/|<)/i.test(target)) continue; // URLs, site-absolute paths, placeholders
+      if (!existsSync(resolve(dirname(file), decodeURIComponent(target)))) {
+        errors.push(`${relative(ROOT, file)}: link to ${target} points at a file that doesn't exist`);
+      }
+    }
   }
 }
 

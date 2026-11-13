@@ -1,5 +1,7 @@
 # Budget Planning — Scientific Methods for Setting the Marketing Budget
 
+Contents: [Method 1 — Revenue-Based (5–40% of annual revenue)](#method-1--revenue-based-540-of-annual-revenue) · [Method 2 — Goal-Based (reverse-engineered from the revenue target)](#method-2--goal-based-reverse-engineered-from-the-revenue-target) · [The VC growth path (3-3-2-2-2 rule)](#the-vc-growth-path-3-3-2-2-2-rule) · [Calculating CAC (blended, not paid-only)](#calculating-cac-blended-not-paid-only) · [The reality check on forecasting](#the-reality-check-on-forecasting) · [How this flows into the plan](#how-this-flows-into-the-plan) · [When to choose which method](#when-to-choose-which-method)
+
 The problem with most SaaS marketing budgets is that they're pulled out of thin air — a number that hopefully doesn't constrain growth too much, but doesn't anchor in customer-acquisition economics either. The result: when someone asks "why this number?" there's no answer.
 
 Two scientific methods solve this. Use one (not both) in Section 8 (Revenue) and Section 10 (12-month outlook) of every plan.

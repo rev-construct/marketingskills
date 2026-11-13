@@ -352,7 +352,8 @@
       "id": "events-k2",
       "kind": "judgement",
       "expect": [
-        "events"
+        "events",
+        "webinar"
       ],
       "prompt": "HarborCert ran an online workshop for port administrators: 420 people registered, 95 attended, 12 requested a consultation, and 4 became qualified opportunities. A colleague wants to repeat it solely because registrations beat our target of 300. Is that enough to call the format successful, or should the next decision hinge on different evidence?"
     },
@@ -905,6 +906,22 @@
       "kind": "none",
       "expect": [],
       "prompt": "My apartment has a sunny south-facing window and a dim hallway. I bought a rosemary plant and a fern. Which plant should get the window, and is putting the rosemary in the hallway likely to work?"
+    },
+    {
+      "id": "webinar-k1",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Is it okay to run our product webinar as a 60-minute feature walkthrough, or should we build it around a customer's problem and show the product only at the end?"
+    },
+    {
+      "id": "webinar-k2",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "We can either run a monthly webinar series or two big quarterly ones with a partner. Which would you choose for a team of three, and how would we tell it's working?"
     }
   ]
 }

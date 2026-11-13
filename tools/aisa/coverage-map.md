@@ -1,7 +1,5 @@
 # AIsa Marketing Data Coverage
 
-> **◆ Verified Partner integration.** AIsa sponsors Marketing Skills. This integration is disclosed and vetted for fit; it does **not** change what any skill recommends. It's listed alongside the neutral options for the same job — use it when it's the right fit, not because it's a partner. See [Verified Partners](../REGISTRY.md#verified-partners).
-
 This map connects specific marketing data needs to AIsa's documented capabilities. A row means a possible source for part of a workflow, not full support for the linked skill. The skill supplies the method; the agent chooses a data source based on the user's existing accounts, required fields, coverage, and budget.
 
 ## Evidence and Scope

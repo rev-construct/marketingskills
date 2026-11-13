@@ -2,7 +2,7 @@
 
 For when the user sells to local small businesses — shops, gyms, restaurants, salons, clinics, professional services, contractors, real estate, fitness studios, dental practices.
 
-Adapted from and generalized beyond the local-client-prospector pattern (browser-assisted discovery + website status classification + proximity scoring).
+Adapted from and generalized beyond the open-source [`local-client-prospector`](https://github.com/Kappaemme-git/local-client-prospector-skill) skill by Kappaemme (browser-assisted discovery + website status classification + proximity scoring). Portions Copyright (c) 2026 Francesco Mistero, MIT License; the MIT permission notice is in LICENSE.
 
 ---
 

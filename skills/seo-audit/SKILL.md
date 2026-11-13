@@ -2,12 +2,31 @@
 name: seo-audit
 description: "When the user wants to audit or diagnose SEO, or asks why traffic dropped, a page won't rank, or whether a setup like canonicals, hreflang, or redirects is right: technical SEO, indexing, Google updates, on-page and titles, Core Web Vitals, local SEO. Start here when someone just says their SEO is bad. For pages at scale, see programmatic-seo. For structured data, see schema. For AI search, see ai-seo."
 metadata:
-  version: 2.2.5
+  version: 2.2.8
 ---
 
 # SEO Audit
 
 You are an expert in search engine optimization. Your goal is to identify SEO issues and provide actionable recommendations to improve organic search performance.
+
+## Reference Routing
+
+This skill's depth lives in references. Load by intent: for **any recommendation on titles, hreflang/international setups, local SEO, or ranking-push work**, load the matching reference before answering; the detailed rules live there, not here.
+
+| User intent | Load | Covers |
+|---|---|---|
+| Writing or auditing titles, titles Google rewrites, low CTR at good positions, bulk title audit | [title-tags.md](references/title-tags.md) | Title patterns by page type, Google's rewrite triggers, low-CTR fixes, bulk-audit table |
+| Pages stuck at positions 8-20, weak click-through, shipping a new page | [rankings-push.md](references/rankings-push.md) | Candidate buckets from Search Console, gap diagnosis against top results, smallest-change fixes, new-page checklist |
+| Hreflang, canonical + i18n, multilingual sitemaps, URL structure, translated content quality | [international-seo.md](references/international-seo.md) | Evidence and source URLs for hreflang, canonicals, sitemaps, URL strategies, locale content quality |
+| Local business: map pack, Business Profile, citations, reviews, location pages | [local-seo.md](references/local-seo.md) | Business-model-first diagnosis, profile/citation/review work, location pages, AI assistants and local search |
+| Profile eligibility, field changes, NAP/citation cleanup | [local-seo-profile-and-citations.md](references/local-seo-profile-and-citations.md) | Business-model table, field-level review, citation cleanup table |
+| Location page content, local schema, local performance reporting | [local-seo-pages-and-measurement.md](references/local-seo-pages-and-measurement.md) | Location and service-area page content, local structured data, customer-outcome measurement |
+| Checking common issues for a SaaS, e-commerce, content, multilingual, or local site | [site-type-issues.md](references/site-type-issues.md) | Per-site-type issue checklists (SaaS, e-commerce, content/blog, multilingual, local business) |
+| Reviewing or editing copy for AI-sounding writing | [ai-writing-detection.md](references/ai-writing-detection.md) | Em dashes, overused verbs/adjectives/transitions, tell-tale phrases, filler words, self-check |
+
+For AI search optimization (AEO, GEO, LLMO, AI Overviews), see the **ai-seo** skill.
+
+---
 
 ## Initial Assessment
 
@@ -372,45 +391,7 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 
 ## Common Issues by Site Type
 
-### SaaS/Product Sites
-- Product pages lack content depth
-- Blog not integrated with product pages
-- Missing comparison/alternative pages
-- Feature pages thin on content
-- No glossary/educational content
-
-### E-commerce
-- Thin category pages
-- Duplicate product descriptions
-- Missing product schema
-- Faceted navigation creating duplicates
-- Out-of-stock pages mishandled
-
-### Content/Blog Sites
-- Outdated content not refreshed
-- Keyword cannibalization
-- No topical clustering
-- Poor internal linking
-- Missing author pages
-
-### Multilingual / Multi-Regional Sites
-- Hreflang errors (missing return tags, invalid codes, no self-reference)
-- Canonical conflicting with hreflang (cross-locale canonical suppresses indexing)
-- Thin locale pages dragging down site-wide quality signal
-- Only boilerplate translated, main content identical across locales
-- Unmatched locale users lack an intentional fallback (consider `x-default`; absence alone is not invalid hreflang)
-- Sitemap missing hreflang alternates or missing reciprocal entries
-- IP-based redirects hiding content from Googlebot
-- Framework locale mode hiding locale from URLs
-
-### Local Business
-- Inconsistent NAP
-- Missing local schema
-- No Google Business Profile optimization
-- Missing location pages
-- No local content
-
-For Google Business Profiles, the map pack, citations, reviews, and location pages, see [local-seo.md](references/local-seo.md).
+Check the issues for the matching site type (SaaS, e-commerce, content/blog, multilingual, local business) in [site-type-issues.md](references/site-type-issues.md).
 
 ---
 
@@ -442,17 +423,6 @@ Same format as above
 2. High-impact improvements
 3. Quick wins (easy, immediate benefit)
 4. Long-term recommendations
-
----
-
-## References
-
-- [AI Writing Detection](references/ai-writing-detection.md): Common AI writing patterns to avoid (em dashes, overused phrases, filler words)
-- [International SEO](references/international-seo.md): Evidence and sources for hreflang, canonical + i18n, sitemaps, URL structure, and content quality across locales
-- [Title Tags](references/title-tags.md): Title patterns by page type, Google's rewrite triggers, low-CTR fixes, and the bulk-audit table
-- [Local SEO](references/local-seo.md): Business Profiles, map pack diagnosis, citations, reviews, and location pages for local businesses (with profile and page details in two companion files)
-- [Rankings Push](references/rankings-push.md): Moving positions 8–20 onto page one, fixing weak click-through, and the checklist for shipping a new page
-- For AI search optimization (AEO, GEO, LLMO, AI Overviews), see the **ai-seo** skill
 
 ---
 

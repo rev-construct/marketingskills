@@ -1,5 +1,13 @@
 # Answer Accuracy: Auditing What AI Says About You
 
+## Contents
+- When to run it
+- Check the claim next to your link
+- The claim ledger
+- Brand page set
+- Fix the source first
+- Report
+
 Visibility counts whether you appear. Accuracy checks what the answer says once you do. A brand can show up in every answer and still be described with last year's pricing, a missing integration, or a limitation it fixed months ago.
 
 Much of an answer is commentary the user never asked for. Profound's analysis of 50,000 responses (Profound, June 2026) found about 47% of response content was unsolicited editorial material: comparisons, rankings, caveats, and recommendations. That editorial layer is where wrong claims about you tend to live.
@@ -12,6 +20,16 @@ Profound sells AI visibility tracking, so treat its figures as vendor research. 
 - Sales hears prospects repeat something false that "ChatGPT said"
 - After a repositioning, pricing change, rebrand, or product retirement
 - Quarterly for any brand with a regulated, safety, or pricing-sensitive product
+
+## Check the claim next to your link
+
+Being linked does not mean being quoted correctly. An arXiv audit of Google AI Overviews checked 98,020 claims across 7,583 overviews against the pages they cited (arXiv 2605.14021, with a WashU summary, 2026). Findings:
+
+- About **11%** of claims were not supported by the cited page. That is an upper bound; the generous estimate is about **5.3%**. State it as a 5.3-11% range, because the audit could not collect Reddit and YouTube pages, so claims citing them could not be fully checked.
+- Only **41.9%** of overviews were fully supported by their cited sources.
+- Source credibility did not predict accuracy: authoritative sources were not reliably quoted more faithfully.
+
+So when an AI Overview links to you, **read the sentence next to your link**, not just whether the link is there. Log a wrong or unsupported sentence as a claim in the ledger below, with your cited page as the evidence. An unsupported claim next to your link is also a reason to state the fact more plainly on that page.
 
 ## The claim ledger
 
@@ -53,6 +71,14 @@ Check first-party facts against your own current product material, and claims ab
 | **Low** | Tone and wording that don't change the decision |
 
 Weight severity by exposure too: a medium error that appears in every run of your top commercial prompt outranks a high error in one obscure prompt.
+
+## Brand page set
+
+A few pages carry most of what engines say about you. Keep these accurate, dated, and consistent with each other: **About, pricing, product, support or docs, and comparison pages.**
+
+SE Ranking (a vendor; its AI Overviews on branded searches study, with follow-up posts on X) found that homepages were 71.1% of brand URLs in the organic top 10 but only 36.8% of the brand pages cited in AI Overviews, and that a brand's own site was 33.8% of AI Overview citations on brand SERPs against 17% of the top 10. In other words, the pages Google ranks for your name are not the pages AI Overviews pull facts from.
+
+Audit flow: **pull the cited URLs first** (for your brand prompts and brand searches), then compare them with your rankings. Any cited page that is thin, stale, or not on the list above is where wrong claims are likely to start.
 
 ## Fix the source first
 

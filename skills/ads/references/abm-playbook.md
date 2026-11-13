@@ -38,7 +38,7 @@ Three motions, by list size:
 - **Personalization layer on the existing site** (Mutiny and similar): swaps headlines and proof by visiting company.
 - **CMS template fed from a list** (Webflow, WordPress, or Framer CMS, with Clay, Whalesync, or the CMS API filling one item per account).
 - **Hand-coded dynamic route** reading from your CRM or a sheet.
-- **AI site platform** (Ploy ◆ documents a Clay row posting to a webhook that runs a Ploybook to publish `/for/<company>`; ◆ marks a [Verified Partner](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md#verified-partners) of this repository, disclosure not endorsement).
+- **AI site platform** (Ploy documents a Clay row posting to a webhook that runs a Ploybook to publish `/for/<company>`).
 
 Whichever you use: keep account pages `noindex` and out of the sitemap, use only public or first-party facts about the account, and have a human review before anything publishes.
 
@@ -98,4 +98,4 @@ Judge ABM on account movement, not CPL:
 
 ---
 
-*Framework lineage: adapted (re-expressed and restructured) from practitioner playbooks, notably Ivan Falco's ads-skills. Thresholds are practitioner-reported starting points — recalibrate against your own accounts.*
+*Framework lineage: inspired by practitioner playbooks, including Ivan Falco's ads-skills. Thresholds are practitioner-reported starting points — recalibrate against your own accounts.*

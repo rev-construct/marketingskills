@@ -1,5 +1,7 @@
 # AARRR Framework — Primer for Plan Sequencing
 
+Contents: [The five stages](#the-five-stages) · [Why AARRR for plan sequencing](#why-aarrr-for-plan-sequencing) · [Brand and content — not a stage, cross-cutting](#brand-and-content--not-a-stage-cross-cutting) · [Diagnosing the binding constraint — which AARRR stage is highest leverage?](#diagnosing-the-binding-constraint--which-aarrr-stage-is-highest-leverage) · [Stage-by-stage strategic patterns](#stage-by-stage-strategic-patterns) · [How to assign a move to a stage](#how-to-assign-a-move-to-a-stage) · [When the AARRR breakdown isn't equal](#when-the-aarrr-breakdown-isnt-equal) · [A note on the order of presentation](#a-note-on-the-order-of-presentation)
+
 AARRR (Dave McClure's "pirate metrics") is the spine of every plan produced by this skill. This doc is the primer + the decision rules for when each stage gets prioritized.
 
 ## The five stages

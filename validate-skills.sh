@@ -98,10 +98,8 @@ for skill_dir in "$SKILLS_DIR"/*/; do
             skill_warnings+=("Description lacks clear trigger phrases ('when', 'mention', 'use')")
         fi
 
-        # Check for related skills reference (scope boundaries)
-        if ! echo "$description" | grep -qi "see\|for\|ref"; then
-            skill_warnings+=("Description lacks related skills reference (e.g., 'For X, see Y')")
-        fi
+        # Related-skill pointers ("For X, see Y") are encouraged where a skill has a close
+        # neighbour, but not required: some skills (e.g. aso) have none to point to.
     fi
 
     # ===== OPTIONAL FIELDS VALIDATION =====

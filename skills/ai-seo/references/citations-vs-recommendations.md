@@ -1,8 +1,16 @@
 # Citations vs. Recommendations: The AI Visibility Ladder
 
+## Contents
+- The Visibility Ladder
+- The Self-Promotional Listicle Risk (including replication and disclosure data)
+- What Earns Recommendations (including the ChatGPT B2B counterpoint)
+- Reading the Citation Mix Before Picking Channels
+- What a Recommendation Is Worth
+- Applying This
+
 Being cited by an AI engine and being recommended by it are **two different outcomes governed by two different systems**. A citation means your page was useful enough to pull information from. A recommendation means the model put your brand on the buyer's shortlist. Optimizing for the first does not automatically earn the second — and for smaller brands, conflating them leads to content strategies that can actively help competitors.
 
-Source note: the analysis and data in this reference draw on Lily Ray's (Amsive) 2026 study of B2B "best [category] software" queries, behavioral studies by Scrunch and SimilarWeb, and commentary by John-Henry Scherck (Growth Plays). The citation-mix taxonomy and decision rules are adapted (re-expressed and restructured) from Profound's MIT-licensed ai-citation-mix-strategist skill, credited.
+Source note: the analysis and data in this reference draw on Lily Ray's (Amsive) 2026 study of B2B "best [category] software" queries, a later 11,025-query replication, Minuttia's study of "alternatives" listicles, behavioral studies by Scrunch and SimilarWeb, and commentary by John-Henry Scherck (Growth Plays). The citation-mix taxonomy and decision rules are adapted (re-expressed and restructured) from Profound's MIT-licensed ai-citation-mix-strategist skill, credited.
 
 ---
 
@@ -31,6 +39,13 @@ The common tactic — publish a "best [category] software" guide, rank yourself 
 
 **The data:** Lily Ray (Amsive) analyzed 100 B2B "best [category] software" queries across three dates in spring 2026. Across the dataset, self-promotional listicles earned 323 citations in AI Overviews — and in 224 of them (**69% of the citations**), the answer left the publishing brand out of the recommendations, pointing buyers to competitors instead.
 
+**Two later data points pull in different directions.** Keep both in view and label each as a single study:
+
+- **A larger replication.** An October 2026 replication across 11,025 queries (relayed on X by Alex Groberman; check the primary report) found Google's share of self-promotional listicles fell from 44% to 24%. That is consistent with the tactic being discounted, though it measures how often such listicles appear, not whether brands got recommended.
+- **Minuttia** (a vendor; relayed on X by Alex Groberman) found self-promotional listicles made up about 43% of the listicle citations for "alternatives" queries, yet only 16% disclosed that the publisher was ranking itself. So the format is still widely cited, while disclosure is rare.
+
+Read them as two sides: engines may be getting stricter, and the tactic is still common and often undisclosed. Treat the Lily Ray figure above as a spring 2026 snapshot, not a fixed rate.
+
 **The mechanism:** the model treats your guide as a source about the *category*. It happily extracts the competitor names, comparisons, and evaluation criteria you compiled — then makes its recommendation from web-wide consensus, where the established players dominate. For an emerging brand, a self-promotional buyer's guide can function as **a vote for your competitors**: you did the research that helps the model describe them.
 
 **The split by stage:**
@@ -40,7 +55,7 @@ The common tactic — publish a "best [category] software" guide, rank yourself 
 
 **What this changes (and doesn't):** genuinely useful buyer's guides still belong in a B2B content strategy at any stage. What changes is the expectation and the investment split. If you're not yet the consensus pick, weight effort toward the offsite signals that actually govern recommendations (below) rather than publishing a plethora of self-ranked listicles.
 
-**A third option between ranking yourself #1 and not writing the guide:** name the category leader first, say honestly what it does well, then show the specific cases where your product goes further (practitioner pattern, Sep 2026). It reads as a fair source, which is what models are now starting to filter for.
+**A third option between ranking yourself #1 and not writing the guide:** name the category leader first, say honestly what it does well, then show the specific cases where your product goes further (practitioner pattern, Sep 2026). It reads as a fair source, which is what models are now starting to filter for. The checklist for an honest vendor listicle is in the **competitors** skill's `references/templates.md`.
 
 ---
 
@@ -50,11 +65,13 @@ Recommendation is a consensus signal. The inputs the models weigh live mostly of
 
 | Channel | Why it moves recommendations | Related skill |
 |---|---|---|
-| **Review platforms** (G2, Capterra, TrustRadius, app stores) | Third-party validation models treat as evidence of legitimacy | customer-research (review generation loops) |
+| **Review platforms** (G2, Capterra, TrustRadius, app stores) | Third-party validation that some engines treat as evidence of legitimacy; weaker for ChatGPT on B2B (see below) | customer-research (review generation loops) |
 | **Analyst coverage** (Gartner, Forrester, industry reports) | High-authority category framing; models echo analyst shortlists | public-relations |
 | **Communities and forums** (Reddit, HN, Slack/Discord, niche forums) | Unprompted practitioner discussion is heavily retrieved and hard to fake | community-marketing |
 | **Earned media and PR** | Independent sources repeating your positioning beyond your own site | public-relations |
 | **Video and podcasts** | Increasingly retrieved; transcripts carry brand + category associations | video, social |
+
+**A ChatGPT counterpoint on review sites.** One analysis of ChatGPT's citation mix on B2B queries (relayed on X by @apoorvshrm; vendor or agency source, check the primary study) found G2, Capterra, and TrustRadius together made up only 0.9% of citations. So don't assume review-site volume moves ChatGPT recommendations. Check which domains each engine cites for your prompts first, and invest in review platforms where they appear in that mix or where buyers use them anyway.
 
 The test to apply before investing in another self-ranked guide: *if a model ignored everything on our domain, would the rest of the web still put us on the shortlist?* If not, that gap is the priority. AEO discourse often stops at "are we in the answer?" — the better question is "are we credible enough to be recommended?"
 

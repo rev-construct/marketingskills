@@ -2,7 +2,7 @@
 name: sms
 description: "When the user wants SMS, MMS, or WhatsApp marketing, or asks whether texting is worth it or a message is allowed: abandoned cart, win-back, and promo texts, WhatsApp templates and windows, TCPA and A2P 10DLC compliance, SMS vs email. For email, see emails. For phone capture popups, see popups."
 metadata:
-  version: 1.1.3
+  version: 1.1.4
 ---
 
 # SMS Marketing
@@ -325,18 +325,18 @@ Keep recommendations specific. Don't say "send an SMS at the right time" — say
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key SMS tools:
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md). Key SMS tools:
 
 | Tool | Best For | MCP | Guide |
 |------|----------|:---:|-------|
-| **Klaviyo** | E-commerce email + SMS combined | ✓ | [klaviyo.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/klaviyo.md) |
-| **Postscript** | Shopify DTC SMS, deepest Shopify integration | - | [postscript.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/postscript.md) |
-| **Attentive** | Mid-market+ DTC SMS, full-service | - | [attentive.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/attentive.md) |
-| **Twilio** | Raw API for custom builds, transactional, dev-first | - | [twilio.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/twilio.md) |
-| **Plivo** | Twilio alternative, lower per-send cost | - | [plivo.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/plivo.md) |
-| **AudienceTap** | AI-forward DTC, on-pack QR opt-in | - | [audiencetap.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/audiencetap.md) |
-| **Brevo** | EU email + SMS, SMB-friendly | ✓ | [brevo.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/brevo.md) |
-| **Customer.io** | Behavior-based SMS automation | - | [customer-io.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/customer-io.md) |
+| **Klaviyo** | E-commerce email + SMS combined | ✓ | [klaviyo.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/klaviyo.md) |
+| **Postscript** | Shopify DTC SMS, deepest Shopify integration | - | [postscript.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/postscript.md) |
+| **Attentive** | Mid-market+ DTC SMS, full-service | - | [attentive.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/attentive.md) |
+| **Twilio** | Raw API for custom builds, transactional, dev-first | - | [twilio.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/twilio.md) |
+| **Plivo** | Twilio alternative, lower per-send cost | - | [plivo.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/plivo.md) |
+| **AudienceTap** | AI-forward DTC, on-pack QR opt-in | - | [audiencetap.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/audiencetap.md) |
+| **Brevo** | EU email + SMS, SMB-friendly | ✓ | [brevo.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/brevo.md) |
+| **Customer.io** | Behavior-based SMS automation | - | [customer-io.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/customer-io.md) |
 
 ---
 

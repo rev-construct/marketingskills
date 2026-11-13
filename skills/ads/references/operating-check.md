@@ -31,7 +31,7 @@ Work top to bottom. The order matters: a problem higher in the list explains sym
 | 5 | **Did the landing page break?** | Page speed, form or checkout errors, mobile vs desktop CVR gap | A deploy, a broken form, a tracking script blocking render |
 | 6 | **Did tracking break?** | Conversion counts vs analytics and CRM, event match quality, consent rate, offline imports | Tag removed, duplicate firing, consent banner change, import job failed |
 
-Check the change history against every movement. A metric that moved the day after a budget edit, a bid strategy switch, or a new ad launch probably moved because of it.
+Check the change history against every movement. Include platform-side changes too: a new default the platform switched on for running ads (for example Meta Product Browsing) can move metrics with no edit in your history. See the platform defaults audit in [audit-guardrails.md](audit-guardrails.md). A metric that moved the day after a budget edit, a bid strategy switch, or a new ad launch probably moved because of it.
 
 Recent days undercount conversions on any account with conversion lag. Read the last few days as incomplete, and never call a trend from them alone.
 
@@ -60,7 +60,7 @@ Every call ends with three short lists: **facts** (in the data), **hypotheses** 
 
 ## The Friday readout
 
-Close the week with a readout a stakeholder can read in a minute. Keep it under 200 words.
+Close the week with a readout a stakeholder can read in a minute.
 
 1. **Results vs target.** One line per account or program, marked green, amber, or red against the target CPA, ROAS, or pipeline goal.
 2. **What moved and why.** The top two or three movers, each with a likely cause and a confidence level (high, medium, low).

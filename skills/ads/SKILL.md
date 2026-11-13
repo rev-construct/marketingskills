@@ -2,7 +2,7 @@
 name: ads
 description: "When the user wants to plan, run, or fix paid ads on Google, Meta, and LinkedIn, or asks a judgement call on them: are ads worth it, which channel or budget split, why CPA rose, kill or keep a campaign. End with facts, hypotheses, and missing data; label unavailable inputs MISSING instead of estimating. For ad copy, see ad-creative. For pixels and CAPI, see conversion-tracking. For landing pages, see cro."
 metadata:
-  version: 2.7.5
+  version: 2.7.8
 ---
 
 # Paid Ads
@@ -48,13 +48,13 @@ This skill's depth lives in references — load by intent. For **any operational
 | User intent | Load | Covers |
 |---|---|---|
 | "Can I afford this channel?", payback math, budgeting per plan, whether LTV:CAC lies | [payback-period.md](references/payback-period.md) | Why LTV:CAC is useless (4 flaws), Gross-margin payback and cohort recovery (3–12mo planning target), $9-vs-$999 worked examples, OOH+social, narrative momentum |
-| B2B strategy, funnel stages, budget splits, kill rules, lead quality, breakeven math | [b2b-paid-playbook.md](references/b2b-paid-playbook.md) | Demand lifecycle, leading/lagging signals, kill rules, offline conversion loop, U/B/F lead scoring, scaling quadrant |
+| B2B strategy, funnel stages, budget splits, kill rules, lead quality, breakeven math | [b2b-paid-playbook.md](references/b2b-paid-playbook.md) | Audiences by lifecycle stage, leading/lagging signals, kill rules, offline conversion loop, U/B/F lead scoring, scaling quadrant |
 | Meta operations: when to kill/graduate/scale an ad, fatigue, testing structure, partnership/creator ads, declining reach | [meta-decision-system.md](references/meta-decision-system.md) | TCPL-anchored decision tree, ad-count ceiling, 80/20 CBO structure, fatigue bands, lead forms, Advantage+ transition, partnership-ads playbook, rolling-reach signal |
 | LinkedIn operations: bidding, audience sizing, scaling, benchmarks, TLAs, formats | [linkedin-b2b-playbook.md](references/linkedin-b2b-playbook.md) | Bidding progression, penetration scaling, sizing rules, funnel benchmarks, document/conversation ads, audit shortlist |
 | Google Search: what to spend on first, structure, match types, negatives, PMax | [google-search-playbook.md](references/google-search-playbook.md) | Intent ladder, account structure, match-type gates (incl. AI Max), negatives, bidding by volume, offline conversions, PMax guardrails |
 | Named-account targeting, pipeline acceleration, cross-channel retargeting | [abm-playbook.md](references/abm-playbook.md) | LinkedIn/Meta ABM, list mechanics, acceleration campaigns, UTM cross-channel remarketing, ABM measurement |
 | Generating Google RSAs | [rsa-output-spec.md](references/rsa-output-spec.md) | Mandatory output spec — limits, sidecars, template, self-check |
-| Weekly or daily account check, "what changed," stakeholder readout | [operating-check.md](references/operating-check.md) | Ordered six-step check, HOLD/FIX/TEST/INVESTIGATE calls, facts/hypotheses/missing data, Friday readout under 200 words |
+| Weekly or daily account check, "what changed," stakeholder readout | [operating-check.md](references/operating-check.md) | Ordered six-step check, HOLD/FIX/TEST/INVESTIGATE calls, facts/hypotheses/missing data, Friday readout a stakeholder can read in a minute |
 | Auditing a live account, grading account health, quoting benchmarks, recommending changes | [audit-guardrails.md](references/audit-guardrails.md) | Pass/fail/unknown scoring, evidence coverage, recommendation safety, hard stops, benchmark discipline |
 | Analyzing or reporting on Google Ads data, search-term waste, pause/keep/scale on low volume, client-facing findings | [reading-google-ads-data.md](references/reading-google-ads-data.md) | Withheld search terms (disclosed vs total clicks), conversions vs all_conversions, click-date attribution, experiment arms, 30-day change history, zero-in-N table, break-even CVR, verified/inferred/stale, "conclusions that sound right" |
 | Itemized Google Ads / ecommerce account audit (Search + Shopping + PMax + GMC + Demand Gen) | [google-ads-audit-checklist.md](references/google-ads-audit-checklist.md) | 32 checks across 11 categories — feed/GMC quality, Shopping segmentation, PMax signals/budget, DG format splits, lander funnels; each scored pass/fail/unknown/NA via audit-guardrails; deep dives for conversion signals and wasted-spend negatives |
@@ -156,7 +156,7 @@ These ratios are directional, not precise. Test in your actual account.
 
 Once you've gathered audience identifiers, here's how to put each kind into the creative:
 
-- **Demographic identifiers** (age, location, occupation) → embed as identity-trigger keywords in headlines (see [[#The one-keyword hack (identity-trigger keywords)]])
+- **Demographic identifiers** (age, location, occupation) → embed as identity-trigger keywords in headlines (see [the one-keyword hack](references/meta-andromeda-playbook.md#the-one-keyword-hack-identity-trigger-keywords))
 - **Pain points + fears** → headline + first line of body copy (Sabri Suby's framing: "the verbatim words your customers use about the problem")
 - **Hopes / desired outcomes** → transformation copy + CTAs
 - **Objections + "why they didn't buy last time"** → objection-handling retargeting ads (see [[#The 4-component retargeting framework]])
@@ -338,7 +338,7 @@ End every check in exactly one call:
 - **TEST**: a hypothesis worth money, with a metric and a stopping rule
 - **INVESTIGATE**: the data can't be trusted yet (this overrides the other three)
 
-Close the week with a stakeholder readout under 200 words: results vs target (green/amber/red), top movers with cause and confidence, and next week's calls. Full check, inputs, and readout format: [operating-check.md](references/operating-check.md).
+Close the week with a readout a stakeholder can read in a minute: results vs target (green/amber/red), top movers with cause and confidence, and next week's calls. Full check, inputs, and readout format: [operating-check.md](references/operating-check.md).
 
 ### Attribution Considerations
 - Platform attribution is inflated
@@ -453,16 +453,16 @@ Before auditing a live account, grading account health, quoting benchmarks, or r
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key advertising platforms:
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md). Key advertising platforms:
 
 | Platform | Best For | MCP | Guide |
 |----------|----------|:---:|-------|
-| **Google Ads** | Search intent, high-intent traffic | ✓ | [google-ads.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/google-ads.md) |
-| **Meta Ads** | Demand gen, visual products, B2C | ✓ (official, start read-only) | [meta-ads.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/meta-ads.md) |
-| **LinkedIn Ads** | B2B, job title targeting | - | [linkedin-ads.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/linkedin-ads.md) |
-| **TikTok Ads** | Younger demographics, video | - | [tiktok-ads.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/tiktok-ads.md) |
+| **Google Ads** | Search intent, high-intent traffic | ✓ | [google-ads.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/google-ads.md) |
+| **Meta Ads** | Demand gen, visual products, B2C | ✓ (official, start read-only) | [meta-ads.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/meta-ads.md) |
+| **LinkedIn Ads** | B2B, job title targeting | - | [linkedin-ads.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/linkedin-ads.md) |
+| **TikTok Ads** | Younger demographics, video | - | [tiktok-ads.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/tiktok-ads.md) |
 
-For tracking setup, see the **conversion-tracking** skill; tool guides: [ga4.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/ga4.md), [segment.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/segment.md)
+For tracking setup, see the **conversion-tracking** skill; tool guides: [ga4.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/ga4.md), [segment.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/segment.md)
 
 ---
 

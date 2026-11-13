@@ -1,5 +1,7 @@
 # Platform Limits Reference
 
+Contents: [Instagram](#instagram) · [Facebook](#facebook) · [TikTok](#tiktok) · [LinkedIn](#linkedin) · [Twitter/X](#twitterx) · [YouTube](#youtube) · [Pinterest](#pinterest) · [Threads (Meta)](#threads-meta) · [Usage Tips](#usage-tips)
+
 Quick reference for hashtag limits, character counts, and visible text thresholds on each major social platform.
 
 ---

@@ -2,7 +2,7 @@
 name: image
 description: "When the user wants to create, generate, edit, or optimize marketing images, or asks which approach to take (generate, design, or photograph): blog heroes, social graphics, product mockups, banners, OG images. For ad images, see ad-creative. For video, see video."
 metadata:
-  version: 2.0.6
+  version: 2.0.7
 ---
 
 # Image
@@ -43,6 +43,7 @@ Pick the right tool for the job:
 | **AI Editing** | Modify existing images | Gemini, FLUX.2 [flex] | Background removal, style changes, variations |
 | **Design Tools** | Templated, brand-consistent assets | Canva, Figma | Profile banners, social templates, presentations |
 | **Screenshot + Overlay** | Product UI showcases | Browser screenshot + code overlay | Product mockups, feature announcements |
+| **Code-built product illustration** | Simplified, believable product screen built in React/CSS | Your own front-end stack, [Stageshow](https://github.com/benjitaylor/skills) (optional) | Marketing stills, feature announcements, OG images, UI that is still changing |
 | **Stock Photography** | Generic business/lifestyle scenes | Unsplash, Pexels | When speed matters more than uniqueness |
 
 ---
@@ -142,7 +143,7 @@ Best for teams with design systems or pixel-perfect needs.
 | Need 20 size variants of one design | Yes (Canva Magic Resize) | No |
 | Unique hero image for a blog post | No | Yes |
 | Recurring social media template | Yes | No |
-| Product mockup with real UI | No (use screenshots) | No (hallucinated UI) |
+| Product mockup with real UI | No (use screenshots or code-built UI) | No (hallucinated UI) |
 | Abstract/creative visual | No | Yes |
 
 ---
@@ -185,7 +186,7 @@ Platform-specific images for organic posts.
 
 ### Product Mockups & Screenshots
 
-Showcase your product UI in context. AI models hallucinate UI — don't use them for this.
+Showcase your product UI in context. AI models hallucinate UI — don't use them for this. Use real screenshots, or a code-built illustration (below).
 
 1. **Capture real screenshots** of your product at 2x resolution
 2. **Frame in device mockups** — use browser frame, laptop, or phone templates
@@ -193,6 +194,26 @@ Showcase your product UI in context. AI models hallucinate UI — don't use them
 4. **Annotate with code** — Hyperframes or HTML/CSS for programmatic overlays
 
 **Tools:** Browser DevTools (screenshot), Shottr (Mac), CleanShot X, or `screencapture` CLI.
+
+### Code-Built Product Illustration
+
+A simplified product screen built in React/CSS and rendered to a still. It is a third path alongside real screenshots and (never) AI-generated UI. For the animated equivalent, see [code-rendered product films](../video/references/code-rendered-product-films.md) in the video skill. [Stageshow](https://github.com/benjitaylor/skills) is an optional install that packages this approach.
+
+**Use it for:** marketing stills, feature announcements, OG images, and UI that is still changing. **Use real screenshots when** the image must document the actual product (docs, tutorials, support, comparisons, anything a customer will check against the app).
+
+**Honesty:** this is a marketing illustration, not a claim that the product looks exactly like this. Don't show features, data, or states the product doesn't have, and use screenshots where accuracy matters.
+
+**Restraint rules:**
+- Use 3-7 real text strings (the words that tell the story); everything else is placeholder bars or blocks
+- Crop to the part of the screen where the story happens, not the whole app
+- Poster-frame rule: the image must tell its story on its own, with no caption needed
+
+**Five failure modes:**
+1. **Too much:** the whole app crammed in, so nothing is the focus
+2. **Wireframe-looking:** grey boxes and no polish, reads as a mockup placeholder
+3. **Boxed:** a rigid rectangle floating on the canvas; let it bleed, crop, or tilt
+4. **Flat:** no depth, shadow, or layering
+5. **Bland:** default colors and type that ignore your brand
 
 ### Profile & Listing Banners
 

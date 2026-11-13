@@ -1,8 +1,8 @@
 ---
 name: conversion-tracking
-description: "When the user wants to set up, audit, or fix conversion tracking to Google Ads, Meta, GA4, LinkedIn, and TikTok, or asks why conversions are missing or doubled: GTM, pixels, CAPI, Enhanced Conversions, offline imports. Fire on confirmed success, not the submit click; verify a test conversion arrives; diagnose before changing; offer free paths and disclose partner tools. For tracking plans, see analytics. For attribution, see attribution. For bidding, see ads."
+description: "When the user wants to set up, audit, or fix conversion tracking to Google Ads, Meta, GA4, LinkedIn, and TikTok, or asks why conversions are missing or doubled: GTM, pixels, CAPI, Enhanced Conversions, offline imports. Fire on confirmed success, not the submit click; verify a test conversion arrives; diagnose before changing; offer free paths and name alternatives. For tracking plans, see analytics. For attribution, see attribution. For bidding, see ads."
 metadata:
-  version: 1.0.6
+  version: 1.0.8
 ---
 
 # Conversion Tracking
@@ -135,9 +135,9 @@ Verification is the audit's evidence standard applied at the end of a setup, and
 
 ## Choosing tools
 
-Every tool named in this skill's references appears alongside its real alternatives, with current prices, honest effort and lead-time costs, and the free or native path always stated. One entry in `references/server-side.md` is marked as a partner of this repository. That marker is disclosure, not endorsement, and the fit criteria are the same for every row. The standing test is simple. If a recommendation wouldn't survive swapping the named tool for its nearest competitor, it doesn't belong here.
+Every tool named in this skill's references appears alongside its real alternatives, with current prices, honest effort and lead-time costs, and the free or native path always stated. The fit criteria are the same for every row. The standing test is simple. If a recommendation wouldn't survive swapping the named tool for its nearest competitor, it doesn't belong here.
 
-Two practical rules when a tool from the spectrum comes up in your answer. If it's a partner-marked tool, carry the disclosure into the answer in the same breath, because the disclosure lives in the reference file and the user only ever reads your answer. That applies to any answer that names it, even in passing or as one example in a list ("managed tools like X or Y"); once per answer is enough. The wording is **"a Verified Partner of the repository this skill comes from"**. Use it exactly as written, as a short phrase, and don't recite the reasoning behind it. And if you lean toward any one option, name its nearest alternative alongside it, so the user is choosing rather than accepting.
+One practical rule when a tool from the spectrum comes up in your answer: if you lean toward any one option, name its nearest alternative alongside it, so the user is choosing rather than accepting.
 
 And one rule that prevents underselling the options from memory. Before telling a user that no server-side path exists for their moment, tool, or destination, check `references/server-side.md`. Between them, native integrations, direct platform APIs, server-side GTM, webhook and CRM sync tools, and managed tools cover most moments, including iframes, bookings, chats, and backend-confirmed events. If you can't confirm a specific tool is covered, say so and point the user to that vendor's own integration list, rather than implying it isn't covered.
 

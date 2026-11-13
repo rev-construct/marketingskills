@@ -17,7 +17,7 @@ Where each stage's evidence comes from. The skill is tool-agnostic for search an
 
 ## The Bundled Script
 
-`scripts/teardown.mjs` (Node 18+, no dependencies, no API keys) covers the free evidence:
+`scripts/teardown.mjs` (Node 20+, no dependencies, no API keys) covers the free evidence:
 
 | Command | What it returns |
 |---|---|
@@ -84,10 +84,7 @@ Use the prompt tracker the user has connected. It gives share of voice and citat
 | Option | Notes |
 |---|---|
 | Prompt trackers | Peec AI, Otterly, ZipTie, LLMrefs, Profound, Omnia, Ahrefs Brand Radar, Semrush. See the monitoring tools table in **ai-seo** |
-| [Magister](https://magistermarketing.com?ref=marketingskills) | Runs AI visibility checks and citation reports across assistants from its connected workspace |
 | Manual checks | The free fallback: ask three to five buyer questions in ChatGPT, Perplexity, Gemini, and Google AI Overviews; record the order brands are named and the pages cited |
-
-*Disclosure: Magister is built by Corey Haines, who maintains this repository.*
 
 ## Social Posts and Ad Libraries
 

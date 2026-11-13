@@ -2,7 +2,7 @@
 
 Zero-dependency, single-file CLI tools for marketing platforms that don't ship their own.
 
-Every CLI is a standalone Node.js script (Node 18+) with no `npm install` required — just `chmod +x` and go.
+Every CLI is a standalone Node.js script (Node 20+) with no `npm install` required — just `chmod +x` and go.
 
 ## Install
 
@@ -230,4 +230,4 @@ node tools/clis/exa.js search --query 'Recent market research' --timeout-ms 3000
 
 The deadline covers obtaining headers and consuming the response body, including OAuth requests. Each subsequent HTTP call gets its own deadline; this is not a total command deadline or a bound on external credential commands. An aborted call exits as a failure. Aborting a local request does not cancel work already accepted by a provider: check provider status before manually retrying a mutation. The CLI does not add automatic retries. Dry runs issue no HTTP request.
 
-Implemented using [Node's AbortSignal.timeout](https://nodejs.org/api/globals.html#static-method-abortsignaltimeoutdelay), available on the supported Node 18+ runtime, preserving zero-dependency standalone scripts. Native loopback tests cover stalled headers, stalled bodies, OAuth, successful responses and malformed timeout values without live accounts.
+Implemented using [Node's AbortSignal.timeout](https://nodejs.org/api/globals.html#static-method-abortsignaltimeoutdelay), available on the supported Node 20+ runtime, preserving zero-dependency standalone scripts. Native loopback tests cover stalled headers, stalled bodies, OAuth, successful responses and malformed timeout values without live accounts.

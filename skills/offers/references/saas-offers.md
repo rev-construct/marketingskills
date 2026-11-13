@@ -14,7 +14,7 @@ The instinct when a SaaS isn't converting is to cut the price — a launch coupo
 
 ### The data
 
-**Discount-*askers* churn at roughly 2× the rate of full-price customers.** The buyer who negotiated their way in is signaling something: price was the reason they bought, not value. When a cheaper option appears — or when the renewal hits full price — they leave. You bought a customer who was never yours.
+**Discount-*askers* tend to churn faster than full-price customers.** The size of the gap varies by product, so check it in your own cohorts. The buyer who negotiated their way in is signaling something: price was the reason they bought, not value. When a cheaper option appears — or when the renewal hits full price — they leave. You bought a customer who was never yours.
 
 This compounds. Discounting to acquire also:
 

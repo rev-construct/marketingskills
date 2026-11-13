@@ -350,7 +350,8 @@
       "id": "events-h2",
       "kind": "heldout",
       "expect": [
-        "events"
+        "events",
+        "webinar"
       ],
       "prompt": "Plan a 45-minute webinar for finance leaders, from invitations through follow-up. We care about qualified conversations, not just registrations; include owners and a measurement plan."
     },
@@ -897,6 +898,22 @@
       "kind": "none",
       "expect": [],
       "prompt": "Walk me through completing the square for x squared plus 6x plus 2 equals zero."
+    },
+    {
+      "id": "webinar-h1",
+      "kind": "heldout",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Help me pick a topic and structure for a 40-minute product webinar aimed at ops managers, including what to say in the first five minutes and how to close."
+    },
+    {
+      "id": "webinar-h2",
+      "kind": "heldout",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Our webinar had 300 registrants and 90 live attendees. What follow-up should go out to attendees versus no-shows, and when?"
     }
   ]
 }

@@ -1,4 +1,5 @@
 /*! Generic AJAX form conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: inline success after an AJAX form submit. Pushes dataLayer event: form_submitted
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

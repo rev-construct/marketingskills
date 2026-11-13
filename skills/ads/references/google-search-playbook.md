@@ -121,4 +121,4 @@ Weekly scorecard — exactly eight numbers: spend · leads · CPL · lead→SQL 
 
 ---
 
-*Framework lineage: adapted (re-expressed and restructured) from practitioner playbooks, notably Ivan Falco's ads-skills. Benchmarks are practitioner-reported starting points — recalibrate against your own account.*
+*Framework lineage: inspired by practitioner playbooks, including Ivan Falco's ads-skills. Benchmarks are practitioner-reported starting points — recalibrate against your own account.*

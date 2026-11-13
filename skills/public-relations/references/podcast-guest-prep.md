@@ -57,4 +57,4 @@ Transcribing their prior episode for a word-level review, pulling a full transcr
 
 ---
 
-*Distilled and adapted from [ai-visibility-skills](https://github.com/Knowatoa/ai-visibility-skills) by Knowatoa (MIT), reused with credit.*
+*Adapted from [ai-visibility-skills](https://github.com/Knowatoa/ai-visibility-skills) by Knowatoa. Portions Copyright (c) 2026 Wafris LLC (d/b/a Knowatoa), MIT License; the MIT permission notice is in LICENSE.*

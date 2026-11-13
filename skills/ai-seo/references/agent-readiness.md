@@ -76,7 +76,7 @@ Practical today: make sure your highest-intent actions (signup, pricing, demo bo
 
 **Ways to add WebMCP** (all early; confirm browser and assistant support before promising anything):
 - **Implement it yourself.** Follow the WebMCP draft to declare each action as a tool with an input schema, wired to the form or API the page already uses. Keep the tool list short (the 2–4 highest-intent actions) and reuse existing validation, spam protection, and permissions rather than building a parallel path.
-- **Use your platform's support, if it has any.** Some site platforms and agent workflows add WebMCP for you. Ploy ◆, for example, has a Ploybook that inspects the site, defines tool contracts, implements them against existing form logic, and validates them. It's a guided workflow, not a hosted MCP server. ◆ marks a [Verified Partner](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md#verified-partners) of this repository (disclosure, not endorsement); name an alternative alongside it when you mention it.
+- **Use your platform's support, if it has any.** Some site platforms and agent workflows add WebMCP for you. Ploy, for example, has a Ploybook that inspects the site, defines tool contracts, implements them against existing form logic, and validates them. It's a guided workflow, not a hosted MCP server. Name an alternative alongside it when you mention it.
 - **Have a coding agent do it** in the site's repo, with the same scoping: a few actions, existing logic, a test for each.
 
 Whichever path, test that each tool rejects bad input, that submissions land where the normal form's do (CRM, inbox, conversion tracking), and that nothing bypasses consent or rate limits.
@@ -114,3 +114,39 @@ What this means for strategy:
 ---
 
 *Agent-readiness check taxonomy distilled from Vercel/Ora's Is Agentic (is-agentic.com) and Frase's Agent Readiness Checker (both August 2026, credited); AgentReady practice IDs, strengths, and study figures from agentready.org and Ora's research (October 2026, credited — vendor-run, dataset public at github.com/ora/research); citation-volatility events practitioner-reported (Ashni of Hype Partners (@ashnichrist) and others, August 2026) — labeled accordingly, verify against your own monitoring.*
+
+## pricing.md template
+
+Put structured pricing at `/pricing.md` or `/pricing.txt` so agents can compare you without rendering a page.
+
+```markdown
+# Pricing — [Your Product Name]
+
+## Free
+- Price: $0/month
+- Limits: 100 emails/month, 1 user
+- Features: Basic templates, API access
+
+## Pro
+- Price: $29/month (billed annually) | $35/month (billed monthly)
+- Limits: 10,000 emails/month, 5 users
+- Features: Custom domains, analytics, priority support
+
+## Enterprise
+- Price: Custom — contact sales@example.com
+- Limits: Unlimited emails, unlimited users
+- Features: SSO, SLA, dedicated account manager
+```
+
+**Why this matters now:**
+- AI agents increasingly compare products programmatically before a human ever visits your site
+- Opaque pricing gets filtered out of AI-mediated buying journeys
+- A simple markdown file is trivially parseable by any LLM — no rendering, no JavaScript, no login walls
+- Same principle as `robots.txt` (for crawlers), `llms.txt` (for AI context), and `AGENTS.md` (for agent capabilities)
+
+**Best practices:**
+- Use consistent units (monthly vs. annual, per-seat vs. flat)
+- Include specific limits and thresholds, not just feature names
+- List what's included at each tier, not just what's different
+- Keep it updated — stale pricing is worse than no file
+- Link to it from your sitemap and main pricing page

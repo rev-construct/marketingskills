@@ -24,7 +24,7 @@ Set expectations before diagnosing. Reasons a perfect setup still diverges:
 - Attribution windows: Google Ads 1-90d click (default 30); Meta max 7d click / 1d view (post-2026: link clicks only); a day-10 lead exists for Google, invisible to Meta
 - Counting method mismatches
 - **GA4-import + native tag both Primary = up to 2x double counting** (fix: demote one to Secondary; prefer native tag as Primary - faster, supports EC and view-through; imports arrive 1-3 days stale)
-- Modeled conversions: consent mode modeling needs ~700 ad clicks per 7 days per country-domain grouping; below threshold, no modeled backfill - most SMB sites never qualify. Consented users convert 2-5x more than average so extrapolation over-corrects.
+- Modeled conversions: consent mode modeling needs ~700 ad clicks per 7 days per country-domain grouping; below threshold, no modeled backfill - most SMB sites never qualify. Users who accept tracking often convert at a higher rate than those who decline, so extrapolating from consented users can over-correct.
 - GA4 thresholding/cardinality hides rows: (other), (not set); ~5-10% reporting loss [VENDOR]
 
 ## 2. Environmental undercount (tracking installed correctly, still loses data)

@@ -69,6 +69,18 @@ Route implementation details to the relevant existing skill:
 - **schema:** markup implementation after choosing accurate, public business facts.
 - **ai-seo:** visibility in AI answers when that is part of the request.
 
+## AI Assistants and Local Search
+
+When the request includes visibility in AI answers, check it as its own surface. Ask each engine "best/top [category] near [area]" for the same areas, and log engine, query, location, and date. Never report one engine as "AI": Yext's study of 491,972 shared cases (Feb-Aug 2026) found all four engines named the same #1 business in only 4% of cases, and four different #1 businesses in 48%.
+
+- **Source mix differs by engine.** In the same Yext study, Gemini leaned most on businesses' own sites (41.9% of citations), ChatGPT on directories (40.9%), and Claude on review sites (20.5%). Match the fix to the engine where the business is missing.
+- **Review volume and recent pace matter more than star rating.** Insites' study of 10,000 US local businesses found those named by both ChatGPT and Perplexity averaged 133 Google reviews against 11 for those named by neither, and Local Pack presence was its strongest predictor of being recommended. A secondary summary of the Yext and Insites work (@psinke) reports consensus winners with a median of 568 reviews vs 19 and about 12 new reviews a month vs about 2, and the highest-rated business ranking first only 40% of the time. Treat those last figures as unconfirmed until checked against the primary reports. Keep review requests within the Google policy above; pace comes from asking every customer, not from incentives or gating.
+- **Have a website with service-level pages.** Seeably (2026; 6,682 businesses across 25 US markets) found 17.5% of businesses with a website were named vs 4.4% without, and 85.6% were never named. More than half of cited pages were third-party lists and articles. For getting onto "best of" lists, see competitors and public-relations.
+- **Skip the technical "AI tricks."** Insites found no meaningful link to being recommended for page speed / Core Web Vitals, FAQ schema, or llms.txt (weak at best). Fix these on their own merits, not as an AI visibility tactic.
+- **Check the GBP landing page's opening.** One test (@ownyourserp) found an AI local pack pulling the top paragraph of the GBP landing page, not the GBP description. This is a single test; verify on the business's own queries before relying on it.
+
+Yext, Insites, and Seeably all sell into this space, and their findings are correlations, not proof that a tactic causes a mention. Report them as directional, and for the full AI-answers workflow, use ai-seo.
+
 ## Return a Decision and an Actionable Artifact
 
 For an audit or plan, return:

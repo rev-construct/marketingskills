@@ -16,16 +16,15 @@ Journalists posting "I need a source for X" — you respond, sometimes you get q
 
 | Platform | What it is | Cost | Quality |
 |----------|-----------|------|---------|
-| **[Connectively](https://www.connectively.us)** (formerly HARO) | Daily email digest of journalist queries | Free tier; paid for filters | Mixed — high volume, lots of noise |
+| **[HARO](https://www.helpareporter.com)** (Help a Reporter Out) | Daily email digest of journalist queries. Cision renamed it Connectively and closed it in December 2024; Featured bought the brand and relaunched it in April 2025 | Check current pricing | Mixed — high volume, lots of noise |
 | **[Qwoted](https://www.qwoted.com)** | Web app with journalist requests | Free; paid for outreach | Good — better-quality outlets |
-| **[Featured](https://featured.com)** | Web app, expert profiles, journalist requests | Free tier; paid pro | Good for thought-leadership snippets |
+| **[Featured](https://featured.com)** (formerly Terkel) | Web app, expert profiles, journalist requests, roundup-style questions ("we asked 50 experts…") | Free tier; paid pro | Good for thought-leadership snippets |
 | **[Help A B2B Writer](https://helpab2bwriter.com)** | Twice-weekly email of B2B queries | Free | High — B2B-focused, low spam |
 | **[SourceBottle](https://www.sourcebottle.com)** | Australia-focused but global queries | Free | Variable |
-| **[Terkel](https://terkel.io)** | Roundup-style ("we asked 50 experts…") | Free | Volume-heavy, low effort |
-| **[JournoRequests](https://twitter.com/journorequests)** | X account aggregating tweets | Free | UK-skewed, real-time |
+| **[JournoRequests](https://x.com/journorequests)** | X account aggregating tweets | Free | UK-skewed, real-time |
 | **#JournoRequest** (X hashtag) | Live journalist requests | Free | Real-time, fast-moving |
 
-**Recommended starter set:** Connectively + Qwoted + Help A B2B Writer + monitoring `#JournoRequest` on X.
+**Recommended starter set:** HARO + Qwoted + Help A B2B Writer + monitoring `#JournoRequest` on X.
 
 ---
 

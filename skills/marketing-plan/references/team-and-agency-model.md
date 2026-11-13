@@ -1,5 +1,7 @@
 # Team and Agency Model — Hire for Strategy, Outsource Execution
 
+Contents: [The principle](#the-principle) · [What stays in-house](#what-stays-in-house) · [What's safe to outsource](#whats-safe-to-outsource) · [The three core functions](#the-three-core-functions) · [The first marketing hire](#the-first-marketing-hire) · [The marketing engine — three components](#the-marketing-engine--three-components) · [Working with agencies — selection framework](#working-with-agencies--selection-framework) · [Setting agencies up for success](#setting-agencies-up-for-success) · [Scaling the model by stage](#scaling-the-model-by-stage) · [How this informs the plan](#how-this-informs-the-plan) · [Operational guardrails](#operational-guardrails)
+
 The marketing operations stack (Section 11 of every plan) describes *what* gets done. This doc describes *who does it* — the operating principle, the org shape, the first hire, the agency model, and how it evolves as the company scales.
 
 Excerpted and adapted from *Founding Marketing* by Corey Haines.

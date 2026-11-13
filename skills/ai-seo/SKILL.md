@@ -2,7 +2,7 @@
 name: ai-seo
 description: "When the user wants to get cited and recommended in AI answers (ChatGPT, Perplexity, AI Overviews), or asks why AI cites a competitor, which content gets cited, or whether llms.txt or a page format is worth it: AEO, GEO, AI visibility, agent-readable sites. For technical and on-page SEO, see seo-audit. For structured data, see schema."
 metadata:
-  version: 2.12.3
+  version: 2.12.5
 ---
 
 # AI SEO
@@ -302,39 +302,7 @@ AI agents aren't just answering questions — they're becoming buyers. When an A
 
 Add these machine-readable files to your site root:
 
-**`/pricing.md` or `/pricing.txt`** — Structured pricing data for AI agents
-
-```markdown
-# Pricing — [Your Product Name]
-
-## Free
-- Price: $0/month
-- Limits: 100 emails/month, 1 user
-- Features: Basic templates, API access
-
-## Pro
-- Price: $29/month (billed annually) | $35/month (billed monthly)
-- Limits: 10,000 emails/month, 5 users
-- Features: Custom domains, analytics, priority support
-
-## Enterprise
-- Price: Custom — contact sales@example.com
-- Limits: Unlimited emails, unlimited users
-- Features: SSO, SLA, dedicated account manager
-```
-
-**Why this matters now:**
-- AI agents increasingly compare products programmatically before a human ever visits your site
-- Opaque pricing gets filtered out of AI-mediated buying journeys
-- A simple markdown file is trivially parseable by any LLM — no rendering, no JavaScript, no login walls
-- Same principle as `robots.txt` (for crawlers), `llms.txt` (for AI context), and `AGENTS.md` (for agent capabilities)
-
-**Best practices:**
-- Use consistent units (monthly vs. annual, per-seat vs. flat)
-- Include specific limits and thresholds, not just feature names
-- List what's included at each tier, not just what's different
-- Keep it updated — stale pricing is worse than no file
-- Link to it from your sitemap and main pricing page
+**`/pricing.md` or `/pricing.txt`** — Structured pricing data for AI agents: one section per tier with price, limits, and features in consistent units, kept current and linked from your sitemap and pricing page. Opaque pricing gets filtered out of AI-mediated buying. Template and best practices: [references/agent-readiness.md](references/agent-readiness.md#pricingmd-template).
 
 **`/llms.txt`** — Context file for AI systems (see [llmstxt.org](https://llmstxt.org))
 
@@ -478,7 +446,7 @@ For tactical guidance on SaaS product pages, blog content, comparison/alternativ
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md).
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md).
 
 | Tool | Use For |
 |------|---------|

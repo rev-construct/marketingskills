@@ -11,6 +11,9 @@ on:
     paths:
       - "skills/**"
 
+permissions:
+  contents: read
+
 concurrency:
   group: validate-skill-${{ github.ref }}
   cancel-in-progress: true

@@ -2,7 +2,7 @@
 name: sales-enablement
 description: "When the user wants sales collateral, or asks what to give a champion or rep, or how to answer an objection or make the case: decks, one-pagers, objection handling, demo scripts, talk tracks, battle cards, proposals, win-loss. For public comparison pages, see competitors. For buyer research, see customer-research. For website copy, see copywriting. For cold emails, see cold-email. For the offer, see offers."
 metadata:
-  version: 2.4.3
+  version: 2.4.4
 ---
 
 # Sales Enablement
@@ -407,11 +407,11 @@ If context is missing, ask:
 
 ## Tool Integrations
 
-For partner sales enablement, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md):
+For partner sales enablement, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md):
 
 | Tool | What It Does | Guide |
 |------|-------------|-------|
-| **Introw** | Partner engagement tracking, deal registration, mutual action plans | [introw.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/introw.md) |
+| **Introw** | Partner engagement tracking, deal registration, mutual action plans | [introw.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/introw.md) |
 
 ---
 

@@ -11,38 +11,13 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 
 ---
 
-## Verified Partners
-
-> **Full rules & boundaries:** [PARTNERS.md](PARTNERS.md) — the canonical governance doc (tool taxonomy, what sponsorship buys and never buys, disclosure, the partner lifecycle, and the `integrations/` spec).
-
-◆ **Verified Partners** are tools whose makers fund Marketing Skills through the [partner program](https://marketing-skills.com/sponsorship). What the marker means — and doesn't:
-
-- **Disclosed + vetted for fit.** Each carries a disclosure header in its integration guide and is marked ◆ in the index below.
-- **Additive, never biasing.** A partner is listed *alongside* the neutral options for the same job, never instead of them. Partner status never removes or demotes another tool and **never changes what any skill recommends** — if a non-partner is the right answer, that's the answer. The badge means "paid, disclosed, vetted for fit," not "best in category."
-
-Anyone — including tool makers and partners — may contribute content that names a tool, as long as it makes an agent *aware* of the right option without manufacturing a recommendation. The bar is the [integrity rubric in CONTRIBUTING.md](../CONTRIBUTING.md#mentioning-tools-the-integrity-rubric) (options not one answer, disclosed, passes the swap test).
-
-<!-- PARTNERS:START -->
-| Partner | Category | Guide |
-|---------|----------|-------|
-| ◆ Converly | Conversion tracking / attribution | [converly.md](integrations/converly.md) |
-| ◆ Ploy | AI website & growth platform | [ploy.md](integrations/ploy.md) |
-| ◆ AIsa | SEO, search & social data | [aisa.md](integrations/aisa.md) |
-| ◆ Omnia | AI search visibility (AEO) | [omnia.md](integrations/omnia.md) |
-| ◆ Livestorm | Webinars & virtual events | [livestorm.md](integrations/livestorm.md) |
-<!-- PARTNERS:END -->
-
-<!-- The table above is generated from partners.json — run `node scripts/sync-partners.mjs`. -->
-
----
-
 ## Tool Index
 
 | Tool | Category | API | MCP | CLI | SDK | Guide |
 |------|----------|:---:|:---:|:---:|:---:|-------|
-| ◆ converly | Conversion Tracking | ✓ | ✓ | ✓ | ✓ | [converly.md](integrations/converly.md) |
-| ◆ ploy | Website | ✓ | - | ✓ | - | [ploy.md](integrations/ploy.md) |
-| ◆ aisa | SEO / Data APIs | ✓ | ✓ | ✓ | - | [aisa.md](integrations/aisa.md) |
+| converly | Conversion Tracking | ✓ | ✓ | ✓ | ✓ | [converly.md](integrations/converly.md) |
+| ploy | Website | ✓ | - | ✓ | - | [ploy.md](integrations/ploy.md) |
+| aisa | SEO / Data APIs | ✓ | ✓ | ✓ | - | [aisa.md](integrations/aisa.md) |
 | ga4 | Analytics | ✓ | ✓ | [✓](clis/ga4.js) | ✓ | [ga4.md](integrations/ga4.md) |
 | mixpanel | Analytics | ✓ | ✓ | [✓](clis/mixpanel.js) | ✓ | [mixpanel.md](integrations/mixpanel.md) |
 | amplitude | Analytics | ✓ | ✓ | [✓](clis/amplitude.js) | ✓ | [amplitude.md](integrations/amplitude.md) |
@@ -58,6 +33,7 @@ Anyone — including tool makers and partners — may contribute content that na
 | rankparse | SEO | ✓ | ✓ | [✓](clis/rankparse.js) | - | [rankparse.md](integrations/rankparse.md) |
 | omnia | AEO | ✓ | ✓ | - | - | [omnia.md](integrations/omnia.md) |
 | cloro | AEO | ✓ | ✓ | [✓](clis/cloro.js) | - | [cloro.md](integrations/cloro.md) |
+| mentiondrop | Listening / Monitoring | ✓ | ✓ | - | - | [mentiondrop.md](integrations/mentiondrop.md) |
 | clearbit | Data Enrichment (legacy) | ✓ | - | [✓](clis/clearbit.js) | ✓ | [clearbit.md](integrations/clearbit.md) |
 | apollo | Data Enrichment | ✓ | ✓ | [✓](clis/apollo.js) | - | [apollo.md](integrations/apollo.md) |
 | zoominfo | Data Enrichment | ✓ | ✓ | [✓](clis/zoominfo.js) | - | [zoominfo.md](integrations/zoominfo.md) |
@@ -141,7 +117,7 @@ Anyone — including tool makers and partners — may contribute content that na
 | g2 | Reviews | ✓ | - | [✓](clis/g2.js) | - | [g2.md](integrations/g2.md) |
 | onesignal | Push | ✓ | - | [✓](clis/onesignal.js) | ✓ | [onesignal.md](integrations/onesignal.md) |
 | demio | Webinar | ✓ | - | [✓](clis/demio.js) | - | [demio.md](integrations/demio.md) |
-| ◆ livestorm | Webinar | ✓ | ✓ | [✓](clis/livestorm.js) | - | [livestorm.md](integrations/livestorm.md) |
+| livestorm | Webinar | ✓ | ✓ | [✓](clis/livestorm.js) | - | [livestorm.md](integrations/livestorm.md) |
 | shopify | Commerce | ✓ | - | ✓ | ✓ | [shopify.md](integrations/shopify.md) |
 | wordpress | CMS | ✓ | - | ✓ | ✓ | [wordpress.md](integrations/wordpress.md) |
 | webflow | CMS | ✓ | ✓ | ✓ | ✓ | [webflow.md](integrations/webflow.md) |
@@ -411,7 +387,7 @@ Programmatic page extraction for **individual public business sites** — not fo
 
 ### Reviews
 
-Review management and social proof platforms. For honest invitation programs, response triage, and permissioned testimonial reuse, use the referrals skill's [review programs reference](https://github.com/coreyhaines31/marketingskills/blob/main/skills/referrals/references/review-programs.md). Platform incentive and collection rules differ; consult its conditional policy reference before a campaign.
+Review management and social proof platforms. For honest invitation programs, response triage, and permissioned testimonial reuse, use the referrals skill's [review programs reference](https://github.com/rev-construct/marketingskills/blob/main/skills/referrals/references/review-programs.md). Platform incentive and collection rules differ; consult its conditional policy reference before a campaign.
 
 | Tool | Best For | Notes |
 |------|----------|-------|
@@ -483,6 +459,16 @@ Traffic analytics, competitor benchmarking, and market research.
 **Agent recommendation**: Similarweb for competitor traffic analysis and market benchmarking.
 
 **Social and ad data**: ScrapeCreators and Apify social actors both cover what a competitor publishes and advertises; the reverse-engineer-marketing skill works with either.
+
+### Listening / Monitoring
+
+Brand, competitor, and keyword mention monitoring across the web and communities.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **[mentiondrop](integrations/mentiondrop.md)** | Brand and competitor mention monitoring across the web and Reddit, with AI-summarized alerts | HTTP API (`/api/v1`, OpenAPI spec), hosted MCP; alerts via email, Slack, webhook |
+
+**Agent note**: The social skill's listening reference has DIY recipes (Reddit, Hacker News, Bluesky, RSS) that remain the default. MentionDrop is a packaged option for continuous monitoring and alerts; choose on coverage and fit.
 
 ### Audience Research
 
@@ -640,6 +626,7 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **introw** - Partner relationship management
 - **omnia** - AI visibility, competitor mentions, and citation data (OAuth)
 - **cloro** - AI answers with cited sources, and Google results with the AI Overview
+- **mentiondrop** - Brand and competitor mention monitoring with alerts
 - **exa** - AI-powered web search for LLMs and agents
 - **apollo** - B2B prospecting, enrichment, and sequences
 - **hubspot** - CRM read and write
@@ -676,7 +663,7 @@ Use Composio when you need MCP access to OAuth-heavy tools. Prefer native MCP se
 
 ### AIsa Data Access
 
-[◆ AIsa](integrations/aisa.md) offers access to supported SEO, search, social, and company-data providers through one account. Check operation coverage, account access, and pricing before choosing it alongside direct provider connections or manual exports. Its data access serves a different need from connecting existing SaaS accounts through Composio.
+[AIsa](integrations/aisa.md) offers access to supported SEO, search, social, and company-data providers through one account. Check operation coverage, account access, and pricing before choosing it alongside direct provider connections or manual exports. Its data access serves a different need from connecting existing SaaS accounts through Composio.
 
 - **Quick start**: [tools/aisa/README.md](aisa/README.md)
 - **Coverage and alternatives**: [tools/aisa/coverage-map.md](aisa/coverage-map.md)

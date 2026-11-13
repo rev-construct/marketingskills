@@ -1,4 +1,5 @@
 /*! Cal.com conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: meeting booked. Pushes dataLayer event: calcom_booking_successful
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

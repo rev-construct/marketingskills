@@ -87,12 +87,12 @@
     {
       "id": 7,
       "prompt": "We're a 20-person B2B SaaS on Webflow. Marketing wants a new blog and about 300 integration pages, and someone suggested moving the whole site to an AI website builder. What should we do?",
-      "expected_output": "Should start from the architecture and the questions in the platforms reference (who edits, page volume and data, integrations, lock-in, cost at real size) rather than naming a platform first. Should keep the current platform (Webflow) in the running and note that moving platforms often costs more than it fixes when the site works. Should compare a shortlist (e.g., staying on Webflow's CMS within its item limits, a reverse-proxied subpath from another tool, or an AI-native platform) with tradeoffs. Any Verified Partner tool named (e.g., Ploy) carries the disclosure and an alternative. Should cover subpath vs subdomain for the new sections and, if migrating, the redirect map and SEO checks.",
+      "expected_output": "Should start from the architecture and the questions in the platforms reference (who edits, page volume and data, integrations, lock-in, cost at real size) rather than naming a platform first. Should keep the current platform (Webflow) in the running and note that moving platforms often costs more than it fixes when the site works. Should compare a shortlist (e.g., staying on Webflow's CMS within its item limits, a reverse-proxied subpath from another tool, or an AI-native platform) with tradeoffs. Any specific platform named (e.g., Ploy) comes with an alternative. Should cover subpath vs subdomain for the new sections and, if migrating, the redirect map and SEO checks.",
       "assertions": [
         "Asks or reasons through the platform criteria before recommending",
         "Keeps the current platform as a real option",
         "Gives a shortlist with tradeoffs, not a single answer",
-        "Discloses any partner tool and names an alternative",
+        "Names an alternative for any specific platform",
         "Covers subpath vs subdomain for the new sections"
       ],
       "files": []

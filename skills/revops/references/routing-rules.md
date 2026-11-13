@@ -159,13 +159,14 @@ When multiple contacts from the same account engage:
 
 ### Response Time Impact on Conversion
 
-| Response Time | Relative Qualification Rate | Notes |
-|---------------|---------------------------|-------|
-| Under 5 minutes | **21x** more likely to qualify | Gold standard |
-| 5-10 minutes | 10x more likely | Still strong |
-| 10-30 minutes | 4x more likely | Acceptable for most |
-| 30 min - 1 hour | 2x more likely | Below best practice |
-| 1-24 hours | Baseline | Industry average |
+The most-cited data point is the Lead Response Management Study (Dr. James Oldroyd with InsideSales.com, 2007): leads contacted within 5 minutes were about **21× more likely to qualify** than leads first contacted after 30 minutes. The study is old and its exact ratios don't transfer, but later data points the same way: faster first contact means more qualified conversations.
+
+| Response time | Read it as | Notes |
+|---------------|-----------|-------|
+| Under 5 minutes | Best | The target for inbound demo and pricing requests |
+| 5-30 minutes | Good | Qualification odds fall quickly as minutes pass |
+| 30 min - 1 hour | Below best practice | The buyer has often moved on or contacted a competitor |
+| 1-24 hours | Common | Where many teams sit; the gap to the best teams is large |
 | 24+ hours | 60% lower than baseline | Lead is effectively cold |
 
 Source: Lead Connect, InsideSales.com

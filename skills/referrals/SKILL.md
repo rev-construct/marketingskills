@@ -2,7 +2,7 @@
 name: referrals
 description: "When the user wants referral and affiliate programs or word of mouth, or asks what to reward, how much to pay, or which loop to start with: refer-a-friend incentives, commissions and payouts, partner programs, 'made with' badges, review campaigns. For launch virality, see launch. For creator deals, see influencer-marketing."
 metadata:
-  version: 2.2.4
+  version: 2.2.6
 ---
 
 # Referral & Affiliate Programs
@@ -68,7 +68,7 @@ If the product is on the natural end, consider **product-embedded viral mechanis
 
 ### Affiliate Programs
 
-For partner recruitment/activation, cohort economics, executable terms, reconciliation, and measured incremental growth, load [the operating playbook](references/affiliate-operations.md). This expands the existing affiliate branch instead of creating an overlapping skill.
+For partner recruitment/activation, cohort economics, executable terms, reconciliation, and measured incremental growth, load [the operating playbook](references/affiliate-operations.md).
 
 **Best for:**
 - Reaching audiences you don't have access to
@@ -261,17 +261,17 @@ Reviews are the other half of customer advocacy. For review-request programs, re
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key tools for referral programs:
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md). Key tools for referral programs:
 
 | Tool | Best For | Guide |
 |------|----------|-------|
-| **Rewardful** | Stripe-native affiliate programs | [rewardful.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/rewardful.md) |
-| **Tolt** | SaaS affiliate programs | [tolt.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/tolt.md) |
-| **Mention Me** | Enterprise referral programs | [mention-me.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/mention-me.md) |
-| **Dub.co** | Link tracking and attribution | [dub-co.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/dub-co.md) |
-| **Stripe** | Payment processing (for commission tracking) | [stripe.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/stripe.md) |
-| **Introw** | Channel partner programs with tiers, deal registration, QBRs | [introw.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/introw.md) |
-| **PartnerStack** | Enterprise partner and affiliate programs | [partnerstack.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/partnerstack.md) |
+| **Rewardful** | Stripe-native affiliate programs | [rewardful.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/rewardful.md) |
+| **Tolt** | SaaS affiliate programs | [tolt.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/tolt.md) |
+| **Mention Me** | Enterprise referral programs | [mention-me.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/mention-me.md) |
+| **Dub.co** | Link tracking and attribution | [dub-co.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/dub-co.md) |
+| **Stripe** | Payment processing (for commission tracking) | [stripe.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/stripe.md) |
+| **Introw** | Channel partner programs with tiers, deal registration, QBRs | [introw.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/introw.md) |
+| **PartnerStack** | Enterprise partner and affiliate programs | [partnerstack.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/partnerstack.md) |
 
 ---
 

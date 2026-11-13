@@ -4,7 +4,7 @@ Cross-platform operating rules for B2B paid acquisition — where sales cycles r
 
 ## Contents
 
-- The Demand Lifecycle (5 stages, past the funnel)
+- Audiences by Lifecycle Stage (past the funnel)
 - Budget by stage
 - Leading vs. lagging signals
 - Unit economics: breakeven CPL and CPC
@@ -15,31 +15,35 @@ Cross-platform operating rules for B2B paid acquisition — where sales cycles r
 - Measurement maturity check
 - Channel selection
 
-## The Demand Lifecycle (5 stages, past the funnel)
+## Audiences by Lifecycle Stage (past the funnel)
 
-TOFU/MOFU/BOFU stops at conversion. B2B revenue doesn't — closed-lost deals, open pipeline, and existing customers are all addressable with ads. Plan across five stages:
+TOFU/MOFU/BOFU stops at the conversion. B2B revenue doesn't: open deals, lost deals, product users, and customers are all reachable with ads, because each is a list in your CRM or product data that syncs to LinkedIn, Meta, and Google. Plan paid media around those segments. The stage names follow the CRM lifecycle used in the **revops** skill, and the awareness column uses Schwartz's awareness levels, as in **ad-creative**.
 
-| Stage | Outcome | Buyer awareness | Typical offers | KPIs |
-|-------|---------|-----------------|----------------|------|
-| **Create** | Build affinity & trust | Unaware / Problem-aware | Educational content, POV | Cost per consumption, blended cost/opp |
-| **Capture** | Convert in-market buyers | Solution / Product-aware | Demos, trials | Pipe-to-spend, direct cost/opp |
-| **Accelerate** (sales-led) / **Activate** (product-led) | Close open deals faster / convert free users | Product / Offer-aware | Case studies, webinars, events | Pipeline velocity, paid signups |
-| **Revive** | Restart closed-lost | Offer-aware | Incentivized demos, guided trials | SQOs created, cost/SQO |
-| **Expand** | Grow existing accounts | Most aware | Referral programs, new-feature content | Expansion revenue, influenced SQOs |
+| Audience (CRM segment) | Job | Buyer awareness | Typical offers | KPIs |
+|---|---|---|---|---|
+| **Out-of-market** (target accounts, no open record) | Be remembered when the need arises | Unaware / Problem-aware | Educational content, a clear point of view | Reach and frequency in the target list, branded search lift |
+| **In-market** (high-intent visitors, leads, MQLs) | Turn existing demand into opportunities | Solution / Product-aware | Demos, trials, pricing and comparison pages | Cost per opportunity, pipeline per dollar |
+| **Open pipeline** (SQLs and open opportunities) | Help deals already in motion close | Product-aware | Case studies, proof for each stakeholder, events | Win rate and cycle length vs. a holdout |
+| **Product users** (free and trial accounts) | Activation: reach the first value moment, then pay | Product-aware | Guided setup, use-case content, upgrade offers | Activation rate, trial-to-paid |
+| **Closed-lost and recycled** | Re-engage when timing or circumstances change | Most aware | What's new since they looked, a fresh trial | Reopened opportunities |
+| **Customers** | Retention, expansion, and referral | Most aware | New features, adjacent use cases, referral asks | Expansion revenue, net revenue retention |
 
-**Build bottom-up for fastest ROI**: Expand → Revive → Accelerate/Activate → Capture → Create. The bottom stages are cheap, small-audience, and quick to pay back; Create is the biggest and slowest investment. Most teams build top-down and burn months waiting for ROI.
+**Why most B2B budgets need patience at the top:** most buyers aren't in the market at any given moment. Prof. John Dawes's 95:5 rule (Ehrenberg-Bass Institute, with LinkedIn's B2B Institute) estimates roughly 5% of business buyers are in market in a given quarter. He offers it as a mental model, so estimate your own share from how often buyers in your category actually switch or buy. Out-of-market spend is building memory for later, and it pays back over quarters, not weeks.
+
+**Start where the audience is warm and small.** Customers, open pipeline, closed-lost, and product users are lists you already own: cheap to reach, easy to measure, and quick to show results. Prove the system there, then widen to in-market and out-of-market reach, where audiences are larger, costs are higher, and payback is slower.
 
 ## Budget by stage
 
-| Stage | Budget size | Time to ROI | Difficulty |
-|-------|------------|-------------|------------|
-| Create | High | 90+ days | High (needs strong content + POV) |
-| Capture | Moderate | <45 days | High (expensive, competitive) |
-| Accelerate/Activate | Low | Tracks sales cycle | Low |
-| Revive | Low | <45 days | Low |
-| Expand | Low | <60 days | Medium (small audiences) |
+| Audience | Relative budget | Expect results in | Main constraint |
+|---|---|---|---|
+| Out-of-market | Largest | Quarters (memory, then branded demand) | Needs a distinct point of view and consistent presence |
+| In-market | Medium | Weeks | Competitive auctions, high cost per click |
+| Open pipeline | Small | In step with the sales cycle | Needs a clean CRM sync |
+| Product users | Small | Weeks | Needs product event data |
+| Closed-lost and recycled | Small | One to two months | Needs accurate loss reasons and dates |
+| Customers | Small | One to two months | Small audiences fatigue quickly |
 
-Weight by motion: product-led skews budget to Create + Capture; sales-led with a small TAM skews to Create + Accelerate. The stage with the most *pipeline* isn't automatically the stage that deserves the most *budget* — fund where pipeline share exceeds budget share and the audience is under-penetrated.
+Weight by motion: product-led teams put more into in-market and product users; sales-led teams with a small, known market put more into out-of-market reach and open pipeline. The audience producing the most *pipeline* doesn't automatically deserve the most *budget*. Fund where pipeline share exceeds budget share and the audience isn't yet saturated, and confirm with a holdout before scaling (see the **attribution** skill on incrementality tests).
 
 ## Leading vs. lagging signals
 
@@ -112,4 +116,4 @@ Before committing to a new channel, **run a ~$100 test campaign** to learn its r
 
 ---
 
-*Framework lineage: several operating rules in this file are adapted (re-expressed, restructured, and extended) from practitioner playbooks, notably Ivan Falco's ads-skills. Benchmarks and thresholds are practitioner-reported starting points — always recalibrate against your own account's first 30 days.*
+*Framework lineage: the leading vs. lagging signals, scaling quadrant, measurement maturity check, and channel selection sections are inspired by practitioner playbooks, including Ivan Falco's ads-skills. Benchmarks and thresholds are practitioner-reported starting points — always recalibrate against your own account's first 30 days.*

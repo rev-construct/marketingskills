@@ -352,7 +352,8 @@
       "id": "events-j2",
       "kind": "judgement",
       "expect": [
-        "events"
+        "events",
+        "webinar"
       ],
       "prompt": "We ran a live online workshop on festival sanitation for our rental company LooFleet: 220 registered, 71 attended, and nine asked about quotes. Would you judge it a success from attendance, or what would you look at before paying for another one? We spent $1,600 and want new rental contracts."
     },
@@ -900,6 +901,22 @@
       "kind": "none",
       "expect": [],
       "prompt": "Should I knit a scarf with wool or cotton for a friend who lives in a cold, rainy climate? I already own 300 grams of each, and she wants something warm that doesn't stretch out quickly."
+    },
+    {
+      "id": "webinar-j1",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Should our scheduling-software company host a live webinar or publish a recorded on-demand demo? We have one presenter, about 2,000 contacts, and want demos booked this quarter."
+    },
+    {
+      "id": "webinar-j2",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Our webinar got 260 registrations but only 38 attendees and two demo requests. Is it worth running the series again, or what would you change first?"
     }
   ]
 }

@@ -1,7 +1,5 @@
 # Omnia
 
-> **◆ Verified Partner integration.** Omnia sponsors Marketing Skills. This integration is disclosed and vetted for fit; it does **not** change what any skill recommends. It's listed here alongside the neutral options for the same job — use it when it's the right fit, not because it's a partner. See [Verified Partners](../REGISTRY.md#verified-partners).
-
 Answer engine optimization (AEO) platform combining AI visibility monitoring, prompt discovery, competitor benchmarking, and citation analysis with an AI agent for content optimization, publishing, and third-party outreach.
 
 ## When to Use

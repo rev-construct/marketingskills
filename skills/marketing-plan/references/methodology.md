@@ -1,5 +1,7 @@
 # Methodology — How a Marketing Plan Gets Made
 
+Contents: [Phase 1 — INIT (research + intake)](#phase-1--init-research--intake) · [Phase 2 — REVIEW (section-by-section drafting)](#phase-2--review-section-by-section-drafting) · [Phase 3 — FINALIZE (compile + verify + publish)](#phase-3--finalize-compile--verify--publish) · [Resuming a plan](#resuming-a-plan) · [Failure modes to watch for](#failure-modes-to-watch-for)
+
 The three-phase workflow that produces a comprehensive marketing plan. SKILL.md is the orchestration layer; this is the operational detail.
 
 ## Phase 1 — INIT (research + intake)

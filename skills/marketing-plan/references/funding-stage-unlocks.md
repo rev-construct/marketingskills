@@ -1,5 +1,7 @@
 # Funding-Stage Capability Unlocks
 
+Contents: [Why funding stage matters in a marketing plan](#why-funding-stage-matters-in-a-marketing-plan) · [Standard tiers](#standard-tiers) · [How to apply tier logic in a plan](#how-to-apply-tier-logic-in-a-plan) · [Adjustments by client category](#adjustments-by-client-category) · [Tier 1 budget detail (most common starting point)](#tier-1-budget-detail-most-common-starting-point) · [When to surface tier limits to the founder](#when-to-surface-tier-limits-to-the-founder) · [Tier-skip cases (worth flagging)](#tier-skip-cases-worth-flagging)
+
 Every marketing plan must include explicit "what changes when funding closes / when budget unlocks" reasoning. This makes the plan investor-friendly and operationally honest.
 
 This doc defines the standard tiers. Use them as anchors, adjust for client category and unit economics.

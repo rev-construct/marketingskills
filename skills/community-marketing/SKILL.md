@@ -1,8 +1,8 @@
 ---
 name: community-marketing
-description: "When the user wants to build or grow an online community, or asks whether a community is worth it, where to host it, or why members stay quiet: Discord, Slack, forums, participation, community-led growth, advocates. For referral programs, see referrals. For creator partnerships, see influencer-marketing."
+description: "When the user wants to build or grow an online community, or asks whether a community is worth it, where to host it, or why members stay quiet: Discord, Slack, forums, advocates, how to post on Reddit without getting banned. For referral programs, see referrals. For creator partnerships, see influencer-marketing."
 metadata:
-  version: 2.0.5
+  version: 2.1.0
 ---
 
 # Community Marketing
@@ -17,7 +17,7 @@ If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or 
 Understand the situation (ask if not provided):
 
 1. **What is the product or brand?** — What problem does it solve, who uses it
-2. **What community platform(s) are in play?** — Discord, Slack, Circle, Reddit, Facebook Groups, forum, etc.
+2. **What community platform(s) are in play?** — Discord, Slack, Circle, Reddit, Facebook Groups, forum, etc. (for participating in subreddits you don't own, see **`references/reddit.md`**)
 3. **What stage is the community at?** — Pre-launch, 0–100 members, 100–1k, scaling, or established
 4. **What is the primary community goal?** — Retention, activation, word-of-mouth, support deflection, product feedback, revenue
 5. **Who is the ideal community member?** — Role, motivation, what they hope to get from joining
@@ -117,9 +117,11 @@ Route here when the user asks *what kind* of community to build, which model fit
 | Discord | Developer, gaming, creator communities; real-time chat | High noise, hard to search, onboarding friction |
 | Slack | B2B / professional communities; familiar to SaaS buyers | Free tier limits history; feels like work |
 | Circle | Creator or course-based communities; clean UX | Less organic discovery; requires driving traffic |
-| Reddit | High-volume public communities; SEO benefit | You don't own it; moderation is hard |
+| Reddit | High-volume public communities; SEO and AI-answer influence | You don't own it; self-promotion gets removed; see `references/reddit.md` |
 | Facebook Groups | Consumer brands; older demographics | Declining organic reach; algorithm dependent |
 | Forum (Discourse) | Long-form technical communities; SEO-rich | Slower velocity; higher effort to post |
+
+For taking part in subreddits you don't own (finding threads, avoiding bans, account ramp, AI-answer influence, Reddit ads), see **`references/reddit.md`**.
 
 ---
 

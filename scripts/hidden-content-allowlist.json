@@ -1,0 +1,17 @@
+[
+  {
+    "path": "tools/integrations/nitrosend.md",
+    "rule": "exfil-send",
+    "reason": "example prompt (password reset email), not an exfiltration instruction"
+  },
+  {
+    "path": "tools/integrations/ploy.md",
+    "rule": "curl-pipe-shell",
+    "reason": "vendor-documented installer; reviewed. Prefer pinning or inspecting the script before running"
+  },
+  {
+    "path": "tools/aisa/evals/evals.json",
+    "rule": "injection-phrase",
+    "reason": "eval fixture that tests injection handling; tools/ is not installed as a skill"
+  }
+]

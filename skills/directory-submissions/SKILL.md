@@ -2,7 +2,7 @@
 name: directory-submissions
 description: "When the user wants to list a product in startup, SaaS, AI, MCP, and review directories, or asks which directories are worth it or whether listings are working: Product Hunt, G2, Capterra, AlternativeTo, MCP registries, awesome lists, and a submission tracker. For the broader launch, see launch. For other link building, see link-building."
 metadata:
-  version: 2.2.0
+  version: 2.2.1
 ---
 
 # Directory Submissions
@@ -22,7 +22,7 @@ Directory submissions are the **foundation layer** of distribution — never the
 
 1. **Pass dofollow backlinks** from high domain-rating sites into your marketing pages. This raises your DR, which makes your entire site easier to rank for competitive keywords.
 2. **Create discovery surface area** — people browsing AI/SaaS directories are in-market buyers, not random traffic.
-3. **Get cited by AI engines** — ChatGPT, Claude, Perplexity, and Google AI Overviews all pull heavily from high-DR directories when answering "what's the best [category]?" queries. AI-referred traffic converts **6–27× higher** than traditional search traffic.
+3. **Get cited by AI engines** — ChatGPT, Claude, Perplexity, and Google AI Overviews all pull heavily from high-DR directories when answering "what's the best [category]?" queries. Several published case studies report that AI-referred visitors convert better than search visitors, though the size of the gap varies widely by site; measure your own.
 
 But directories alone will not generate meaningful leads. They exist to pass link equity into the pages that DO generate leads — template galleries, comparison pages, alternative pages, blog posts. **Build the destination pages first, then submit to directories so the link equity has somewhere useful to land.**
 
@@ -34,18 +34,18 @@ The full directory catalog lives in `references/directory-list.md`. The position
 
 ### Rule 1: Foundation before submission
 Never submit to a directory until the landing page it will link to is live, indexed, and has:
-- A single `<h1>` and sequential heading hierarchy — pages with clean hierarchy have **2.8× higher AI citation rates**, and 87% of ChatGPT-cited pages use a single H1.
+- A single `<h1>` and a sequential heading hierarchy, so people, search engines, and AI tools can tell what each section covers.
 - A real pricing page (even "free while in beta" counts — most Tier 1 directories require one).
 - Privacy policy + terms.
 - Logo assets in PNG + SVG + square 1024×1024 + favicon.
 - 5–8 real product screenshots at 1920×1080 (not marketing mockups).
-- A 60–90 second demo video — products with video on Product Hunt get **2.7× more upvotes**.
-- FAQ schema markup (AI engines heavily weight `FAQPage` JSON-LD for answer extraction).
+- A 60–90 second demo video. Product Hunt and most directories ask for one, and it shows the product faster than screenshots.
+- A visible FAQ section that answers real buyer questions in plain sentences. `FAQPage` markup is optional: Google retired FAQ rich results in May 2026, so the visible answers are what matter (see **schema**).
 - Structured data: `Organization`, `Product`, `SoftwareApplication`.
 
 ### Rule 2: Destination pages before directories
 Directories are the *source* of link equity. You need *destinations* that can convert the resulting traffic. Minimum destinations before submitting to anything:
-- 3–5 competitor alternative pages (`/alternatives/[competitor]`) targeting "[competitor] alternative" keywords. Comparison/alternative pages convert at **5–15%** vs 0.5–2% for generic content.
+- 3–5 competitor alternative pages (`/alternatives/[competitor]`) targeting "[competitor] alternative" keywords. Comparison and alternative pages usually convert far better than general content, because their visitors are already choosing between tools.
 - 3–5 use-case pages (`/for/[audience]` or `/use-cases/[use-case]`).
 - Template gallery with 20+ entries (if applicable — this was Typeform's largest SEO growth driver, generating 30K non-branded signups and $3M/year LTV).
 - 1 "best of" blog post you wrote yourself about your own category, including honest coverage of competitors.
@@ -76,7 +76,7 @@ Ask the user these 9 questions. If any are "no", they're not ready — help them
 3. Are privacy policy + terms live?
 4. Logo assets in PNG + SVG + square + favicon?
 5. 5–8 real screenshots + 60–90s demo video?
-6. Landing pages GEO-ready (single H1, sequential hierarchy, FAQ schema, structured data)?
+6. Landing pages GEO-ready (single H1, sequential headings, a visible FAQ section, structured data)?
 7. At least 3 alternative pages and 3 use-case pages live and indexed?
 8. Template gallery or lead magnet asset (if applicable to category)?
 9. At least 20 beta/early users who could leave a review on G2?
@@ -206,7 +206,7 @@ Product Hunt is the single highest-leverage submission but also the most easily 
 - **Post the first comment yourself** with the story: why you built it, what's different, what to try first.
 - **Reply to every comment** in under 30 minutes. PH measures maker responsiveness.
 - **Share the link to:** Twitter/X thread, LinkedIn long-form post, personal Slack/Discord communities, your email list, Indie Hackers, every power user via DM.
-- **Never ask for upvotes.** Ask for **feedback**. "Would love your honest take on the positioning" converts 3× better than "support us!" and doesn't trigger the algorithm's anti-manipulation filters.
+- **Never ask for upvotes.** Ask for **feedback**. "Would love your honest take on the positioning" starts more real conversations than "support us!" and doesn't trigger the algorithm's anti-manipulation filters.
 - **Don't message strangers.** The community flags this and moderators will hide your post.
 
 ### Post-launch
@@ -254,7 +254,7 @@ Directories are useless if the backlinks land on a generic homepage. Build these
 
 ### 1. Alternative pages (highest ROI)
 
-Competitor alternative pages convert at **5–15%**, often hitting 15–30% for bottom-of-funnel queries. One page per top competitor:
+Competitor alternative pages are usually among a site's highest-converting pages, especially for bottom-of-funnel queries. One page per top competitor:
 
 - `/alternatives/[competitor-1]`
 - `/alternatives/[competitor-2]`
@@ -291,13 +291,13 @@ Every integration = one landing page at `/integrations/[partner]`. Follows the Z
 
 ## GEO (Generative Engine Optimization)
 
-In 2026, 30–50% of "research a tool" queries happen inside ChatGPT, Claude, Perplexity, or Google AI Overviews without ever touching a traditional search page. Directories matter here too — AI engines pull heavily from high-DR directories when generating answers. But the *destination pages* also need to be GEO-optimized.
+A growing share of "research a tool" questions are now answered inside ChatGPT, Claude, Perplexity, or Google AI Overviews, often without a visit to a traditional search page. Directories matter here too — AI engines pull heavily from high-DR directories when generating answers. But the *destination pages* also need to be GEO-optimized.
 
 ### Tactics that get pages cited
 
-1. **One H1 per page, sequential heading hierarchy.** 2.8× higher citation rate. 87% of cited pages use a single H1.
+1. **One H1 per page, sequential heading hierarchy.** Clear structure makes each section easy to extract and quote.
 2. **Dense, factual content with citable stats.** AI engines prefer specific numbers ("3× faster than X") over vague claims.
-3. **FAQ schema on every landing page.** AI engines heavily weight `FAQPage` JSON-LD for answer extraction.
+3. **A visible FAQ on every landing page.** Short, direct answers to the questions buyers ask are easy for AI answers to lift. Markup is optional; the visible text does the work (see **schema** and **ai-seo**).
 4. **Comparison tables.** Extractable, structured — exactly what an AI answer needs.
 5. **Explicit "what it is" paragraph in the first 100 words.**
 6. **Get cited on Reddit and Hacker News.** Claude and Perplexity index these heavily. Genuine mentions on r/SaaS and HN count as training fuel.

@@ -1,4 +1,5 @@
 /*! Tally conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: form submission. Pushes dataLayer event: tally_form_submitted
  *  From the conversion-tracking skill in Marketing Skills */
 /* Tally Submission Listener. Reads only the envelope of Tally's

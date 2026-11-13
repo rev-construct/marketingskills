@@ -1,5 +1,7 @@
 # Short-Form Video: Hooks, Scripts & Strategy
 
+Contents: [Video Hook Library](#video-hook-library) · [Scripting Template](#scripting-template) · [Additional Video Structures](#additional-video-structures) · [Visual Patterns](#visual-patterns) · [Audio Strategy](#audio-strategy) · [Posting Strategy](#posting-strategy) · [Analytics & Iteration](#analytics--iteration)
+
 Detailed reference for creating short-form video content on TikTok, Instagram Reels, and YouTube Shorts.
 
 ---

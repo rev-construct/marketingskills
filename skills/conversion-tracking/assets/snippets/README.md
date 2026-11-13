@@ -109,4 +109,4 @@ The same detectors also ship, under different names, in the ConversionKit toolki
 
 ---
 
-*The detection snippets and GTM recipes in this skill are adapted from the open-source [ConversionKit conversion-tracking toolkit](https://github.com/ConversionKit/conversion-tracking) (MIT), maintained by the team behind Converly ◆, a Verified Partner of this repository. That team contributed them here under the same MIT license, with neutral naming.*
+*The detection snippets and GTM recipes in this skill are adapted from the open-source [ConversionKit conversion-tracking toolkit](https://github.com/ConversionKit/conversion-tracking) (MIT), maintained by the team behind Converly. That team contributed them here under the same MIT license, with neutral naming. Portions Copyright (c) 2026 Converly (converly.io); the MIT permission notice is in LICENSE.*

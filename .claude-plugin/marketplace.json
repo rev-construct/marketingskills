@@ -1,18 +1,18 @@
 {
-  "name": "marketingskills",
+  "name": "revconstruct",
   "owner": {
-    "name": "Corey Haines",
-    "url": "https://corey.co"
+    "name": "REVConstruct",
+    "url": "https://github.com/rev-construct/marketingskills"
   },
   "metadata": {
     "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
-    "version": "2.14.12",
-    "repository": "https://github.com/coreyhaines31/marketingskills"
+    "version": "2.15.1",
+    "repository": "https://github.com/rev-construct/marketingskills"
   },
   "plugins": [
     {
-      "name": "marketing-skills",
-      "description": "53 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
+      "name": "revconstruct-marketingskills",
+      "description": "54 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
       "source": "./"
     }
   ]

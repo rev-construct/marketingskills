@@ -527,7 +527,8 @@
       "id": "events-3",
       "kind": "near-miss",
       "expect": [
-        "events"
+        "events",
+        "webinar"
       ],
       "prompt": "Plan a monthly webinar series: topics, promotion, and what to do with registrants who don't show."
     },
@@ -1346,6 +1347,31 @@
       "kind": "none",
       "expect": [],
       "prompt": "Refactor this Python function to use a dictionary instead of a long if/elif chain."
+    },
+    {
+      "id": "webinar-1",
+      "kind": "direct",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "We're running our first webinar next month on onboarding automation. What should the 4-week promotion timeline look like?"
+    },
+    {
+      "id": "webinar-2",
+      "kind": "indirect",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Only 40% of our webinar registrants show up live and almost none book a demo afterward. How do we fix the show rate and follow-up?"
+    },
+    {
+      "id": "webinar-3",
+      "kind": "near-miss",
+      "expect": [
+        "co-marketing",
+        "webinar"
+      ],
+      "prompt": "We want to co-host a webinar with a partner whose audience overlaps ours. How should we split the work, the list, and the follow-up?"
     }
   ]
 }

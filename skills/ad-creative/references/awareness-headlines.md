@@ -2,7 +2,7 @@
 
 Use for text-led static concepts, especially B2B feed ads. These are compact treatments within the existing angle and template workflow; they do not replace audience research, the hook system, or platform specs.
 
-Concept lineage: the maintainer's #404 follow-up to the ivangfalco/ads-skills remix. Re-expressed independently and reconciled with this repo's grounding and AI-tells rules; no source copy or creative assets imported.
+Concept lineage: inspired by Ivan Falco's ads-skills, written independently and reconciled with this repo's grounding and AI-tells rules; no source text or creative assets are included.
 
 ## Choose the Reader's Next Step
 

@@ -11,6 +11,7 @@ Ready-to-use templates for each section of competitor comparison pages.
 - Who It's For Section
 - Migration Section
 - Social Proof Section
+- Honest Vendor Listicle Checklist
 - Comparison Table Best Practices (beyond checkmarks, organize by category, include ratings where useful)
 
 ## TL;DR Summary
@@ -187,6 +188,18 @@ Focus on switchers:
 - [Company] saw [specific result]
 - [Company] reduced [metric] by [amount]
 ```
+
+---
+
+## Honest Vendor Listicle Checklist
+
+For "best [category]" or "alternatives to [competitor]" pages where you list your own product. Readers and AI engines both reward pages that read as fair sources (see the **ai-seo** skill's `references/citations-vs-recommendations.md`).
+
+- [ ] **Disclose** at the top that you publish one of the products listed
+- [ ] **Include real competitors**, including the category leader, with their strengths stated accurately
+- [ ] **Say who should pick someone else**, for each product including yours
+- [ ] **Show real pricing**, with the date checked and a link to each pricing page
+- [ ] **State the methodology**: criteria, how you tested or sourced each claim, and when you last updated the page
 
 ---
 

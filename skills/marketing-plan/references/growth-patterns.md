@@ -1,5 +1,7 @@
 # Growth Patterns — The Real Shape of SaaS Growth
 
+Contents: [The long, slow SaaS ramp of death](#the-long-slow-saas-ramp-of-death) · [Two real growth patterns (and the exponential myth)](#two-real-growth-patterns-and-the-exponential-myth) · [Layering growth curves — Channel × Product × Market](#layering-growth-curves--channel--product--market) · [The 70/20/10 resource-allocation rule](#the-702010-resource-allocation-rule) · [Weekly tracking cadence and plateau alerts](#weekly-tracking-cadence-and-plateau-alerts) · [The 3-3-2-2-2 VC growth path](#the-3-3-2-2-2-vc-growth-path) · [How this informs the plan](#how-this-informs-the-plan) · [Operational guidance for the planner](#operational-guidance-for-the-planner)
+
 The 12-month outlook in every plan (Section 10) describes a trajectory. This doc names the shape of that trajectory honestly — what real SaaS growth looks like, when to expect plateaus, and how to plan for the next leg of growth before the current one stalls.
 
 Excerpted and adapted from *Founding Marketing* by Corey Haines.

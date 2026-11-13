@@ -2,7 +2,7 @@
 name: revops
 description: "When the user wants to design revenue operations, or asks when a lead is ready for sales or why sales and marketing disagree on lead quality: lifecycle stages, MQL and SQL, scoring, routing, handoff, pipeline stages, CRM automation. For outbound copy, see cold-email. For email flows, see emails."
 metadata:
-  version: 2.2.4
+  version: 2.2.5
 ---
 
 # RevOps
@@ -141,9 +141,8 @@ Define response times and document them:
 
 ### Speed-to-Lead
 
-Response time is the single biggest factor in lead conversion:
-- Contact within **5 minutes** = 21x more likely to qualify (Lead Connect)
-- After **30 minutes**, conversion drops by 10x
+Response time is one of the biggest factors in lead conversion:
+- Contact within **5 minutes**: in the often-cited Lead Response Management Study (Oldroyd with InsideSales.com, 2007), these leads were about 21× more likely to qualify than leads first reached after 30 minutes. The data is old; the direction still holds
 - After **24 hours**, the lead is effectively cold
 
 Build routing rules that prioritize speed. Alert reps immediately. Escalate if SLA is missed.
@@ -322,20 +321,20 @@ Format each as a standalone document the user can implement directly. Include pl
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key RevOps tools:
+For implementation, see the [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md). Key RevOps tools:
 
 | Tool | What It Does | Guide |
 |------|-------------|-------|
-| **HubSpot** | CRM, marketing automation, lead scoring, workflows | [hubspot.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/hubspot.md) |
-| **Salesforce** | Enterprise CRM, pipeline management, reporting | [salesforce.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/salesforce.md) |
-| **Calendly** | Meeting scheduling, round-robin routing | [calendly.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/calendly.md) |
-| **SavvyCal** | Scheduling with priority-based availability | [savvycal.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/savvycal.md) |
-| **Attio** | CRM with a hosted MCP for agents | [attio.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/attio.md) |
-| **Apollo** | Contact data, enrichment, and outbound sequences | [apollo.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/apollo.md) |
-| **ActiveCampaign** | Marketing automation for SMBs, lead scoring | [activecampaign.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/activecampaign.md) |
-| **Zapier** | Cross-tool automation and workflow glue | [zapier.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/zapier.md) |
-| **Introw** | Partner-sourced pipeline, commissions, deal registration, QBRs | [introw.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/introw.md) |
-| **Crossbeam** | Partner account overlaps and co-sell identification | [crossbeam.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/crossbeam.md) |
+| **HubSpot** | CRM, marketing automation, lead scoring, workflows | [hubspot.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/hubspot.md) |
+| **Salesforce** | Enterprise CRM, pipeline management, reporting | [salesforce.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/salesforce.md) |
+| **Calendly** | Meeting scheduling, round-robin routing | [calendly.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/calendly.md) |
+| **SavvyCal** | Scheduling with priority-based availability | [savvycal.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/savvycal.md) |
+| **Attio** | CRM with a hosted MCP for agents | [attio.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/attio.md) |
+| **Apollo** | Contact data, enrichment, and outbound sequences | [apollo.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/apollo.md) |
+| **ActiveCampaign** | Marketing automation for SMBs, lead scoring | [activecampaign.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/activecampaign.md) |
+| **Zapier** | Cross-tool automation and workflow glue | [zapier.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/zapier.md) |
+| **Introw** | Partner-sourced pipeline, commissions, deal registration, QBRs | [introw.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/introw.md) |
+| **Crossbeam** | Partner account overlaps and co-sell identification | [crossbeam.md](https://github.com/rev-construct/marketingskills/blob/main/tools/integrations/crossbeam.md) |
 
 ---
 

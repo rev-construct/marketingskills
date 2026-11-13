@@ -20,11 +20,20 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
+const FLAGS = ['plugin-dir', 'extra-plugin-dir', 'model', 'concurrency', 'repeat', 'only', 'kind', 'prompts', 'label', 'out'];
+export const USAGE = `Usage: node scripts/trigger-eval.mjs [--prompts file] [--label name] [--plugin-dir dir]
+  [--extra-plugin-dir dir ...] [--model sonnet] [--concurrency 4] [--repeat 1] [--only id,id] [--kind direct] [--out file]
+Each prompt is one paid request on your logged-in Claude Code (about $0.05 on Sonnet).`;
+
 export function parseArgs(argv) {
   const opts = { 'plugin-dir': ROOT, 'extra-plugin-dir': [], model: 'sonnet', concurrency: 4, repeat: 1, label: 'run' };
   for (let i = 0; i < argv.length; i++) {
+    if (argv[i] === '--help' || argv[i] === '-h') { opts.help = true; continue; }
     const key = argv[i].replace(/^--/, '');
     const val = argv[i + 1];
+    // Fail before any paid request: an unknown or valueless flag must not start a run.
+    if (!argv[i].startsWith('--') || !FLAGS.includes(key)) throw new Error(`Unknown option: ${argv[i]}\n${USAGE}`);
+    if (val === undefined || val.startsWith('--')) throw new Error(`Missing value for --${key}\n${USAGE}`);
     if (key === 'extra-plugin-dir') opts[key].push(val);
     else opts[key] = val;
     i++;
@@ -61,7 +70,7 @@ export function skillsInvoked(streamText) {
 
 // Scores the first skill invoked. A skill from outside this pack (built in or another plugin) is "other-skill".
 // A run that failed (no result event, timeout, auth error) is "error" and left out of the routing metrics.
-export function score(item, invoked, packName = 'marketing-skills', failed = false) {
+export function score(item, invoked, packName = 'revconstruct-marketingskills', failed = false) {
   const first = invoked[0] || null;
   const pick = first && first.startsWith(`${packName}:`) ? first.slice(packName.length + 1) : null;
   let outcome;
@@ -170,7 +179,9 @@ function runOne(item, opts, cwd) {
 }
 
 async function main() {
-  const opts = parseArgs(process.argv.slice(2));
+  let opts;
+  try { opts = parseArgs(process.argv.slice(2)); } catch (e) { console.error(e.message); process.exit(2); }
+  if (opts.help) { console.log(USAGE); return; }
   const all = JSON.parse(readFileSync(path.resolve(ROOT, opts.prompts || 'evals/triggers/prompts.json'), 'utf8')).prompts;
   let items = all;
   if (opts.only) items = items.filter(p => opts.only.split(',').includes(p.id));
@@ -186,7 +197,7 @@ async function main() {
     while (next < jobs.length) {
       const { item, run } = jobs[next++];
       const res = await runOne(item, opts, cwd);
-      const s = score(item, res.skills, 'marketing-skills', Boolean(res.error));
+      const s = score(item, res.skills, 'revconstruct-marketingskills', Boolean(res.error));
       cost += res.cost;
       rows.push({ id: item.id, run, kind: item.kind, expect: item.expect, invoked: res.skills, ...s, error: res.error, ...(s.outcome === 'pass' ? {} : { reply: res.text }) });
       process.stderr.write(`[${rows.length}/${jobs.length}] ${s.outcome.padEnd(13)} ${item.id}${s.pick && s.outcome !== 'pass' ? ` -> ${s.pick}` : ''}${res.error ? ` (${res.error})` : ''}\n`);

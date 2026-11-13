@@ -7,6 +7,9 @@ on:
       - "validate-skills.sh"
       - "tests/**"
       - "tools/clis/**"
+      - "scripts/**"
+      - "evals/triggers/**"
+      - "skills/*/SKILL.md"
       - "skills/ad-creative/assets/creative-review-template.html"
       - ".github/workflows/regression-tests.yml"
   pull_request:
@@ -15,8 +18,14 @@ on:
       - "validate-skills.sh"
       - "tests/**"
       - "tools/clis/**"
+      - "scripts/**"
+      - "evals/triggers/**"
+      - "skills/*/SKILL.md"
       - "skills/ad-creative/assets/creative-review-template.html"
       - ".github/workflows/regression-tests.yml"
+
+permissions:
+  contents: read
 
 concurrency:
   group: regression-tests-${{ github.ref }}
@@ -34,17 +43,21 @@ jobs:
 
   cli-contract-tests:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20, 22, 24]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Node
+      - name: Set up Node ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
 
       - name: Check CLI syntax
         run: for f in tools/clis/*.js; do node --check "$f"; done
 
       - name: Run CLI and asset contract tests
-        run: node --test tests/clis/*.test.cjs tests/assets/*.test.cjs
+        run: node --test tests/clis/*.test.cjs tests/assets/*.test.cjs tests/*.test.mjs

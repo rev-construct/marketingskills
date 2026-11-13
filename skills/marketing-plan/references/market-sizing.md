@@ -1,5 +1,7 @@
 # Market Sizing
 
+Contents: [Define the market first](#define-the-market-first) · [TAM, SAM, SOM in plain terms](#tam-sam-som-in-plain-terms) · [The four sizing methods](#the-four-sizing-methods) · [Evidence and confidence](#evidence-and-confidence) · [Market attractiveness scorecard](#market-attractiveness-scorecard) · [Where this feeds the plan](#where-this-feeds-the-plan) · [Common mistakes](#common-mistakes)
+
 Adapted from a contribution by @imMamdouhaboammar (PR #418).
 
 Use this reference when the market-quality gate raises the question "is this market big enough to plan around?" or when the user asks directly how big a market is. The goal is a defensible range that supports a decision (enter, narrow, validate, or avoid). A precise-looking number with no visible math does more harm than an honest range.

@@ -21,6 +21,8 @@ Almost every public cold email benchmark comes from a vendor that sells sending,
 
 ## Performance Levers (ranked by impact)
 
+The figures below come from vendor datasets that each measure differently. Read them as the direction and rough size of each lever, not as targets.
+
 1. **Hook type** — Timeline hooks outperform problem hooks by 3.4x in meetings
 2. **Personalization depth** — Up to 250% more replies
 3. **Brevity** — 25–75 words optimal, 83% more replies under 75 words

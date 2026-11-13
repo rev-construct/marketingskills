@@ -1,5 +1,7 @@
 # Idea Cross-Reference — 139 Marketing Ideas Mapped to AARRR
 
+Contents: [How to read this doc](#how-to-read-this-doc) · [AARRR assignment for all 139 ideas](#aarrr-assignment-for-all-139-ideas) · [How to apply this to a specific client](#how-to-apply-this-to-a-specific-client) · [How to maintain this doc](#how-to-maintain-this-doc) · [Sources](#sources)
+
 The `marketing-ideas` skill catalogs 139 proven marketing tactics. This doc is the source-of-truth mapping: every idea assigned to a primary AARRR stage, with notes for when it's typically active and what category constraints apply.
 
 The plan's Section 12 ("Tactical idea bank") uses this mapping as the base, then layers client-specific filters: brand voice rules might skip some ideas; funding stage might shift Q-status; client category might rule out others.
@@ -44,7 +46,7 @@ These ideas primarily serve top-of-funnel awareness, traffic, and lead generatio
 | 24 | Pre-targeting Ads | Paid Ads | Post-budget |
 | 25 | Facebook Ads | Paid Ads | Post-budget |
 | 26 | Instagram Ads | Paid Ads | Post-budget |
-| 27 | Twitter Ads | Paid Ads | Post-budget |
+| 27 | X Ads | Paid Ads | Post-budget |
 | 28 | LinkedIn Ads | Paid Ads | Post-budget (B2B-strong) |
 | 29 | Reddit Ads | Paid Ads | Post-budget |
 | 30 | Quora Ads | Paid Ads | Post-budget |
@@ -91,7 +93,7 @@ These ideas primarily serve top-of-funnel awareness, traffic, and lead generatio
 | 80 | New Year Promotions | Launches | Q1 (seasonal) |
 | 81 | Early Access Pricing | Launches | GA |
 | 82 | Product Hunt Alternatives | Launches | Same as PH |
-| 83 | Twitter Giveaways | Launches | Generally off-brand |
+| 83 | X Giveaways | Launches | Generally off-brand |
 | 84 | Giveaways | Launches | Q3+ |
 | 85 | Vacation Giveaways | Launches | Q4+ (seasonal) |
 | 86 | Lifetime Deals | Launches | Generally off-brand (damages LTV math) |
@@ -210,7 +212,7 @@ For each idea, ask:
 - Does this idea conflict with the client's brand voice?
 - Common conflicts:
   - **Lifetime Deals (#86)** — conflicts with premium positioning
-  - **Twitter Giveaways (#83)** — often off-brand for serious / clinical / luxury voices
+  - **X Giveaways (#83)** — often off-brand for serious / clinical / luxury voices
   - **Humor Marketing (#122)** — off-brand for serious / clinical voices
   - **Cameo Marketing (#118)** — off-brand for most voices
   - **Reality TV Marketing (#112)** — off-brand for most voices

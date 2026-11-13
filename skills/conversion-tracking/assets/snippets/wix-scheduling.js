@@ -1,4 +1,5 @@
 /*! Wix Bookings conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: booking made. Pushes dataLayer event: wix_appointment_scheduled
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

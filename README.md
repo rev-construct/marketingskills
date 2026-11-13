@@ -1,72 +1,66 @@
-# Marketing Skills for AI Agents
+# REVConstruct Marketing Skills for AI Agents
 
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
-Built by [Corey Haines](https://corey.co?ref=marketingskills). Need hands-on help? Check out [Conversion Factory](https://conversionfactory.co?ref=marketingskills) — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to [Swipe Files](https://swipefiles.com?ref=marketingskills). Want to get dangerously good at using AI for marketing? Check out [AI Marketing Training](https://conversionfactory.co/offers/ai-marketing-training?ref=marketingskills). Want an autonomous AI agent that uses these skills to be your CMO? Try [Magister](https://magistermarketing.com?ref=marketingskills).
+Maintained by REVConstruct. Based on [Marketing Skills](https://github.com/coreyhaines31/marketingskills) by [Corey Haines](https://corey.co) (MIT). This is REVConstruct's fork of that library, forked at upstream 2.14.10. What we changed:
 
-New to the terminal and coding agents? Check out the companion guide [Coding for Marketers](https://codingformarketers.com?ref=marketingskills).
+- **New and expanded skills:** a `webinar` skill, a Reddit reference in `community-marketing`, and updates to `ai-seo`, `ads`, `seo-audit`, `image`, `cold-email`, and others. The full list is in [VERSIONS.md](VERSIONS.md).
+- **Fixes:** broken links, wrong cross-references, and out-of-date platform names.
+- **Clear sourcing:** every outside source was checked for copied text, and the pack now credits it accurately; see [Credits](#credits). The copywriting transitions reference and the B2B ads lifecycle stages are rebuilt on public-domain and industry-standard frameworks, with text written for this pack.
+- **No paid placement:** the upstream partner program and its sponsor markers are removed. Tools appear as neutral options alongside their alternatives.
+- **Safety checks:** CI scans skills and tools for hidden content and dead links. See [SECURITY.md](SECURITY.md).
+- **Its own install identity:** the plugin is `revconstruct-marketingskills` in the `revconstruct` marketplace. Skill names match upstream, so this pack replaces the original rather than running beside it.
+
+REVConstruct is not affiliated with, sponsored by, or endorsed by Corey Haines or the original Marketing Skills project. "Marketing Skills" here describes what the pack does; it is not a claim to the original project's name. The skills are provided as is, without warranty of any kind; see [LICENSE](LICENSE). Material adapted from other sources keeps its own terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Want your agent to read your marketing accounts? Follow the [guided tool connection workflow](tools/SETUP.md) for scoped credentials and a first read-only result.
 
 **Contributions welcome!** Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).
 
-Run into a problem or have a question? [Open an issue](https://github.com/coreyhaines31/marketingskills/issues) — we're happy to help.
-
-## Partners
-
-The library is free and MIT-licensed. [Verified Partners](tools/REGISTRY.md#verified-partners) fund the work — vetted, disclosed tool integrations, listed alongside the neutral options and never influencing what the core skills recommend. The full rules and boundaries are in [tools/PARTNERS.md](tools/PARTNERS.md). [Become a partner →](https://marketing-skills.com/sponsorship)
-
-<!-- PARTNERS:START -->
-> ◆ **[Converly](https://converly.io)** — *Conversion tracking / attribution.* Server-side conversion tracking that fires when someone submits a form, books a meeting, or starts a chat — passing click IDs and identifiers for Enhanced Conversions (Google) and stronger match quality (Meta), across about 100 tools. CLI + MCP so your agent sets it up in minutes. → [Integration guide](tools/integrations/converly.md)
-
-> ◆ **[Ploy](https://ploy.ai)** — *AI website & growth platform.* AI marketing platform built around a hosted website builder — an in-app agent that builds and publishes pages, PloyDB for pages at scale, routing to add pages to an existing site, built-in analytics and visitor identification, and a CLI for coding agents. → [Integration guide](tools/integrations/ploy.md)
-
-> ◆ **[AIsa](https://aisa.one)** — *SEO, search & social data.* One AIsa key, pay as you go, instead of a subscription to every data platform. Agents get SEO, search, social, and market data from Similarweb, Semrush, Ahrefs, DataForSEO, Tavily, Reddit, X, and more through REST or MCP, and pay only for the calls they make. → [Integration guide](tools/integrations/aisa.md)
-
-> ◆ **[Omnia](https://www.useomnia.com)** — *AI search visibility (AEO).* Omnia tracks how AI engines answer your customers' questions every day: visibility, citations, Share of Voice and sentiment for your brand and competitors. Connect the Omnia MCP to Claude and these skills run on real AI answers data instead of guesses. Or let your Omnia Agent turn it into prioritized work that you review and approve. → [Integration guide](tools/integrations/omnia.md)
-
-> ◆ **[Livestorm](https://livestorm.co)** — *Webinars & virtual events.* Browser-based platform for webinars, virtual events, and online meetings, with registration pages, live engagement, recordings, and analytics. A REST API, webhooks, and an official MCP server let agents create events, manage registrants, and pull attendance data. → [Integration guide](tools/integrations/livestorm.md)
-<!-- PARTNERS:END -->
-
-<!-- The Partners block above is generated from partners.json — run `node scripts/sync-partners.mjs` after editing it. -->
+Run into a problem or have a question? [Open an issue](https://github.com/rev-construct/marketingskills/issues) — we're happy to help.
 
 ## What are Skills?
 
 Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, your agent can recognize when you're working on a marketing task and apply the right frameworks and best practices.
 
+### Skills, prompts, projects, MCP, or subagents?
+
+| Use a... | When you need |
+|----------|---------------|
+| **Skill** | Reusable know-how an agent loads when the task matches (this repo) |
+| **Prompt** | A one-off instruction for a single conversation |
+| **Project** | Standing context and files shared across many chats |
+| **MCP server / tool** | Live access to a system: your analytics, CRM, or ad account (see [tools/REGISTRY.md](tools/REGISTRY.md)) |
+| **Subagent** | A separate worker with its own context, for a task you want run in parallel or isolated |
+
+**Before installing:** skills are instructions your agent follows, and some point it at CLI tools or MCP servers. Read what you install and pin a release tag. See [SECURITY.md](SECURITY.md).
+
 ## How Skills Work Together
 
 Skills reference each other and build on shared context. The `product-marketing` skill is the foundation — every other skill checks it first to understand your product, audience, and positioning before doing anything.
 
+```mermaid
+flowchart TD
+    PM["<b>product-marketing</b><br/>read by all other skills first"]
+    PM --> SEO["<b>SEO &amp; Content</b><br/>seo-audit<br/>ai-seo<br/>site-architecture<br/>programmatic-seo<br/>schema<br/>content-strategy<br/>aso<br/>link-building"]
+    PM --> CRO["<b>CRO</b><br/>cro<br/>signup<br/>onboarding<br/>popups<br/>paywalls"]
+    PM --> COPY["<b>Content &amp; Copy</b><br/>copywriting<br/>copy-editing<br/>cold-email<br/>emails<br/>social<br/>video<br/>image<br/>sms<br/>public-relations"]
+    PM --> PAID["<b>Paid &amp; Measurement</b><br/>ads<br/>ad-creative<br/>ab-testing<br/>analytics<br/>conversion-tracking<br/>attribution<br/>events<br/>webinar"]
+    PM --> GROW["<b>Growth &amp; Retention</b><br/>referrals<br/>free-tools<br/>churn-prevention<br/>community-marketing<br/>lead-magnets<br/>co-marketing<br/>influencer-marketing"]
+    PM --> SALES["<b>Sales &amp; GTM</b><br/>revops<br/>sales-enablement<br/>launch<br/>pricing<br/>competitors<br/>competitor-profiling<br/>directory-submissions<br/>prospecting<br/>offers"]
+    PM --> STRAT["<b>Strategy</b><br/>marketing-ideas<br/>marketing-psychology<br/>customer-research<br/>reverse-engineer-marketing<br/>marketing-plan<br/>marketing-council<br/>marketing-loops"]
 ```
-                            ┌──────────────────────────────────────┐
-                            │          product-marketing           │
-                            │    (read by all other skills first)  │
-                            └──────────────────┬───────────────────┘
-                                               │
-    ┌──────────────┬─────────────┬─────────────┼─────────────┬──────────────┬──────────────┐
-    ▼              ▼             ▼             ▼             ▼              ▼              ▼
-┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────────┐ ┌──────────┐ ┌─────────────┐ ┌───────────┐
-│  SEO &   │ │   CRO    │ │Content & │ │  Paid &    │ │ Growth & │ │  Sales &    │ │ Strategy  │
-│ Content  │ │          │ │   Copy   │ │Measurement │ │Retention │ │    GTM      │ │           │
-├──────────┤ ├──────────┤ ├──────────┤ ├────────────┤ ├──────────┤ ├─────────────┤ ├───────────┤
-│seo-audit │ │cro       │ │copywritin│ │ads         │ │referrals │ │revops       │ │mktg-ideas │
-│ai-seo    │ │signup    │ │copy-edit │ │ad-creative │ │free-tools│ │sales-enable │ │mktg-psych │
-│site-arch │ │onboarding│ │cold-email│ │ab-testing  │ │churn-    │ │launch       │ │customer-  │
-│programm  │ │popups    │ │emails    │ │analytics   │ │ prevent  │ │pricing      │ │ research  │
-│schema    │ │paywalls  │ │social    │ │            │ │community │ │competitors  │ │reverse-   │
-│content   │ │          │ │video     │ │            │ │lead-magnt│ │comp-profile │ │ eng-mktg  │
-│aso       │ │          │ │image     │ │            │ │co-mktg   │ │directory    │ │           │
-│link-build│ │          │ │sms       │ │            │ │          │ │prospecting  │ │           │
-└────┬─────┘ └────┬─────┘ └────┬─────┘ └─────┬──────┘ └────┬─────┘ └──────┬──────┘ └─────┬─────┘
-     │            │            │              │             │              │              │
-     └────────────┴─────┬──────┴──────────────┴─────────────┴──────────────┴──────────────┘
-                        │
-         Skills cross-reference each other:
-           copywriting ↔ cro ↔ ab-testing
-           revops ↔ sales-enablement ↔ cold-email
-           seo-audit ↔ schema ↔ ai-seo
-           customer-research → copywriting, cro, competitors
+
+Skills also cross-reference each other. The main links:
+
+```mermaid
+flowchart LR
+    copywriting <--> cro <--> ab-testing
+    revops <--> sales-enablement <--> cold-email
+    seo-audit <--> schema <--> ai-seo
+    customer-research --> copywriting
+    customer-research --> cro
+    customer-research --> competitors
 ```
 
 See each skill's **Related Skills** section for the full dependency map.
@@ -107,7 +101,7 @@ See each skill's **Related Skills** section for the full dependency map.
 | [marketing-council](skills/marketing-council/) | When the user wants several expert takes on a marketing decision, or asks what a famous marketer would say about it: a... |
 | [marketing-ideas](skills/marketing-ideas/) | When the user wants marketing ideas or growth tactics for a software product, or asks what to try to get attention or... |
 | [marketing-loops](skills/marketing-loops/) | When the user wants a recurring marketing job an AI agent runs on a cadence or trigger, or asks what a weekly or daily... |
-| [marketing-plan](skills/marketing-plan/) | When the user wants a full marketing or go-to-market plan for a client, an advised company, or their own product, or... |
+| [marketing-plan](skills/marketing-plan/) | Produces a full marketing or go-to-market plan. Use when the user wants one for a client, an advised company, or their... |
 | [marketing-psychology](skills/marketing-psychology/) | When the user wants to apply psychology to marketing, or asks why buyers behave or value things as they do, or whether... |
 | [offers](skills/offers/) | When the user wants to design or improve the offer itself, or asks why it isn't selling or how to add urgency honestly:... |
 | [onboarding](skills/onboarding/) | When the user wants better onboarding and activation, or asks why new users don't stick or what the first session... |
@@ -127,11 +121,14 @@ See each skill's **Related Skills** section for the full dependency map.
 | [signup](skills/signup/) | When the user wants better signup, registration, and trial start flows, or asks which fields or steps to cut or whether... |
 | [site-architecture](skills/site-architecture/) | When the user wants to plan or restructure a website, or asks which pages they need or where something belongs:... |
 | [sms](skills/sms/) | When the user wants SMS, MMS, or WhatsApp marketing, or asks whether texting is worth it or a message is allowed:... |
-| [social](skills/social/) | When the user wants organic social content for LinkedIn, X, Instagram, TikTok, or Facebook, or asks what to post, which... |
+| [social](skills/social/) | Writes, schedules, and repurposes organic social posts. Use when the user wants content for LinkedIn, X, Instagram,... |
 | [video](skills/video/) | When the user wants to create video with AI tools or code, or asks which approach to use (screen recording, AI avatar,... |
+| [webinar](skills/webinar/) | When the user wants to plan, promote, or run a webinar or virtual event, or asks what topic to pick, how to structure... |
 <!-- SKILLS:END -->
 
 ## Installation
+
+> **Already have the original Marketing Skills installed?** This pack uses the same skill names (`cro`, `emails`, ...), so it replaces the original rather than running beside it. Remove the original first: delete its skill folders for `npx skills` installs, or run `/plugin uninstall marketing-skills@marketingskills` in Claude Code, or remove `marketing-skills` from `/plugins` in Codex.
 
 ### Option 1: CLI Install (Recommended)
 
@@ -139,13 +136,13 @@ Use [npx skills](https://github.com/vercel-labs/skills) to install skills direct
 
 ```bash
 # Install all skills
-npx skills add coreyhaines31/marketingskills
+npx skills add rev-construct/marketingskills
 
 # Install specific skills
-npx skills add coreyhaines31/marketingskills --skill cro copywriting
+npx skills add rev-construct/marketingskills --skill cro copywriting
 
 # List available skills
-npx skills add coreyhaines31/marketingskills --list
+npx skills add rev-construct/marketingskills --list
 ```
 
 The CLI detects which agents you have installed and asks where to install. For Claude Code it installs into `.claude/skills/`; universal agents share `.agents/skills/`.
@@ -154,7 +151,7 @@ The CLI detects which agents you have installed and asks where to install. For C
 > If you run the command from **inside** an agent session (e.g., asking Claude Code to install the skills for you), the CLI runs non-interactively and may only install to the universal `.agents/skills/` directory, which Claude Code does not read. Pass the agent explicitly:
 >
 > ```bash
-> npx skills add coreyhaines31/marketingskills -a claude-code
+> npx skills add rev-construct/marketingskills -a claude-code
 > ```
 
 ### Option 2: Claude Code Plugin
@@ -163,17 +160,17 @@ Install via Claude Code's built-in plugin system:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add coreyhaines31/marketingskills
+/plugin marketplace add rev-construct/marketingskills
 
 # Install all marketing skills
-/plugin install marketing-skills
+/plugin install revconstruct-marketingskills
 ```
 
 > **Note:** `/plugin` is only available in an interactive Claude Code CLI session. It is **not** available in Claude Code on the web, GitHub Actions, or other non-interactive/remote environments — in those cases you'll see `/plugin isn't available in this environment`. Use **Option 1 (`npx skills`)** instead, or the equivalent CLI commands:
 >
 > ```bash
-> claude plugin marketplace add coreyhaines31/marketingskills
-> claude plugin install marketing-skills@marketingskills
+> claude plugin marketplace add rev-construct/marketingskills
+> claude plugin install revconstruct-marketingskills@revconstruct
 > ```
 
 ### Option 3: OpenAI Codex Plugin
@@ -182,20 +179,20 @@ Install via Codex's plugin system:
 
 ```bash
 # Add the marketplace
-codex plugin marketplace add coreyhaines31/marketingskills
+codex plugin marketplace add rev-construct/marketingskills
 
 # Then browse and install from inside a Codex session
 /plugins
 ```
 
-Select **marketing-skills** to install all skills. To pick up new releases later, run `codex plugin marketplace upgrade`.
+Select **revconstruct-marketingskills** to install all skills. To pick up new releases later, run `codex plugin marketplace upgrade`.
 
 ### Option 4: Clone and Copy
 
 Clone the entire repo and copy the skills folder:
 
 ```bash
-git clone https://github.com/coreyhaines31/marketingskills.git
+git clone https://github.com/rev-construct/marketingskills.git
 cp -r marketingskills/skills/* .agents/skills/
 ```
 
@@ -204,7 +201,7 @@ cp -r marketingskills/skills/* .agents/skills/
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/coreyhaines31/marketingskills.git .agents/marketingskills
+git submodule add https://github.com/rev-construct/marketingskills.git .agents/marketingskills
 ```
 
 Then reference skills from `.agents/marketingskills/skills/`.
@@ -221,24 +218,24 @@ Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across mu
 
 ```bash
 # Install all skills
-npx skillkit install coreyhaines31/marketingskills
+npx skillkit install rev-construct/marketingskills
 
 # Install specific skills
-npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
+npx skillkit install rev-construct/marketingskills --skill cro copywriting
 
 # List available skills
-npx skillkit install coreyhaines31/marketingskills --list
+npx skillkit install rev-construct/marketingskills --list
 ```
 
 ### Option 8: Claude Web Skill ZIPs
 
-Download the desired `<name>-claude-web.zip` from [Releases](https://github.com/coreyhaines31/marketingskills/releases/latest), then use **Customize → Skills → + Create skill → Upload a skill** in Claude. Each archive contains one skill. Account permissions and code execution must allow skills.
+Download the desired `<name>-claude-web.zip` from [Releases](https://github.com/rev-construct/marketingskills/releases/latest), then use **Customize → Skills → + Create skill → Upload a skill** in Claude. Each archive contains one skill. Account permissions and code execution must allow skills.
 
 The web-target archive uses an explicitly reviewed shorter description; its instructions and resources are preserved. The attached web manifest lists any skills whose description still needs review; newly created release notes also summarize omissions. Installing a ZIP does not configure local CLIs, MCP servers, credentials, or related skills. See [release packaging and verification](docs/skill-release-packaging.md) for archive contents, source variants, and unverified client limitations.
 
 ### Option 9: Perplexity Computer Skill ZIPs
 
-Download the desired `<name>-perplexity.zip` from [Releases](https://github.com/coreyhaines31/marketingskills/releases/latest), then in Perplexity Computer use **Plugins → Add custom → Skill → Upload skill**. These archives keep the original skill files with `SKILL.md` at the root, which Perplexity requires; the source and Claude web ZIPs nest the skill in a folder and won't upload there. Installing a ZIP doesn't configure local CLIs, MCP servers, or related skills.
+Download the desired `<name>-perplexity.zip` from [Releases](https://github.com/rev-construct/marketingskills/releases/latest), then in Perplexity Computer use **Plugins → Add custom → Skill → Upload skill**. These archives keep the original skill files with `SKILL.md` at the root, which Perplexity requires; the source and Claude web ZIPs nest the skill in a folder and won't upload there. Installing a ZIP doesn't configure local CLIs, MCP servers, or related skills.
 
 ## Upgrading from v1.x to v2.0
 
@@ -254,7 +251,7 @@ rm -rf page-cro form-cro \
        signup-flow-cro social-content
 ```
 
-Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add coreyhaines31/marketingskills`).
+Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add rev-construct/marketingskills`).
 
 ### Migrate the product marketing context file
 
@@ -349,6 +346,7 @@ You can also invoke skills directly:
 ### Paid & Distribution
 - `ads` - Google, Meta, LinkedIn ad campaigns
 - `events` - Webinars, conferences, sponsorships, speaking
+- `webinar` - Plan, promote, and run webinars and virtual events
 - `ad-creative` - Bulk ad creative generation and iteration
 - `social` - Social media scheduling and strategy
 
@@ -382,12 +380,15 @@ Found a way to improve a skill? Have a new skill to suggest? PRs and issues welc
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding or improving skills.
 
+## Credits
+
+This pack builds on [Marketing Skills](https://github.com/coreyhaines31/marketingskills) by Corey Haines (MIT). Outside material falls into four groups; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) has every source, the files that use it, and the results of a text-overlap check against each public source (2026-11-12).
+
+- **Included under the MIT License, with notices:** detection snippets and GTM recipes from the [ConversionKit conversion-tracking toolkit](https://github.com/ConversionKit/conversion-tracking) (Converly), podcast prep from [ai-visibility-skills](https://github.com/Knowatoa/ai-visibility-skills) (Knowatoa), and two prospecting references from Kappaemme's [local-client-prospector](https://github.com/Kappaemme-git/local-client-prospector-skill) and [first-customer-finder](https://github.com/Kappaemme-git/codex-first-customer-finder-skill). Each file carries its source's copyright line.
+- **Public domain:** the transition types in the federal plain language guidelines ([plainlanguage.gov](https://www.plainlanguage.gov/guidelines/organize/use-transition-words/)).
+- **Re-expressed from MIT-licensed work:** Profound and Wispr Flow skills ([skills-marketing-library](https://github.com/retieedra-profound/skills-marketing-library)) and eliasstravik's [gtm-skills](https://github.com/eliasstravik/gtm-skills).
+- **Inspired by:** Ivan Falco's [ads-skills](https://github.com/ivangfalco/ads-skills), Prof. John Dawes's 95:5 rule (Ehrenberg-Bass Institute with LinkedIn's B2B Institute), Eugene Schwartz's awareness levels, and the practitioners named in each skill's lineage notes. No text from these sources is included.
+
 ## License
 
 [MIT](LICENSE) - Use these however you want.
-
-<br />
-<br />
-<a href="https://vercel.com/open-source-program">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" />
-</a>

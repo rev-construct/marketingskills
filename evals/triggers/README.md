@@ -8,6 +8,7 @@ Checks whether Claude Code picks the right skill for a prompt when the whole pac
 - `heldout.json`: 2 prompts per skill plus 8 non-marketing prompts, written from the skill bodies only, without reading descriptions.
 - `heldout2.json`: 2 advice-style prompts per skill ("give me 5 ways", "is this enough"), written the same way.
 - `heldout3.json` and `heldout4.json`: 2 judgement-style prompts per skill each ("should we", "which of these", "is it okay to"), written the same way. Keep one set unread while tuning descriptions, and judge the change on it. heldout4 was the unread set for 2.14.9; write a new one before the next round.
+- `heldout5.json`: 2 judgement-style prompts per skill plus 8 non-marketing prompts, written for #954 without reading the descriptions or the earlier sets. The author worked from skill names, not bodies, so a few prompts are ambiguous (two `marketing-loops` prompts asked about viral growth loops and were replaced). Baseline on the current wording, pack alone, Sonnet, 2026-11-11: 91.7% (99/108), 0 false triggers. Misses: product-marketing 0/2 (one went to copywriting), and one each for image, marketing-ideas, marketing-psychology, reverse-engineer-marketing, video. It is unread by whoever tunes next: don't tune against it until a newer set exists.
 - `results/`: run output (git-ignored). Missed rows include the model's reply, so you can tell a skipped skill from a fair clarifying question.
 
 Every prompt must include the material it refers to. A prompt that mentions "the URLs below" without them makes the model ask for them, which scores as a miss.
@@ -26,6 +27,19 @@ node scripts/trigger-eval.mjs --extra-plugin-dir ../other-skills --repeat 2 --la
 Outcomes: `pass`, `wrong-skill` (another skill from this pack), `other-skill` (a skill from outside the pack), `no-trigger` (no skill invoked), `false-trigger` (a pack skill fired on a non-marketing prompt), and `error` (the run failed; left out of the scores).
 
 **Noise:** identical crowded runs of one 106-prompt set scored 80.2%, 84.0%, and 87.7%. Use `--repeat 2` or more for crowded runs, and don't read a change of a few points from one run.
+
+## Tried: plain-sentence descriptions (issue #930)
+
+Issue #930 proposed opening every description with the one-sentence job from `scripts/claude-web-descriptions.json`. Prepending those sentences to the current descriptions would take the pack from 18,719 to about 26,300 characters, over the 24,000 cap. So we tested the variant that fits: each description replaced by the plain sentence plus its existing "For X, see Y" boundaries (12,457 characters).
+
+Run on `heldout4.json`, pack alone, Sonnet, 2026-11-11:
+
+| Descriptions | Pass | No skill invoked |
+|---|---|---|
+| Current (18,719 chars) | 95.3% (101/106) | 4 |
+| Plain sentence + boundaries (12,457 chars) | 47.2% (50/106) | 53 |
+
+Shorter wasn't better: the cue phrases in the current descriptions ("or asks whether...", "should we...") are what make the model load a skill for a judgement question instead of answering directly. Keep the current wording. A plain opening sentence can still be tried skill by skill, ahead of the existing cues, if the character budget allows.
 
 ## Why description length matters
 

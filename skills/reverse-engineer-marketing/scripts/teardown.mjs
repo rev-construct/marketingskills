@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Free-source collection and analysis for a growth teardown. Node 18+, no dependencies.
+// Free-source collection and analysis for a growth teardown. Node 20+, no dependencies.
 // Run with no arguments for usage.
 
 import { gunzipSync } from 'node:zlib';

@@ -18,11 +18,15 @@ permissions:
 jobs:
   packaging:
     runs-on: ubuntu-slim
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.14"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
       - name: Test actual ZIP structure and integrity
         run: python3 -m unittest discover -s tests -p test_skill_packaging.py -v
       - name: Build the checked-out library without uploading

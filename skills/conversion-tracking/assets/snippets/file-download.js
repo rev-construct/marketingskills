@@ -1,4 +1,5 @@
 /*! File download conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: click on a downloadable file link. Pushes dataLayer event: file_download
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

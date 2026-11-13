@@ -1,8 +1,10 @@
 # Example — Quietude Marketing Plan v1
 
-**This is the canonical reference example for the `/marketing-plan` skill.** It's based on a real fCMO engagement for a hybrid hardware-and-software wellness platform. **Names, domains, and identifying details have been changed** — the client is called "Quietude" here, and the team members have been renamed (Alex / Sam / Casey / Devon). The funnel numbers, budget, and structural lessons preserve the shape of the original engagement so the example retains its teaching value.
+Contents: [1. Executive summary](#1-executive-summary) · [2. Strategic frame](#2-strategic-frame) · [3. Current state](#3-current-state) · [4. Acquisition](#4-acquisition) · [5. Activation](#5-activation) · [6. Retention](#6-retention) · [7. Referral](#7-referral) · [8. Revenue](#8-revenue) · [9. 90-day roadmap](#9-90-day-roadmap) · [10. 12-month outlook](#10-12-month-outlook) · [11. Marketing operations stack](#11-marketing-operations-stack) · [12. Tactical idea bank — 139-idea cross-reference](#12-tactical-idea-bank--139-idea-cross-reference) · [13. Measurement, RACI, open decisions, appendix](#13-measurement-raci-open-decisions-appendix)
 
-Use this as the "what good looks like" reference when drafting a new plan. The structure, tone, depth, and operational specificity are the bar to clear.
+**This is the worked example for the `/marketing-plan` skill.** It's based on a real fCMO engagement for a hybrid hardware-and-software wellness platform. **Names, domains, and identifying details have been changed** — the client is called "Quietude" here, and the team members have been renamed (Alex / Sam / Casey / Devon). The funnel numbers, budget, and structural lessons preserve the shape of the original engagement so the example retains its teaching value.
+
+This is one illustrative plan, for a hardware-and-software consumer client. Match its specificity (owner-assigned moves, skipped ideas with reasons, open decisions named), not its channel mix, section lengths or numbers.
 
 **Quietude's archetype:** Hybrid hardware + software with deep-tech / clinical credibility layer. See `references/client-types.md` for archetype patterns.
 
@@ -771,7 +773,7 @@ This is the exhaustive menu. The plan above is the curated path. When we move to
 | 126 | YouTube Reviews | Pitch Quietude to wellness YouTubers — Huberman fan-creator tier |
 | 127 | YouTube Channel | Sound design behind-the-scenes; Sam session demos |
 | 129 | Review Sites | App Store reviews actively managed; Trustpilot for eye mask Shopify |
-| 130 | Live Audio | Twitter Spaces / LinkedIn Audio with Alex on sound + body |
+| 130 | Live Audio | X Spaces / LinkedIn Audio with Alex on sound + body |
 | 134 | Certifications | Quietude Guides cert IS this — Q3+ pilot |
 
 **Q4+ / long-game:**
@@ -805,12 +807,12 @@ This is the exhaustive menu. The plan above is the curated path. When we move to
 | 19 | Chrome Extensions | Off-platform (mobile-first product) |
 | 21 | Scanners | No obvious product fit |
 | 22 | Public APIs | Not core business |
-| 27 | Twitter Ads | Lower priority unless Alex's X presence grows |
+| 27 | X Ads | Lower priority unless Alex's X presence grows |
 | 34 | Click-to-Messenger Ads | Off-brand (no DM-driven sales pattern) |
 | 41 | X Audience | Depends on Alex's bandwidth — defer unless he wants to |
 | 43 | Engagement Pods | Off-brand |
 | 73 | Media Acquisitions | Too capital-intensive at this stage |
-| 83 | Twitter Giveaways | Off-brand voice |
+| 83 | X Giveaways | Off-brand voice |
 | 86 | Lifetime Deals | Brand-conflict — pressures the "no pressure" voice and damages LTV math |
 | 88 | Free Migrations | No competitor data to migrate |
 | 89 | Contract Buyouts | Not relevant for D2C subs |

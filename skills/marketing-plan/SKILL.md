@@ -1,8 +1,8 @@
 ---
 name: marketing-plan
-description: "When the user wants a full marketing or go-to-market plan for a client, an advised company, or their own product, or asks how to sequence or prioritize several initiatives with a fixed team and budget: channels, budget, team, goals across AARRR, market sizing. For positioning first, see product-marketing. For ideas only, see marketing-ideas."
+description: "Produces a full marketing or go-to-market plan. Use when the user wants one for a client, an advised company, or their own product, or asks how to sequence or prioritize several initiatives with a fixed team and budget. For positioning first, see product-marketing. For ideas only, see marketing-ideas."
 metadata:
-  version: 1.2.5
+  version: 1.2.7
 ---
 
 # Marketing Plan
@@ -44,7 +44,7 @@ The full workflow lives in `references/methodology.md`. Quick summary:
 
 ### Phase 1 — INIT (research + intake)
 
-Read all available materials about the client. Pull data from any wired tools (Ahrefs, GA4 MCP, Stripe MCP, etc.). Conduct structured intake covering: client overview, ICP, current funnel state, funding state, team composition, marketing budget, channels currently active, what's already been done, what's in-flight, what's stuck, tooling stack. Save to `research.md`.
+Read all available materials about the client. Pull data from the user's connected tools if any (for example Ahrefs, GA4, Stripe connectors). Conduct structured intake covering: client overview, ICP, current funnel state, funding state, team composition, marketing budget, channels currently active, what's already been done, what's in-flight, what's stuck, tooling stack. Save to `research.md`.
 
 Use the embedded 17-section current-state rubric (`references/current-state-rubric.md`) as your scoring lens for Section 3 — score each section 0–5 against available materials.
 
@@ -62,7 +62,7 @@ Save each confirmed section to the progress file as you go. The skill is resumab
 
 Compile all 13 sections into `final_plan.md`. Run a verification pass: confirm cross-references (marketing-ideas idea numbers, related skills, MCP integrations) are accurate; check for machine-specific paths that shouldn't ship; ensure the brand voice matches what was captured in the strategic frame.
 
-Optionally offer to publish to a shared GitHub repo (e.g., `{client-org}/{client-context}/marketing/plan.md`) if the user wants to share it with the team.
+Optionally offer to publish to a shared GitHub repo (e.g., `{client-org}/{client-context}/marketing/plan.md`) if the user wants to share it with the team. Private repo only, and only with the client's OK: plans usually contain confidential budgets, metrics, and funding state.
 
 ## The 13-section plan structure
 
@@ -243,6 +243,17 @@ What separates a good plan from a generic one:
 - Ignoring brand voice — every plan section must respect the client's voice rules
 - Padding the plan with skills/ideas the client doesn't actually need
 - Not acknowledging work the team has already done
+
+**Check the plan against the quality bar.** Copy this checklist into your reply and tick each item against the plan:
+
+- [ ] Every move names its AARRR stage
+- [ ] Every recommendation is anchored in real client data
+- [ ] The 90-day roadmap has owners
+- [ ] Skipped ideas are listed with reasons
+- [ ] Open decisions are explicit
+- [ ] No failure mode above appears
+
+Revise the failing section and check again until every item passes.
 
 ## Output format
 

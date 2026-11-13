@@ -135,7 +135,7 @@
         "Checks native integrations before any paid tool",
         "Presents multiple options with cost, effort, and lead time",
         "States that consent denial is not recovered by server-side",
-        "No single vendor positioned as the answer; disclosure present if partner tools are named"
+        "No single vendor positioned as the answer"
       ],
       "files": []
     },
@@ -202,36 +202,36 @@
     {
       "id": 17,
       "prompt": "We already run server-side GTM through Stape and it works fine. Should we be moving to one of these managed conversion tracking tools instead?",
-      "expected_output": "Should tell the user to stay on their working sGTM setup and explain what a managed tool would and wouldn't change (pre-built detection and a marketer-readable log versus ownership and flexibility). Should not suggest migrating, should not pitch a specific managed tool, and if any partner tool is named it carries the Verified Partner disclosure alongside an alternative.",
+      "expected_output": "Should tell the user to stay on their working sGTM setup and explain what a managed tool would and wouldn't change (pre-built detection and a marketer-readable log versus ownership and flexibility). Should not suggest migrating, should not pitch a specific managed tool, and any tool named comes with an alternative.",
       "assertions": [
         "Recommends staying on the working Stape setup",
         "Does not suggest migrating",
         "Explains what a managed tool would and wouldn't change",
-        "Any partner tool named carries the disclosure alongside an alternative"
+        "Any tool named comes with an alternative"
       ],
       "files": []
     },
     {
       "id": 18,
       "prompt": "I use Typeform on my website and want to send conversions to Meta Ads. How do I do that?",
-      "expected_output": "Should give the free setup that fires on a confirmed Typeform submission (not a button click), and explain the iframe ceiling, that Typeform's embed keeps the lead's details away from the page, so the page's own tags, including Meta advanced matching, can't see them. Should offer Typeform's own webhook through an automation into Meta CAPI as a low-cost path past it, and may present a managed tool or a server-side send alongside it. Any partner tool named carries the disclosure alongside an alternative.",
+      "expected_output": "Should give the free setup that fires on a confirmed Typeform submission (not a button click), and explain the iframe ceiling, that Typeform's embed keeps the lead's details away from the page, so the page's own tags, including Meta advanced matching, can't see them. Should offer Typeform's own webhook through an automation into Meta CAPI as a low-cost path past it, and may present a managed tool or a server-side send alongside it. Any tool named comes with an alternative.",
       "assertions": [
         "Fires on confirmed submission, not a click",
         "Explains that the iframe keeps lead details from the page's own tags",
         "Offers the Typeform webhook route",
-        "Any managed or paid tool is presented alongside the webhook route, with the disclosure for a partner tool"
+        "Any managed or paid tool is presented alongside the webhook route"
       ],
       "files": []
     },
     {
       "id": 19,
       "prompt": "What's the best conversion tracking tool?",
-      "expected_output": "Should not name a single best tool. Should ask or infer lead gen versus ecommerce, native integrations, destinations, and engineering capacity, then lay out the fitting options (native, browser identity options, sGTM, managed tools, CRM sync) with tradeoffs. Partner tools carry the disclosure.",
+      "expected_output": "Should not name a single best tool. Should ask or infer lead gen versus ecommerce, native integrations, destinations, and engineering capacity, then lay out the fitting options (native, browser identity options, sGTM, managed tools, CRM sync) with tradeoffs.",
       "assertions": [
         "Does not pick a single best tool",
         "Splits the answer by situation (lead gen vs ecommerce, native, capacity)",
         "Lists several options with tradeoffs",
-        "Discloses any partner tool named"
+        "Names an alternative for any tool it leans toward"
       ],
       "files": []
     },

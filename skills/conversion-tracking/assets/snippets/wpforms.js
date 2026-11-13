@@ -1,4 +1,5 @@
 /*! WPForms conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: form submission. Pushes dataLayer event: wpforms_form_submitted
  *  From the conversion-tracking skill in Marketing Skills */
 /* WPForms listener. Records message and redirect confirmations.

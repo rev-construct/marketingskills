@@ -1,4 +1,5 @@
 /*! Thank-you page conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: arrival on a confirmation page. Pushes dataLayer event: thank_you_page_view
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

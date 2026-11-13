@@ -9,11 +9,14 @@ Reusable content block patterns optimized for answer engines and AI citation.
 - Generative Engine Optimization (GEO) Patterns (Statistic Citation Block, Expert Quote Block, Authoritative Claim Block, Self-Contained Answer Block, Evidence Sandwich Block)
 - Fact-Family Fan-Out Matrix
 - Domain-Specific GEO Tactics (Technology Content, Health/Medical Content, Financial Content, Legal Content, Business/Marketing Content)
+- Use-Case and Job Page Template
 - Voice Search Optimization (Question Formats for Voice, Voice-Optimized Answer Structure)
 
 ## Answer Engine Optimization (AEO) Patterns
 
 These patterns help content appear in featured snippets, AI Overviews, voice search results, and answer boxes.
+
+Phrase the heading as the question. In one study, question-form queries triggered AI Overviews far more often than other queries, 64.7% against 9.5% (SE Ranking, a vendor; verify the primary report).
 
 ### Definition Block
 
@@ -288,6 +291,35 @@ Different content domains benefit from different authority signals.
 - Reference industry research and reports
 - Add percentage changes and timeframes
 - Quote recognized thought leaders
+
+---
+
+## Use-Case and Job Page Template
+
+Use for pages that answer "how do I do [task] with [tool/category]?" where the reader has a job to finish. Cross-link to the **programmatic-seo** skill when you are building many of these from a pattern. Practitioner pattern (from @mal_shaik on X); test it against your own results.
+
+```markdown
+# [The task, in the reader's words]
+
+[Answer first: the outcome and the shortest path, in 2-3 sentences, before any pitch.]
+
+![Screenshot of the finished result](result.png)
+
+## Worked example
+[One complete example from start to finish, with real inputs and outputs.]
+
+## Steps
+1. [Step, with the blocking question answered beside it: permissions, limits, "what if X"]
+2. [Step]
+
+## When you don't need [product]
+[Cases where a spreadsheet, a free tool, or a competitor is enough.]
+
+## Get started
+[Link to a template or setup page.]
+```
+
+Checklist: the title is the task, not the product; the answer comes before the pitch; there is a screenshot of the finished result; there is one full worked example; questions that block people sit next to the steps they affect; the page says when the product is unnecessary; and it ends with a template or setup link.
 
 ---
 

@@ -1,0 +1,917 @@
+{
+  "about": "Fifth held-out set: judgement-style, self-contained prompts written from skill bodies only, without reading descriptions.",
+  "prompts": [
+    {
+      "id": "ab-testing-m1",
+      "kind": "judgement",
+      "expect": [
+        "ab-testing"
+      ],
+      "prompt": "Tamarind Freight tested two quote forms on a random 50/50 split. After 9 days the new form leads 112 to 96 completed quotes, and the sample size we calculated up front was 14 days. The VP wants to peek every morning and ship the moment the p-value dips below 0.05. Is that okay?"
+    },
+    {
+      "id": "ab-testing-m2",
+      "kind": "judgement",
+      "expect": [
+        "ab-testing"
+      ],
+      "prompt": "We ran five variants of a pricing-page headline against control and one of them, variant D, came out 'significant' at p=0.04 while the other four showed nothing. Is it fine to roll out D as the winner, or should we do something else first?"
+    },
+    {
+      "id": "ad-creative-m1",
+      "kind": "judgement",
+      "expect": [
+        "ad-creative"
+      ],
+      "prompt": "Our ad account has 40 headline and description variants for a language-tutoring app and we need to refresh them for next week's Google responsive search ads. Which of these two approaches is better: generating 40 more near-copies of the top performer, or writing 10 new angles built on different customer pains?"
+    },
+    {
+      "id": "ad-creative-m2",
+      "kind": "judgement",
+      "expect": [
+        "ad-creative"
+      ],
+      "prompt": "Is it okay to use the same 1:1 image creative across LinkedIn, TikTok and Meta placements for a B2B payroll tool, just resizing the text? Our designer says each platform needs its own concept and copy limits are different. Who's right?"
+    },
+    {
+      "id": "ads-m1",
+      "kind": "judgement",
+      "expect": [
+        "ads"
+      ],
+      "prompt": "We have $6,000 a month to spend on paid acquisition for a pet-insurance startup and are choosing between Google search ads and Meta prospecting. Search has a $48 cost per lead but intent is high; Meta is $19 but leads rarely answer calls. Which should get the majority of budget?"
+    },
+    {
+      "id": "ads-m2",
+      "kind": "judgement",
+      "expect": [
+        "ads"
+      ],
+      "prompt": "Our Google Ads campaign has spent $2,300 over 3 weeks with 4 conversions, and the agency says to wait another month before touching bids or keywords. Is that enough data to judge, or should we change the structure now?"
+    },
+    {
+      "id": "ai-seo-m1",
+      "kind": "judgement",
+      "expect": [
+        "ai-seo"
+      ],
+      "prompt": "When people ask ChatGPT or Perplexity 'best invoice software for freelancers', our product is never mentioned while two competitors are. Should we spend the next quarter on getting cited in AI answers, or is that too speculative compared with normal Google rankings?"
+    },
+    {
+      "id": "ai-seo-m2",
+      "kind": "judgement",
+      "expect": [
+        "ai-seo"
+      ],
+      "prompt": "Our docs team wants to block GPTBot and other AI crawlers in robots.txt to protect content. Marketing wants AI assistants to recommend us. Is it okay to block them, and what would we lose?"
+    },
+    {
+      "id": "analytics-m1",
+      "kind": "judgement",
+      "expect": [
+        "analytics"
+      ],
+      "prompt": "We have a small SaaS and currently track pageviews only. Which of these should we instrument first: signup completion, feature usage events, or email clicks? We have one engineer for two days."
+    },
+    {
+      "id": "analytics-m2",
+      "kind": "judgement",
+      "expect": [
+        "analytics"
+      ],
+      "prompt": "Our dashboard shows 18,000 sessions and our new analytics export shows 12,400 for the same week. Is it okay to just pick the lower number for the board deck, or is this discrepancy something we must explain first?"
+    },
+    {
+      "id": "aso-m1",
+      "kind": "judgement",
+      "expect": [
+        "aso"
+      ],
+      "prompt": "Our meditation app's iOS title is 'Stillwater' and the subtitle is 'Calm app'. Is it worth changing the title to 'Stillwater: Sleep & Meditation' to pick up keywords, even though the brand name gets lost a bit?"
+    },
+    {
+      "id": "aso-m2",
+      "kind": "judgement",
+      "expect": [
+        "aso"
+      ],
+      "prompt": "Our Google Play listing converts 21% of store visitors to installs but our competitor converts 35%. We can only change one thing this sprint: screenshots, short description, or the icon. Which should we choose?"
+    },
+    {
+      "id": "attribution-m1",
+      "kind": "judgement",
+      "expect": [
+        "attribution"
+      ],
+      "prompt": "Our last-click report says 70% of revenue comes from branded search, so the CFO wants to cut display and podcast spend. Is that a safe conclusion, or is last-click misleading us here?"
+    },
+    {
+      "id": "attribution-m2",
+      "kind": "judgement",
+      "expect": [
+        "attribution"
+      ],
+      "prompt": "We started asking 'how did you hear about us?' on checkout and 38% of answers say 'a friend' while our analytics shows almost none as referral. Which should we trust when allocating next quarter's budget?"
+    },
+    {
+      "id": "churn-prevention-m1",
+      "kind": "judgement",
+      "expect": [
+        "churn-prevention"
+      ],
+      "prompt": "When a customer hits the cancel button in our billing app, we show a 20%-off offer for three months. Is it okay to show that to everyone, or should we only offer it to certain cancel reasons?"
+    },
+    {
+      "id": "churn-prevention-m2",
+      "kind": "judgement",
+      "expect": [
+        "churn-prevention"
+      ],
+      "prompt": "About 30% of our churn is failed card payments, not deliberate cancellations. Should we invest first in better dunning emails and card retries, or in a win-back campaign for people who chose to leave?"
+    },
+    {
+      "id": "co-marketing-m1",
+      "kind": "judgement",
+      "expect": [
+        "co-marketing"
+      ],
+      "prompt": "A smaller scheduling tool wants to co-host a webinar with us and share the lead list 50/50, but their audience is a third of ours. Is that a fair deal, or should we ask for something different?"
+    },
+    {
+      "id": "co-marketing-m2",
+      "kind": "judgement",
+      "expect": [
+        "co-marketing"
+      ],
+      "prompt": "We are choosing between two partner candidates for a joint ebook: a larger adjacent tool that also sells a competing feature, and a smaller complementary tool with a loyal community. Which should we approach first?"
+    },
+    {
+      "id": "cold-email-m1",
+      "kind": "judgement",
+      "expect": [
+        "cold-email"
+      ],
+      "prompt": "We're about to send our first cold email to 3,000 CFOs from a brand-new domain using a tool, 500 a day. Is it okay to start at that volume, or is that going to land us in spam?"
+    },
+    {
+      "id": "cold-email-m2",
+      "kind": "judgement",
+      "expect": [
+        "cold-email"
+      ],
+      "prompt": "Which opening line is better for a cold email to heads of logistics: 'I hope this email finds you well, I wanted to introduce Parcelwise' or 'Noticed you run 14 depots in the Midlands; most of your peers lose about 6% to late scans'? And is it okay to add three follow-ups?"
+    },
+    {
+      "id": "community-marketing-m1",
+      "kind": "judgement",
+      "expect": [
+        "community-marketing"
+      ],
+      "prompt": "Our developer tool has 400 members in a free Slack. Should we move the community to Discord because our users are on Discord already, or is it better to stay put and just grow the Slack?"
+    },
+    {
+      "id": "community-marketing-m2",
+      "kind": "judgement",
+      "expect": [
+        "community-marketing"
+      ],
+      "prompt": "A community member asked us to pay them $500 a month to be a 'moderator and ambassador'. Is it okay to pay members, or will it hurt the trust of the community?"
+    },
+    {
+      "id": "competitor-profiling-m1",
+      "kind": "judgement",
+      "expect": [
+        "competitor-profiling"
+      ],
+      "prompt": "I need a one-page profile of Foundry Loop, a competitor in field-service software, ahead of a sales call tomorrow. Is it enough to read their homepage and pricing page, or what else should I check before I describe their strengths and weaknesses?"
+    },
+    {
+      "id": "competitor-profiling-m2",
+      "kind": "judgement",
+      "expect": [
+        "competitor-profiling"
+      ],
+      "prompt": "Is it okay to quote the competitor's G2 reviews and job postings as evidence in our internal battlecard that they're struggling with onboarding? Which sources should I treat as reliable when profiling them?"
+    },
+    {
+      "id": "competitors-m1",
+      "kind": "judgement",
+      "expect": [
+        "competitors"
+      ],
+      "prompt": "We want to write 'Acme Rota vs. Us' alternative pages. Should we make one page per competitor, or one 'best alternatives to Acme Rota' roundup that lists us first alongside others?"
+    },
+    {
+      "id": "competitors-m2",
+      "kind": "judgement",
+      "expect": [
+        "competitors"
+      ],
+      "prompt": "Is it fair to say on our comparison page that a competitor 'lacks SOC 2' if we only checked their website and found no mention? What is the honest way to word this?"
+    },
+    {
+      "id": "content-strategy-m1",
+      "kind": "judgement",
+      "expect": [
+        "content-strategy"
+      ],
+      "prompt": "We publish two blog posts a week with no real plan and traffic is flat. Should we double the output, or stop and build topic clusters around the three problems our buyers hire us for?"
+    },
+    {
+      "id": "content-strategy-m2",
+      "kind": "judgement",
+      "expect": [
+        "content-strategy"
+      ],
+      "prompt": "For a small company with one writer, which is the better use of the next quarter: 12 short posts targeting long-tail questions, or 3 big pillar guides and then updates to what we already have?"
+    },
+    {
+      "id": "conversion-tracking-m1",
+      "kind": "judgement",
+      "expect": [
+        "conversion-tracking"
+      ],
+      "prompt": "Our developer set up the Meta pixel to fire a 'Purchase' event on the thank-you page, but customers can refresh that page and trigger it again. Is that tracking good enough for optimizing ads, or do we need a different approach?"
+    },
+    {
+      "id": "conversion-tracking-m2",
+      "kind": "judgement",
+      "expect": [
+        "conversion-tracking"
+      ],
+      "prompt": "We want to send server-side conversion events to Google and Meta in addition to the browser pixel. Is it okay to run both at once, or will we double-count? How do we handle that?"
+    },
+    {
+      "id": "copy-editing-m1",
+      "kind": "judgement",
+      "expect": [
+        "copy-editing"
+      ],
+      "prompt": "Here's our hero text: 'We leverage cutting-edge synergies to empower teams to unlock best-in-class workflows.' Our founder thinks it sounds professional. Is it fine as is, or should it go through an edit pass? Please edit it."
+    },
+    {
+      "id": "copy-editing-m2",
+      "kind": "judgement",
+      "expect": [
+        "copy-editing"
+      ],
+      "prompt": "I wrote this email paragraph: 'Just wanted to reach out and touch base about maybe possibly scheduling a quick call sometime, if that works for you, no pressure at all.' Is that okay to send after a light edit, or should I rewrite it? Please tighten it."
+    },
+    {
+      "id": "copywriting-m1",
+      "kind": "judgement",
+      "expect": [
+        "copywriting"
+      ],
+      "prompt": "We're launching a bookkeeping tool for dental practices and I need homepage copy. Should the headline lead with saving time, or with avoiding tax-season panic? Please write me both and tell me which you'd choose."
+    },
+    {
+      "id": "copywriting-m2",
+      "kind": "judgement",
+      "expect": [
+        "copywriting"
+      ],
+      "prompt": "Write a landing-page headline and subhead for a $29 app that cleans up duplicate photos. We can't decide between a benefit-led headline and a clever pun. Which should we use?"
+    },
+    {
+      "id": "cro-m1",
+      "kind": "judgement",
+      "expect": [
+        "cro"
+      ],
+      "prompt": "Our pricing page gets 9,000 visits a month but only 1.1% click 'Start trial'. Should we first fix the headline, shorten the page, or add testimonials? We can only change one thing for now."
+    },
+    {
+      "id": "cro-m2",
+      "kind": "judgement",
+      "expect": [
+        "cro"
+      ],
+      "prompt": "The product page for our $240 standing desk has a big carousel, a pop-up and 14 form fields at checkout. Is it okay to leave it while we run ads at it, or is that page leaking conversions?"
+    },
+    {
+      "id": "customer-research-m1",
+      "kind": "judgement",
+      "expect": [
+        "customer-research"
+      ],
+      "prompt": "We want to understand why trial users don't convert. Is it better to run 8 interviews or to send a 20-question survey to our whole list of 5,000?"
+    },
+    {
+      "id": "customer-research-m2",
+      "kind": "judgement",
+      "expect": [
+        "customer-research"
+      ],
+      "prompt": "We have 12 interview transcripts from customers of our route-planning app and the founder wants to just pick the quotes he likes for the positioning doc. Is that okay, or how should we synthesize them?"
+    },
+    {
+      "id": "directory-submissions-m1",
+      "kind": "judgement",
+      "expect": [
+        "directory-submissions"
+      ],
+      "prompt": "We're launching a note-taking app next month. Should we submit to Product Hunt, G2, Capterra, AlternativeTo and about 50 smaller directories, or focus on just a handful? Is it okay to use a service that submits to hundreds?"
+    },
+    {
+      "id": "directory-submissions-m2",
+      "kind": "judgement",
+      "expect": [
+        "directory-submissions"
+      ],
+      "prompt": "Is it worth paying $299 for a listing in a niche 'best HR tools' directory, given that we'd get a backlink? How do we decide which directories are worth the effort?"
+    },
+    {
+      "id": "emails-m1",
+      "kind": "judgement",
+      "expect": [
+        "emails"
+      ],
+      "prompt": "Our onboarding sequence is 7 emails over 14 days, all text-heavy, with open rates falling from 52% to 9%. Should we cut it down to 4, or keep 7 and fix the subject lines?"
+    },
+    {
+      "id": "emails-m2",
+      "kind": "judgement",
+      "expect": [
+        "emails"
+      ],
+      "prompt": "Is it okay to send our monthly newsletter and a promo email on the same day to the same list? Marketing says our unsubscribe rate is fine, but the list is only 8,000 people."
+    },
+    {
+      "id": "events-m1",
+      "kind": "judgement",
+      "expect": [
+        "events"
+      ],
+      "prompt": "We have a $15,000 budget for one event this year. Should we buy a booth at a big trade show with 10,000 attendees, or host a dinner for 30 target accounts?"
+    },
+    {
+      "id": "events-m2",
+      "kind": "judgement",
+      "expect": [
+        "events"
+      ],
+      "prompt": "We exhibited at a conference and got 140 badge scans. Is it okay to add all of them to our newsletter, and how should we judge whether the event was worth it?"
+    },
+    {
+      "id": "free-tools-m1",
+      "kind": "judgement",
+      "expect": [
+        "free-tools"
+      ],
+      "prompt": "We run an accounting platform for contractors and are considering building a free invoice generator as lead gen. Is that a good idea, or should it be a calculator for markup and margin instead? Which has more potential?"
+    },
+    {
+      "id": "free-tools-m2",
+      "kind": "judgement",
+      "expect": [
+        "free-tools"
+      ],
+      "prompt": "Our free 'headline analyzer' gets 20,000 uses a month but almost nobody signs up for the paid product. Should we gate the results behind email, or is that going to kill the traffic?"
+    },
+    {
+      "id": "image-m1",
+      "kind": "judgement",
+      "expect": [
+        "image"
+      ],
+      "prompt": "I need a hero image for a blog post about cold-chain logistics. Should we use an AI-generated image, a stock photo, or a custom illustration? We have no designer and need it today."
+    },
+    {
+      "id": "image-m2",
+      "kind": "judgement",
+      "expect": [
+        "image"
+      ],
+      "prompt": "Is it okay to use AI-generated product photos on our store listing showing the item in a lifestyle scene, if the real product looks slightly different? Which style prompts would you use?"
+    },
+    {
+      "id": "influencer-marketing-m1",
+      "kind": "judgement",
+      "expect": [
+        "influencer-marketing"
+      ],
+      "prompt": "We have $8,000 to spend on influencers for a protein snack brand. Should we pay one creator with 800k followers, or ten micro-creators with 20k each?"
+    },
+    {
+      "id": "influencer-marketing-m2",
+      "kind": "judgement",
+      "expect": [
+        "influencer-marketing"
+      ],
+      "prompt": "A creator we want to work with has 200k followers but only 0.4% engagement, and the posts look like they were bought. Is it okay to still hire them, and how do we vet creators before signing?"
+    },
+    {
+      "id": "launch-m1",
+      "kind": "judgement",
+      "expect": [
+        "launch"
+      ],
+      "prompt": "We're releasing our v2 next Tuesday. Should we do one big launch day, or a staggered launch over three weeks with waitlist, beta, and public stages?"
+    },
+    {
+      "id": "launch-m2",
+      "kind": "judgement",
+      "expect": [
+        "launch"
+      ],
+      "prompt": "Is it okay to announce a new feature on Product Hunt, our newsletter and Twitter on the same morning, or should we split the channels across days? We have a small team."
+    },
+    {
+      "id": "lead-magnets-m1",
+      "kind": "judgement",
+      "expect": [
+        "lead-magnets"
+      ],
+      "prompt": "We're a payroll startup choosing between a 40-page guide, a compliance checklist, and a template pack as an email-capture offer. Which is likely to bring in more qualified leads?"
+    },
+    {
+      "id": "lead-magnets-m2",
+      "kind": "judgement",
+      "expect": [
+        "lead-magnets"
+      ],
+      "prompt": "Our ebook has 3,000 downloads but sales says the leads are students and job seekers. Should we change the offer, or gate it differently?"
+    },
+    {
+      "id": "link-building-m1",
+      "kind": "judgement",
+      "expect": [
+        "link-building"
+      ],
+      "prompt": "An outreach agency offers us 30 backlinks for $1,500 from sites 'with DR 50+'. Is it okay to buy those, or is that risky for Google penalties?"
+    },
+    {
+      "id": "link-building-m2",
+      "kind": "judgement",
+      "expect": [
+        "link-building"
+      ],
+      "prompt": "Which is better for a small SaaS with a limited budget: digital PR with original research, or guest posting on industry blogs? We have one person for it."
+    },
+    {
+      "id": "marketing-council-m1",
+      "kind": "judgement",
+      "expect": [
+        "marketing-council"
+      ],
+      "prompt": "We need a decision from multiple angles on whether our $12M B2B software company should shift 40% of our budget from paid search into a content and community program. Which view is right? Please get several perspectives and then recommend."
+    },
+    {
+      "id": "marketing-council-m2",
+      "kind": "judgement",
+      "expect": [
+        "marketing-council"
+      ],
+      "prompt": "Our CEO wants to rebrand and change the name before launching in Europe; the CMO says keep it. Can you have a set of different marketing experts weigh in on whether we should rebrand now, and give a verdict?"
+    },
+    {
+      "id": "marketing-ideas-m1",
+      "kind": "judgement",
+      "expect": [
+        "marketing-ideas"
+      ],
+      "prompt": "We run a small climbing gym and have almost no budget. Give me a handful of marketing ideas to try this month, and which of them is the best first step?"
+    },
+    {
+      "id": "marketing-ideas-m2",
+      "kind": "judgement",
+      "expect": [
+        "marketing-ideas"
+      ],
+      "prompt": "We sell a niche B2B SaaS for vet clinics and have about 200 customers. Which unconventional marketing tactics are worth trying, and is it okay to just copy what bigger SaaS companies do?"
+    },
+    {
+      "id": "marketing-loops-m1",
+      "kind": "judgement",
+      "expect": [
+        "marketing-loops"
+      ],
+      "prompt": "I want an AI agent to check our Google Ads search terms every Monday morning and flag waste. Should it just report findings each week, or also pause keywords by itself? And when should it stop running?"
+    },
+    {
+      "id": "marketing-loops-m2",
+      "kind": "judgement",
+      "expect": [
+        "marketing-loops"
+      ],
+      "prompt": "We want a daily job where an agent triages new brand mentions and drafts replies. Is it enough to give it a prompt and a schedule, or does it also need memory of what it already handled? What should the stopping rule be?"
+    },
+    {
+      "id": "marketing-plan-m1",
+      "kind": "judgement",
+      "expect": [
+        "marketing-plan"
+      ],
+      "prompt": "We're a 6-person startup selling accounting software to law firms and need a 90-day marketing plan with a $20k budget. Should we start with outbound or content? Please lay out the plan and priorities."
+    },
+    {
+      "id": "marketing-plan-m2",
+      "kind": "judgement",
+      "expect": [
+        "marketing-plan"
+      ],
+      "prompt": "Is it enough to have a plan that just says 'post on LinkedIn 3 times a week and run some ads'? Our CEO thinks so. What would a proper plan include?"
+    },
+    {
+      "id": "marketing-psychology-m1",
+      "kind": "judgement",
+      "expect": [
+        "marketing-psychology"
+      ],
+      "prompt": "Is it ethical to add a countdown timer that resets every day on our checkout page to create urgency? Our growth lead says it works."
+    },
+    {
+      "id": "marketing-psychology-m2",
+      "kind": "judgement",
+      "expect": [
+        "marketing-psychology"
+      ],
+      "prompt": "Which is more persuasive on a pricing page: anchoring with a high 'Enterprise' price next to the Pro plan, or showing 'most popular' on the Pro plan? Can we do both?"
+    },
+    {
+      "id": "offers-m1",
+      "kind": "judgement",
+      "expect": [
+        "offers"
+      ],
+      "prompt": "Our consulting offer is 'a 12-week audit and roadmap for $18,000' and prospects keep asking for a discount. Should we cut the price, or reshape the offer with a guarantee and a smaller first step?"
+    },
+    {
+      "id": "offers-m2",
+      "kind": "judgement",
+      "expect": [
+        "offers"
+      ],
+      "prompt": "Is it okay to add a 'free bonus' of three templates, a call and a Slack channel to our $499 course to push conversions, or does stacking extras devalue it?"
+    },
+    {
+      "id": "onboarding-m1",
+      "kind": "judgement",
+      "expect": [
+        "onboarding"
+      ],
+      "prompt": "Our new users sign up but only 22% finish setup. Should we add a 6-step product tour, or cut the setup down to one key step? Which is better?"
+    },
+    {
+      "id": "onboarding-m2",
+      "kind": "judgement",
+      "expect": [
+        "onboarding"
+      ],
+      "prompt": "Is it okay to make users connect their data source before seeing anything in the app? Our PM says it's too much friction; our engineers say the app is useless without it."
+    },
+    {
+      "id": "paywalls-m1",
+      "kind": "judgement",
+      "expect": [
+        "paywalls"
+      ],
+      "prompt": "We're building a freemium photo app and wondering where to put the paywall: when users try to export a high-res photo, or when they have saved more than five projects? Which is better?"
+    },
+    {
+      "id": "paywalls-m2",
+      "kind": "judgement",
+      "expect": [
+        "paywalls"
+      ],
+      "prompt": "Our upgrade modal appears the moment someone opens the app for the second time. Is that okay, or is it too early to ask people to pay?"
+    },
+    {
+      "id": "popups-m1",
+      "kind": "judgement",
+      "expect": [
+        "popups"
+      ],
+      "prompt": "Our site shows an email popup after 3 seconds on every page, including the checkout. Is that okay? Our bounce rate has gone up since we added it."
+    },
+    {
+      "id": "popups-m2",
+      "kind": "judgement",
+      "expect": [
+        "popups"
+      ],
+      "prompt": "Should we use an exit-intent popup offering 10% off on our blog, or a slide-in after 60% scroll? Which converts better for content readers, and is it OK on mobile?"
+    },
+    {
+      "id": "pricing-m1",
+      "kind": "judgement",
+      "expect": [
+        "pricing"
+      ],
+      "prompt": "We charge $49 a month flat for our scheduling tool and almost everyone buys. Is that a sign we're underpriced and should raise to $79, or should we add tiers?"
+    },
+    {
+      "id": "pricing-m2",
+      "kind": "judgement",
+      "expect": [
+        "pricing"
+      ],
+      "prompt": "Should we price our analytics product per seat or by usage (events tracked)? Customers range from 3-person startups to 300-person firms."
+    },
+    {
+      "id": "product-marketing-m1",
+      "kind": "judgement",
+      "expect": [
+        "product-marketing"
+      ],
+      "prompt": "We sell inventory software to bakeries and the sales team describes it three different ways. Should we write one positioning statement first, or start with messaging for each persona?"
+    },
+    {
+      "id": "product-marketing-m2",
+      "kind": "judgement",
+      "expect": [
+        "product-marketing"
+      ],
+      "prompt": "Is it okay to position our app as 'the Salesforce for plumbers' in our homepage copy? Which is better: category-creation or a known category with a twist?"
+    },
+    {
+      "id": "programmatic-seo-m1",
+      "kind": "judgement",
+      "expect": [
+        "programmatic-seo"
+      ],
+      "prompt": "We have a database of 40,000 apartment listings and want to generate a page for each neighborhood and each bedroom count (about 6,000 pages). Is it okay to publish all at once, or is that risky?"
+    },
+    {
+      "id": "programmatic-seo-m2",
+      "kind": "judgement",
+      "expect": [
+        "programmatic-seo"
+      ],
+      "prompt": "Which template is better for programmatic pages for a currency converter: 'USD to EUR' pairs or 'exchange rate on [date]' pages? Is a thin page with just a table enough?"
+    },
+    {
+      "id": "prospecting-m1",
+      "kind": "judgement",
+      "expect": [
+        "prospecting"
+      ],
+      "prompt": "We sell compliance software to credit unions with 50-500 employees. Where should we look to build a list of prospects first: LinkedIn Sales Navigator, a state regulator's list, or conference attendee lists?"
+    },
+    {
+      "id": "prospecting-m2",
+      "kind": "judgement",
+      "expect": [
+        "prospecting"
+      ],
+      "prompt": "Is it enough to prospect only from companies that just raised funding, or should we also look for hiring signals and tech-stack changes? Which signals are better?"
+    },
+    {
+      "id": "public-relations-m1",
+      "kind": "judgement",
+      "expect": [
+        "public-relations"
+      ],
+      "prompt": "We raised a $4M seed round. Should we pitch TechCrunch an exclusive, or send the announcement to 40 journalists at once? Which is better for a startup our size?"
+    },
+    {
+      "id": "public-relations-m2",
+      "kind": "judgement",
+      "expect": [
+        "public-relations"
+      ],
+      "prompt": "Is it okay to send a press release about a minor feature update to a list of reporters? Our agency says yes, once a month. How do we judge if something is news?"
+    },
+    {
+      "id": "referrals-m1",
+      "kind": "judgement",
+      "expect": [
+        "referrals"
+      ],
+      "prompt": "We want to start a referral program for our meal kit. Should we give $20 credit to both the referrer and friend, or only reward the referrer? Which structure works better?"
+    },
+    {
+      "id": "referrals-m2",
+      "kind": "judgement",
+      "expect": [
+        "referrals"
+      ],
+      "prompt": "A customer is sending hundreds of referral links in forums to earn credit. Is it okay to let it continue, or should we cap rewards and add rules?"
+    },
+    {
+      "id": "reverse-engineer-marketing-m1",
+      "kind": "judgement",
+      "expect": [
+        "reverse-engineer-marketing"
+      ],
+      "prompt": "I want to figure out how a competitor, Sproutline, gets so much traffic. Is it enough to look at their top pages in Similarweb, or what else should I analyze to work out their marketing machine?"
+    },
+    {
+      "id": "reverse-engineer-marketing-m2",
+      "kind": "judgement",
+      "expect": [
+        "reverse-engineer-marketing"
+      ],
+      "prompt": "Is it okay to copy a competitor's funnel structure exactly, after tearing down their ads, landing pages and email sequence? What should I take from the teardown and what should I avoid?"
+    },
+    {
+      "id": "revops-m1",
+      "kind": "judgement",
+      "expect": [
+        "revops"
+      ],
+      "prompt": "Our sales and marketing teams define 'qualified lead' differently and leads sit unworked for days. Should we create a shared MQL definition with an SLA first, or fix lead routing in the CRM first?"
+    },
+    {
+      "id": "revops-m2",
+      "kind": "judgement",
+      "expect": [
+        "revops"
+      ],
+      "prompt": "We have 5 lifecycle stages in HubSpot and reps skip stages manually. Is it okay to automate stage changes, or will that corrupt our pipeline reporting?"
+    },
+    {
+      "id": "sales-enablement-m1",
+      "kind": "judgement",
+      "expect": [
+        "sales-enablement"
+      ],
+      "prompt": "Our reps lose deals to a competitor and keep asking marketing for a battlecard. Is a one-page battlecard enough, or do they need a full playbook with objection handling and a demo script?"
+    },
+    {
+      "id": "sales-enablement-m2",
+      "kind": "judgement",
+      "expect": [
+        "sales-enablement"
+      ],
+      "prompt": "Which of these sales collateral pieces should we build first for a new enterprise product: a pitch deck, a case study, or an ROI calculator? Reps have no assets right now."
+    },
+    {
+      "id": "schema-m1",
+      "kind": "judgement",
+      "expect": [
+        "schema"
+      ],
+      "prompt": "Is it okay to mark up all our blog posts with FAQ schema even though the FAQ content isn't visible on the page? Our SEO contractor says it helps get rich results."
+    },
+    {
+      "id": "schema-m2",
+      "kind": "judgement",
+      "expect": [
+        "schema"
+      ],
+      "prompt": "For a local plumbing business, which schema types should we add first: LocalBusiness, Service, or Review? And is it fine to add aggregate rating markup using testimonials from our own site?"
+    },
+    {
+      "id": "seo-audit-m1",
+      "kind": "judgement",
+      "expect": [
+        "seo-audit"
+      ],
+      "prompt": "Our organic traffic dropped 35% after a site migration last month. Should we first check redirects and indexing, or start rewriting content? Where would you look first?"
+    },
+    {
+      "id": "seo-audit-m2",
+      "kind": "judgement",
+      "expect": [
+        "seo-audit"
+      ],
+      "prompt": "A freelancer says our site's SEO is fine because Lighthouse scores are 95+. Is that enough to conclude there are no technical SEO problems?"
+    },
+    {
+      "id": "signup-m1",
+      "kind": "judgement",
+      "expect": [
+        "signup"
+      ],
+      "prompt": "Our signup form asks for name, email, phone, company, role, and a password, and 60% abandon halfway. Should we cut it to email only, or keep fields for sales qualification?"
+    },
+    {
+      "id": "signup-m2",
+      "kind": "judgement",
+      "expect": [
+        "signup"
+      ],
+      "prompt": "Is it okay to require email verification before letting users into the product, or should we let them in and verify later? Which converts better?"
+    },
+    {
+      "id": "site-architecture-m1",
+      "kind": "judgement",
+      "expect": [
+        "site-architecture"
+      ],
+      "prompt": "We are redesigning our site with 300 pages and want to know if it's better to keep a flat URL structure (/feature-x) or nest pages by category (/product/feature-x). Which is better for SEO and users?"
+    },
+    {
+      "id": "site-architecture-m2",
+      "kind": "judgement",
+      "expect": [
+        "site-architecture"
+      ],
+      "prompt": "Our top navigation has 11 items and a mega-menu. Is it okay to keep it, or should we cut to 5? Where should pricing and the blog live?"
+    },
+    {
+      "id": "sms-m1",
+      "kind": "judgement",
+      "expect": [
+        "sms"
+      ],
+      "prompt": "We collected phone numbers at checkout for order updates. Is it okay to also send promotional text messages to them, or do we need separate consent?"
+    },
+    {
+      "id": "sms-m2",
+      "kind": "judgement",
+      "expect": [
+        "sms"
+      ],
+      "prompt": "Which is better for a boutique clothing shop: SMS blasts twice a week, or just abandoned-cart and back-in-stock texts? We have 2,500 subscribers."
+    },
+    {
+      "id": "social-m1",
+      "kind": "judgement",
+      "expect": [
+        "social"
+      ],
+      "prompt": "We have one person doing social for a B2B accounting tool. Should we focus on LinkedIn only or spread across LinkedIn, X and Instagram? What's the better use of time?"
+    },
+    {
+      "id": "social-m2",
+      "kind": "judgement",
+      "expect": [
+        "social"
+      ],
+      "prompt": "Is it okay to schedule the same post across all platforms with a tool, or does each platform need its own native version? Our engagement is dropping."
+    },
+    {
+      "id": "video-m1",
+      "kind": "judgement",
+      "expect": [
+        "video"
+      ],
+      "prompt": "We want a product explainer video for our homepage. Is it better to do a 2-minute animated explainer for $6,000 or a 60-second screen recording with voiceover done in-house?"
+    },
+    {
+      "id": "video-m2",
+      "kind": "judgement",
+      "expect": [
+        "video"
+      ],
+      "prompt": "Is it enough to have only a horizontal 16:9 video for our launch, or do we need vertical cuts for Reels and Shorts as well? We have a $2,000 budget."
+    },
+    {
+      "id": "webinar-m1",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "We held a webinar with 600 registrants and only 140 attended live. Is that a bad attendance rate, and should we send the recording to those who missed it or hold a rerun?"
+    },
+    {
+      "id": "webinar-m2",
+      "kind": "judgement",
+      "expect": [
+        "webinar"
+      ],
+      "prompt": "Which is better for generating pipeline: a monthly 45-minute educational webinar, or a short 20-minute live demo-style session every week? We have two presenters."
+    },
+    {
+      "id": "none-m1",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Our Postgres query joining orders to line items takes 14 seconds on 20 million rows. Should we add a composite index on (order_id, created_at) or partition the table by month first?"
+    },
+    {
+      "id": "none-m2",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Is it okay to store user session tokens in localStorage for our single-page React app, or should we use httpOnly cookies? We have no server-side rendering."
+    },
+    {
+      "id": "none-m3",
+      "kind": "none",
+      "expect": [],
+      "prompt": "I'm choosing between a 15-year fixed mortgage at 5.9% and a 30-year at 6.6%, planning to stay put for about 8 years. Which one is the better deal?"
+    },
+    {
+      "id": "none-m4",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Should I take the job offer paying $118k with a 1-hour commute or stay at my current $104k remote role? I have two kids under five."
+    },
+    {
+      "id": "none-m5",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Is it safe to give my 3-year-old a half dose of adult children's allergy syrup when the bottle only lists doses for 4 and up? Please be careful."
+    },
+    {
+      "id": "none-m6",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Our Kubernetes pods keep restarting with OOMKilled. Is it enough to double the memory limit to 2Gi, or should we look for a leak first?"
+    },
+    {
+      "id": "none-m7",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Which is better for a first marathon: a 16-week plan with 4 runs a week peaking at 32 miles, or an 18-week plan with 5 runs peaking at 40? I currently run 15 miles a week."
+    },
+    {
+      "id": "none-m8",
+      "kind": "none",
+      "expect": [],
+      "prompt": "Is it okay to refactor a 900-line Python function into small functions right before a release, given we only have a few tests covering it?"
+    }
+  ]
+}

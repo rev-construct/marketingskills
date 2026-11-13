@@ -106,4 +106,4 @@ Return:
 
 For library planning use **content-strategy**; for capture and promotion use **lead-magnets**; for public-site agent access and AI search use **ai-seo**. This skill creates the archive-derived agent artifact.
 
-Scope requested in [issue #432](https://github.com/coreyhaines31/marketingskills/issues/432).
+Scope requested in [issue #432](https://github.com/rev-construct/marketingskills/issues/432).

@@ -1,6 +1,44 @@
 # Measuring AI Search Impact Past the Referral Click
 
+## Contents
+- Size the opportunity first
+- Benchmarks (2026)
+- The SERP halo and opt-out tests
+- Four layers, setup, evaluation designs, and reporting language
+
 AI answers influence buyers who never click a link. They read a recommendation, then search your brand or type your URL a few days later. Referral reports miss most of that, so "AI sends us almost no traffic" is usually a measurement gap, and the impact sits in other channels.
+
+## Size the opportunity first
+
+Before building any measurement, answer "how big is this for us?" from your own analytics, over the trailing 12 months:
+
+1. **LLM sessions as a percentage of Google organic sessions.** Group the AI referrers (see Setup, step 3) and divide.
+2. **Conversion rate by channel**, AI referrals against Google organic, direct, and paid.
+
+Treat the result as a **floor**. ChatGPT's UTM tagging had an outage in early October, which pushed clicks that would have been tagged into Direct, and AI visits without a referrer are always undercounted. Scale AEO effort to the number: a channel at a fraction of a percent of organic that converts well deserves monitoring and fixes to pages that already matter, not a new program that displaces SEO.
+
+## Benchmarks (2026)
+
+Dated, third-party data points for context. Each comes from a different sample, and most are agencies or vendors reporting on their own panels, so use them to sanity-check your own numbers rather than as forecasts. Check the primary reports before quoting any of them externally, since several were relayed through social posts.
+
+| Source | Sample | Finding |
+|---|---|---|
+| Marie Haynes ("GEO is a distraction", 2026) | 100 sites, 145M sessions | ChatGPT referrals were 0.62% of Google organic sessions; they converted at 13.8% against 3.02%; Google drove 96.5% of conversions |
+| IDHL (agency) | 175 sites | AI sessions up 392% year over year, revenue from them up 312% |
+| Seer Interactive (agency) | Not stated in our notes | Brands cited in an AI Overview had a 2.07% CTR against 0.94% for brands not cited |
+| Semrush (vendor) | A fixed panel of 400 commercial keywords | AI Overviews appeared on 88% of the panel, up from 45.75% earlier |
+
+The first two rows pull in different directions on purpose: AI referrals convert well and are growing quickly, from a base that is still small next to Google. The Semrush figure is for one hand-picked commercial panel, so it says nothing about the share of all queries that show an AI Overview.
+
+## The SERP halo and opt-out tests
+
+Judging AI Overviews by AI referral clicks alone misses the halo: people who see your brand in an overview may click a regular result, or search your name later. Cyrus Shepard ran an opt-out test on his own site, reported by Search Engine Roundtable and Search Engine Land, and found AI-surface impressions had a CTR of about 0.9%, while regular organic clicks fell during the weeks the site was opted out.
+
+Caveats: that is one site, and no volumes were published, so read it as a design to copy, not a result to quote as a rate.
+
+You can use opt-out on and off as a **measurement design** (the interrupted-time-series row below): switch the AI opt-out control on for a set period, then off, and compare organic clicks, branded search, and conversions. The cost is real. While opted out you may lose AI exposure and the clicks that came with it, so run it on a section of the site or for a short window, log other changes in the same period, and decide beforehand what drop would end the test. Do not report AI Overviews as ineffective because AI referral clicks are low.
+
+## Reading the delayed effect
 
 Profound joined more than two million AI conversations with later browsing behavior (Profound, July 2026; observational, US-only, measured site visits rather than purchases). Two findings shape the setup below:
 

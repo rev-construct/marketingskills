@@ -1,5 +1,7 @@
 # Carousel Frameworks
 
+Contents: [Picking a Framework](#picking-a-framework) · [Framework A: Value-Stack (4–14 slides)](#framework-a-value-stack-414-slides) · [Framework B: Problem-Proof (6–10 slides)](#framework-b-problem-proof-610-slides) · [Framework C: Hack List (6–10 slides)](#framework-c-hack-list-610-slides) · [Framework D: Rant Callout (4–8 slides)](#framework-d-rant-callout-48-slides) · [Framework E: Demo Walkthrough (5–11 slides)](#framework-e-demo-walkthrough-511-slides) · [Platform Notes](#platform-notes) · [Production Checklist](#production-checklist) · [Measuring What Worked](#measuring-what-worked)
+
 Five slide-by-slide narrative architectures for carousels — Instagram carousels and LinkedIn document posts. Each framework is a different *reason to keep swiping*; picking the right one for the content matters more than polishing individual slides.
 
 A carousel is not a blog post chopped into squares. It's a swipe-through with two jobs per slide: deliver one idea, and make the next swipe irresistible. These frameworks encode structures that show up repeatedly in high-performing carousels; treat them as starting structures to adapt, not rigid formulas — and expect to validate against your own analytics.

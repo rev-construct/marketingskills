@@ -1,4 +1,5 @@
 /*! Phone call click detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: click on a tel: link. Pushes dataLayer event: phone_click
  *  From the conversion-tracking skill in Marketing Skills */
 (function () {

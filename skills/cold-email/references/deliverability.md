@@ -2,6 +2,8 @@
 
 The best cold email does nothing if it lands in spam. Deliverability is set up before the first send and watched every week after. This reference covers the sending setup, the mailbox providers' rules, volume limits, warmup, monitoring, and when to stop.
 
+Contents: [The rules from Google, Yahoo, and Microsoft](#the-rules-from-google-yahoo-and-microsoft) · [Sending setup](#sending-setup) · [Warmup](#warmup) · [The email itself](#the-email-itself) · [Verify before you send](#verify-before-you-send) · [Monitoring](#monitoring) · [Stop-loss rules](#stop-loss-rules) · [Common mistakes](#common-mistakes) · [Tools](#tools)
+
 Numbers here come mostly from sending-infrastructure vendors and mailbox providers' own guidelines. Mailbox providers change enforcement without notice, so treat the volume figures as starting points and let your own placement tests decide.
 
 ## The rules from Google, Yahoo, and Microsoft
@@ -108,4 +110,4 @@ Decide these before launch and enforce them automatically where your tool allows
 | DMARC monitoring | EasyDMARC, dmarcian, Valimail |
 | List verification | Bouncer, MillionVerifier, NeverBounce, Truelist, ZeroBounce, and others |
 
-Setup guides: [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md).
+Setup guides: [tools registry](https://github.com/rev-construct/marketingskills/blob/main/tools/REGISTRY.md).

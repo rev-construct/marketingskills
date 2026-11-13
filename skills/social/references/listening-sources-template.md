@@ -1,5 +1,7 @@
 # Listening Sources — Template
 
+Contents: [What We're Listening For](#what-were-listening-for) · [ICP (for scoring)](#icp-for-scoring) · [Target Accounts](#target-accounts) · [Keywords (intent signals)](#keywords-intent-signals) · [Subreddits](#subreddits) · [Saved Searches (manual / browser-driven)](#saved-searches-manual--browser-driven) · [Do Not Engage](#do-not-engage) · [Notes for Claude](#notes-for-claude)
+
 Copy this file to `.agents/listening-sources.md` in your project (or `.claude/listening-sources.md`) and fill in the brackets. Claude reads it when running the [listening workflow](listening.md).
 
 Delete sections you don't use. Keep this short and current — stale sources are worse than no sources.

@@ -1,4 +1,5 @@
 /*! Jotform conversion detection (MIT)
+ *  Portions Copyright (c) 2026 Converly (converly.io); MIT License, see LICENSE.
  *  Detects: form submission. Pushes dataLayer event: jotform_form_submitted
  *  From the conversion-tracking skill in Marketing Skills */
 /* Jotform iframe completion listener. Reads no form answers.

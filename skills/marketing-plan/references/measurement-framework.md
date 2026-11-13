@@ -1,5 +1,7 @@
 # Measurement Framework — KPIs, North Stars, Cadence
 
+Contents: [The north-star principle](#the-north-star-principle) · [North-star patterns by business model](#north-star-patterns-by-business-model) · [Leading indicators by AARRR stage](#leading-indicators-by-aarrr-stage) · [Review cadence](#review-cadence) · [KPI target setting](#kpi-target-setting) · [Anchoring against the VC growth path](#anchoring-against-the-vc-growth-path) · [Forecasting reality check](#forecasting-reality-check) · [Kill criteria](#kill-criteria) · [Guardrail metrics](#guardrail-metrics) · [Data sources mapping](#data-sources-mapping) · [When data isn't wired](#when-data-isnt-wired) · [Reporting cadence + automation](#reporting-cadence--automation)
+
 Every plan needs a measurement section that tells the team how to know if the plan is working. This doc is the source for Section 13's measurement subsection.
 
 **Related docs:**

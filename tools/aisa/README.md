@@ -1,7 +1,5 @@
 # AIsa Quick Start
 
-> **◆ Verified Partner integration.** AIsa sponsors Marketing Skills. This guide adds an optional data connection and does not change what any skill recommends. Compare alternatives for the task. See [Verified Partners](../REGISTRY.md#verified-partners).
-
 Use AIsa when a selected marketing workflow needs data from several supported providers through one account. An existing [direct provider connection](../REGISTRY.md), [Composio](../composio/README.md) for connected SaaS accounts, or a manual export may fit better. Check the [coverage map](coverage-map.md) before connecting anything.
 
 ## MCP Connection
