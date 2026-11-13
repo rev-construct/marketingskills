@@ -2,7 +2,7 @@
 
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
-Maintained by REVConstruct. Based on [Marketing Skills](https://github.com/coreyhaines31/marketingskills) by [Corey Haines](https://corey.co) (MIT). This is REVConstruct's fork of that library, forked at upstream 2.14.10. What we changed:
+Maintained by REVConstruct. Based on [Marketing Skills](https://github.com/coreyhaines31/marketingskills) by [Corey Haines](https://corey.co) (MIT). This is REVConstruct's fork of that library, forked at upstream 2.14.12. What we changed:
 
 - **New and expanded skills:** a `webinar` skill, a Reddit reference in `community-marketing`, and updates to `ai-seo`, `ads`, `seo-audit`, `image`, `cold-email`, and others. The full list is in [VERSIONS.md](VERSIONS.md).
 - **Fixes:** broken links, wrong cross-references, and out-of-date platform names.
